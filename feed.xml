@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://oakbrad.github.io">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://bradwenner.wiki">
     <title>Digital Garden</title>
-    <link href="https://oakbrad.github.io/feed.xml" rel="self" >
-    <link href="https://oakbrad.github.io" >
-    <updated>2025-07-19T23:03:54Z</updated>
-    <id>https://oakbrad.github.io</id>
+    <link href="https://bradwenner.wiki/feed.xml" rel="self" >
+    <link href="https://bradwenner.wiki" >
+    <updated>2025-07-19T23:46:37Z</updated>
+    <id>https://bradwenner.wiki</id>
         <entry>
             <title>
                 Digital Garden Index
                 
             </title>
-            <updated>2025-07-19T23:03:38Z</updated>
-            <id>https://oakbrad.github.io/</id>
+            <updated>2025-07-19T23:46:21Z</updated>
+            <id>https://bradwenner.wiki/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#obsidian&quot;&gt;#obsidian&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#github&quot;&gt;#github&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#diy&quot;&gt;#diy&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#wiki&quot;&gt;#wiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Testing digital garden to Github Pages deployment using custom domain.&lt;/p&gt;
 
             </content>
-            <link href="https://oakbrad.github.io/" >
+            <link href="https://bradwenner.wiki/" >
         </entry>
 </feed>
