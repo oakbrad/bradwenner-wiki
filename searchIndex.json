@@ -1,7 +1,7 @@
 [
 {
 		"title": "Taco Log",
-		"date":"Sun Jul 20 2025 04:07:42 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Jul 20 2025 04:08:19 GMT+0000 (Coordinated Universal Time)",
 		"url":"/oakland/taco-log/",
 		"content": "#oakland #restaurants #food\n\nWHERE\nWHAT\nWHEN\nTHOUGHTS\n\nTacos Sinaloa\nShrimp, saudero, carnitas tacos\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-12</a>\nThe saudero is underrated. 💳\n\nTacos Asi Es Colima\nCarnitas burrito\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-10</a>\nVery good, lots of onion. Red sauce is fire roasted. Spicy! $14 💳\n\nTaqueria El Mejor\nChile Relleno Plate\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-09</a>\nReally good, large portions, cheap. Also serve baby burritos. $15 💵\n\nTaco El Gordo\nAl Pastor Burrito\n3/13/23\nExcellent, good crema, next time try saudero. 💳\n\nTacos El Melon\nAl pastor and birria taco\n3/14/23\nCheap, everything was really good. 💳\n\nTacos El Novillo\nAl pastor burrito\n3/17/23\nLARGE burrito. Next time do asada. 💳\n\nLos Compadres\nAsada burrito, asada fries\n7/22/23\nBest asada in Fruitvale. Friendly guys, really cheap $12. 💳\n\nTacos Guadalajara\nAl pasta burrito\n12/19/23\nAl pastor was good, red sauce was better than most. 💳\n\nRelated: <a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Town Business</a>",
 		"tags": ["oakland", "restaurants", "food", "note"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "brad wiki",
-		"date":"Sun Jul 20 2025 04:07:42 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Jul 20 2025 04:08:19 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "An uncultivated digital garden published with Obsidian &amp; Github.",
 		"tags": [ "note","gardenEntry"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "Useful Linux Terminal",
-		"date":"Sun Jul 20 2025 04:07:42 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Jul 20 2025 04:08:19 GMT+0000 (Coordinated Universal Time)",
 		"url":"/tech/useful-linux-terminal/",
 		"content": "#linux #reference #tech #cli\nShortcut Keys\n\nctrl + R = reverse search through history\nctrl + L = clear screen\nctrl + U = clear line\nctrl + W/K = clear before/after cursor\nctrl + A/E = jump to begin/end of line\nesc + . = argument of the last command\nctrl + X + E = open current line in text editor\n\nCommands\nFind and replace in a previous command\nReplace a string in the last matching command:\n^find^replace\n\nex:\nssh 192.168.0.7\n# do stuff on that server, now move on to the next...\n^.7^.8\n\nReturn to previous directory\ncd -\n\nRe-run previous command with sudo\nsudo !!\n\nRefer to last string of previous command\nYou can use $_ to refer to the last string/argument. ex:\ntouch /path/to/file\nnano $_\n\nCreate directories from list\nxargs mkdir -p &lt; list.txt\n\nCombine multiple files into one\nfind . -name '*.txt' -exec cat {} + &gt;&gt; ../combined.txt\n\nList processes with ports open\nsudo netstat -tulnp\n\nHuman readable CSV output\nInput doesn't need to be file, ie. sort instead of cat\ncat data.csv | column -t -s -n, | less -S\n\nBSD/MacOS column does not support -n argument, so:\ncat data.csv | sed 's/,/ ,/g' | column -t -s, | less -S\n\nUseful Utilities\nncdu\nncurses disk usage analyzer - scans all directories in the path and shows a list sorted by size",
 		"tags": ["linux", "reference", "tech", "cli", "note"]
