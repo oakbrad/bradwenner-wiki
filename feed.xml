@@ -3,14 +3,14 @@
     <title>brad wiki</title>
     <link href="https://bradwenner.wiki/feed.xml" rel="self" />
     <link href="https://bradwenner.wiki" />
-    <updated>2025-07-20T03:06:09Z</updated>
+    <updated>2025-07-20T03:07:12Z</updated>
     <id>https://bradwenner.wiki</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-20T03:05:55Z</updated>
+            <updated>2025-07-20T03:06:58Z</updated>
             <id>https://bradwenner.wiki/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -63,49 +63,10 @@ nano $_
         </entry>
         <entry>
             <title>
-                Useful Linux Commands
-                
-            </title>
-            <updated>2025-07-20T03:05:55Z</updated>
-            <id>https://bradwenner.wiki/tech/useful-linux-commands/</id>
-            <content type="html">
-                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;find-and-replace-in-your-previous-command&quot; tabindex=&quot;-1&quot;&gt;Find and replace in your previous command&lt;/h3&gt;
-&lt;p&gt;Replace a string in the last matching command:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;^find^replace
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;ex:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;ssh 192.168.0.7
-# do stuff on that server, now move on to the next...
-^.7^.8
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;return-to-previous-directory&quot; tabindex=&quot;-1&quot;&gt;Return to previous directory&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;cd -
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;re-run-previous-command-with-sudo&quot; tabindex=&quot;-1&quot;&gt;Re-run previous command with sudo&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;sudo !!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;refer-to-last-string-of-previous-command&quot; tabindex=&quot;-1&quot;&gt;Refer to last string of previous command&lt;/h3&gt;
-&lt;p&gt;You can use &lt;code&gt;$_&lt;/code&gt; to refer to the last string/argument. ex:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;touch /path/to/file
-nano $_
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;create-directories-from-list&quot; tabindex=&quot;-1&quot;&gt;Create directories from list&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;xargs mkdir -p &amp;lt; list.txt
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;combine-multiple-files-into-one&quot; tabindex=&quot;-1&quot;&gt;Combine multiple files into one&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;find . -name &#39;*.txt&#39; -exec cat {} + &amp;gt;&amp;gt; ../combined.txt
-&lt;/code&gt;&lt;/pre&gt;
-
-            </content>
-            <link href="https://bradwenner.wiki/tech/useful-linux-commands/" />
-        </entry>
-        <entry>
-            <title>
                 brad wiki
                 
             </title>
-            <updated>2025-07-20T03:05:55Z</updated>
+            <updated>2025-07-20T03:06:58Z</updated>
             <id>https://bradwenner.wiki/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital garden&lt;/a&gt; published with &lt;a href=&quot;https://dg-docs.ole.dev/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/oakbrad/bradwenner-wiki&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
@@ -118,7 +79,7 @@ nano $_
                 Taco Log
                 
             </title>
-            <updated>2025-07-20T03:05:55Z</updated>
+            <updated>2025-07-20T03:06:58Z</updated>
             <id>https://bradwenner.wiki/oakland/taco-log/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
