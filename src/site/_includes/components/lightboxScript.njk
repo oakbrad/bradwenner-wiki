@@ -2,24 +2,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" integrity="sha512-FaAQujRxLMvw+BkmGN3w7u9EdQQr1t0vQoY8KDh09+6SFaWSTe+KrT8oCWg25X91hytm5c5BTmiSGQejkraaZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
-  .content img {
+  /* Style for images that should have lightbox functionality */
+  .content picture img, 
+  .content > img:not(#dungeon-map img) {
     cursor: zoom-in;
     position: relative;
     transition: all 0.3s ease;
-  }
-  
-  .content img::after {
-    content: '🔍';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    opacity: 0.7;
-    pointer-events: none;
-  }
-  
-  .content img:hover::after {
-    opacity: 1;
   }
   
   /* SimpleLightbox customizations */
@@ -42,10 +30,35 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Add magnifying glass icon to all images
-    const contentImages = document.querySelectorAll('.content img');
+    // Process images in picture elements
+    const pictureElements = document.querySelectorAll('.content picture');
     
-    contentImages.forEach(img => {
+    pictureElements.forEach(picture => {
+      // Skip if picture is inside dungeon map
+      if (picture.closest('#dungeon-map')) {
+        return;
+      }
+      
+      const img = picture.querySelector('img');
+      if (!img) return;
+      
+      setupLightbox(img, picture);
+    });
+    
+    // Process standalone images (not in picture elements and not in dungeon map)
+    const standaloneImages = document.querySelectorAll('.content > img:not(#dungeon-map img)');
+    
+    standaloneImages.forEach(img => {
+      // Skip if image is inside dungeon map
+      if (img.closest('#dungeon-map')) {
+        return;
+      }
+      
+      setupLightbox(img);
+    });
+    
+    // Helper function to set up lightbox for an image
+    function setupLightbox(img, container = null) {
       // Create a wrapper div for positioning the icon
       const wrapper = document.createElement('div');
       wrapper.style.position = 'relative';
@@ -64,8 +77,9 @@
       icon.style.pointerEvents = 'none';
       
       // Replace the image with the wrapper
-      img.parentNode.insertBefore(wrapper, img);
-      wrapper.appendChild(img);
+      const parent = container || img.parentNode;
+      parent.insertBefore(wrapper, container || img);
+      wrapper.appendChild(container || img);
       wrapper.appendChild(icon);
       
       // Show icon on hover
@@ -88,10 +102,16 @@
           img.setAttribute('data-title', img.getAttribute('alt'));
         }
       }
-    });
+      
+      // Add click event to ensure lightbox opens
+      img.addEventListener('click', function(e) {
+        e.preventDefault();
+        // The SimpleLightbox library will handle the actual lightbox display
+      });
+    }
     
-    // Initialize SimpleLightbox
-    new SimpleLightbox('.content img', {
+    // Initialize SimpleLightbox with the correct selectors
+    new SimpleLightbox('.content picture img, .content > img:not(#dungeon-map img)', {
       captionPosition: 'bottom',
       captionsData: 'data-title',
       captionDelay: 250,
