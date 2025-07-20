@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://bradwenner.wiki">
     <title>brad wiki</title>
-    <link href="https://bradwenner.wiki/feed.xml" rel="self" >
-    <link href="https://bradwenner.wiki" >
-    <updated>2025-07-20T01:50:18Z</updated>
+    <link href="https://bradwenner.wiki/feed.xml" rel="self" />
+    <link href="https://bradwenner.wiki" />
+    <updated>2025-07-20T02:12:04Z</updated>
     <id>https://bradwenner.wiki</id>
         <entry>
             <title>
                 brad wiki
                 
             </title>
-            <updated>2025-07-20T01:50:08Z</updated>
+            <updated>2025-07-20T02:11:52Z</updated>
             <id>https://bradwenner.wiki/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital garden&lt;/a&gt; published with &lt;a href=&quot;https://dg-docs.ole.dev/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/oakbrad/bradwenner-wiki&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 
             </content>
-            <link href="https://bradwenner.wiki/" >
+            <link href="https://bradwenner.wiki/" />
         </entry>
         <entry>
             <title>
                 Taco Log
                 
             </title>
-            <updated>2025-07-20T01:50:08Z</updated>
+            <updated>2025-07-20T02:11:52Z</updated>
             <id>https://bradwenner.wiki/oakland/taco-log/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -90,6 +90,7 @@
 &lt;p&gt;&lt;strong&gt;Related: &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;Town Business&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://bradwenner.wiki/oakland/taco-log/" >
+            <link href="https://bradwenner.wiki/oakland/taco-log/" />
         </entry>
 </feed>
+
