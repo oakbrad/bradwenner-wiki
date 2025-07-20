@@ -25,6 +25,25 @@ body {
         transform: rotate(45deg);
         margin: 60px;
         align-items: flex-end;
+        position: relative;
+        
+        /* Grid background */
+        &::before {
+          content: "";
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          right: -10px;
+          bottom: -10px;
+          background-image: 
+            linear-gradient(to right, var(--text-muted) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--text-muted) 1px, transparent 1px);
+          background-size: 20px 20px;
+          opacity: 0.1;
+          z-index: -1;
+          border: 1px solid var(--text-muted);
+          border-radius: 4px;
+        }
         
         @media (max-width: 575.99px) {
           transform: rotate(45deg) scale(0.9);
@@ -106,4 +125,3 @@ body {
       background-image: url(/img/chest.svg);
     }
 }
-
