@@ -1,0 +1,105 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLdjthA/rm0VqqWjcT98qNoM5INQPQwR9+fUYeP3C0zIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" integrity="sha512-FaAQujRxLMvw+BkmGN3w7u9EdQQr1t0vQoY8KDh09+6SFaWSTe+KrT8oCWg25X91hytm5c5BTmiSGQejkraaZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  .content img {
+    cursor: zoom-in;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .content img::after {
+    content: '🔍';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  
+  .content img:hover::after {
+    opacity: 1;
+  }
+  
+  /* SimpleLightbox customizations */
+  .sl-overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .sl-wrapper .sl-close {
+    color: #fff;
+  }
+  
+  .sl-wrapper .sl-navigation button {
+    color: #fff;
+  }
+  
+  .sl-wrapper .sl-counter {
+    color: #fff;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add magnifying glass icon to all images
+    const contentImages = document.querySelectorAll('.content img');
+    
+    contentImages.forEach(img => {
+      // Create a wrapper div for positioning the icon
+      const wrapper = document.createElement('div');
+      wrapper.style.position = 'relative';
+      wrapper.style.display = 'inline-block';
+      
+      // Create the magnifying glass icon
+      const icon = document.createElement('div');
+      icon.innerHTML = '🔍';
+      icon.style.position = 'absolute';
+      icon.style.top = '10px';
+      icon.style.right = '10px';
+      icon.style.fontSize = '20px';
+      icon.style.color = 'var(--text-accent)';
+      icon.style.opacity = '0';
+      icon.style.transition = 'opacity 0.3s ease';
+      icon.style.pointerEvents = 'none';
+      
+      // Replace the image with the wrapper
+      img.parentNode.insertBefore(wrapper, img);
+      wrapper.appendChild(img);
+      wrapper.appendChild(icon);
+      
+      // Show icon on hover
+      wrapper.addEventListener('mouseenter', () => {
+        icon.style.opacity = '1';
+      });
+      
+      wrapper.addEventListener('mouseleave', () => {
+        icon.style.opacity = '0';
+      });
+      
+      // Add data attributes for SimpleLightbox
+      if (!img.hasAttribute('data-lightbox')) {
+        img.setAttribute('data-lightbox', 'gallery');
+        
+        // If the image has a title or alt text, use it for the lightbox caption
+        if (img.getAttribute('title')) {
+          img.setAttribute('data-title', img.getAttribute('title'));
+        } else if (img.getAttribute('alt')) {
+          img.setAttribute('data-title', img.getAttribute('alt'));
+        }
+      }
+    });
+    
+    // Initialize SimpleLightbox
+    new SimpleLightbox('.content img', {
+      captionPosition: 'bottom',
+      captionsData: 'data-title',
+      captionDelay: 250,
+      animationSpeed: 250,
+      fadeSpeed: 200,
+      scrollZoom: true,
+      maxZoom: 3
+    });
+  });
+</script>
+
