@@ -3,14 +3,14 @@
     <title>brad wiki</title>
     <link href="https://bradwenner.wiki/feed.xml" rel="self" />
     <link href="https://bradwenner.wiki" />
-    <updated>2025-07-20T03:07:12Z</updated>
+    <updated>2025-07-20T03:18:32Z</updated>
     <id>https://bradwenner.wiki</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-20T03:06:58Z</updated>
+            <updated>2025-07-20T03:18:21Z</updated>
             <id>https://bradwenner.wiki/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -54,6 +54,13 @@ nano $_
 &lt;h3 id=&quot;list-processes-with-ports-open&quot; tabindex=&quot;-1&quot;&gt;List processes with ports open&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;sudo netstat -tulnp
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;a-href-https-www-stefaanlippens-net-pretty-csv-html-target-blank-class-external-link-human-readable-csv-output-a&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://www.stefaanlippens.net/pretty-csv.html&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Human readable CSV output&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Input doesn&#39;t need to be file, ie. &lt;code&gt;sort&lt;/code&gt; instead of &lt;code&gt;cat&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cat data.csv | column -t -s -n, | less -S
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;BSD/MacOS column does not support -n argument, so:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cat data.csv | sed &#39;s/,/ ,/g&#39; | column -t -s, | less -S
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;useful-utilities&quot; tabindex=&quot;-1&quot;&gt;Useful Utilities&lt;/h2&gt;
 &lt;h3 id=&quot;ncdu&quot; tabindex=&quot;-1&quot;&gt;ncdu&lt;/h3&gt;
 &lt;p&gt;ncurses disk usage analyzer - scans all directories in the path and shows a list sorted by size&lt;/p&gt;
@@ -66,7 +73,7 @@ nano $_
                 brad wiki
                 
             </title>
-            <updated>2025-07-20T03:06:58Z</updated>
+            <updated>2025-07-20T03:18:21Z</updated>
             <id>https://bradwenner.wiki/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital garden&lt;/a&gt; published with &lt;a href=&quot;https://dg-docs.ole.dev/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/oakbrad/bradwenner-wiki&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
@@ -79,7 +86,7 @@ nano $_
                 Taco Log
                 
             </title>
-            <updated>2025-07-20T03:06:58Z</updated>
+            <updated>2025-07-20T03:18:21Z</updated>
             <id>https://bradwenner.wiki/oakland/taco-log/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
