@@ -3,14 +3,14 @@
     <title>brad wiki</title>
     <link href="https://bradwenner.wiki/feed.xml" rel="self" >
     <link href="https://bradwenner.wiki" >
-    <updated>2025-07-20T00:58:31Z</updated>
+    <updated>2025-07-20T01:06:27Z</updated>
     <id>https://bradwenner.wiki</id>
         <entry>
             <title>
                 brad wiki
                 
             </title>
-            <updated>2025-07-20T00:58:20Z</updated>
+            <updated>2025-07-20T01:06:16Z</updated>
             <id>https://bradwenner.wiki/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital garden&lt;/a&gt; published with &lt;a href=&quot;https://dg-docs.ole.dev/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Obsidian&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/oakbrad/bradwenner-wiki&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
@@ -23,7 +23,7 @@
                 Taco Log
                 
             </title>
-            <updated>2025-07-20T00:58:20Z</updated>
+            <updated>2025-07-20T01:06:16Z</updated>
             <id>https://bradwenner.wiki/oakland/taco-log/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -91,79 +91,5 @@
 
             </content>
             <link href="https://bradwenner.wiki/oakland/taco-log/" >
-        </entry>
-        <entry>
-            <title>
-                Oakland Taco Log
-                
-            </title>
-            <updated>2025-07-20T00:58:20Z</updated>
-            <id>https://bradwenner.wiki/journal/oakland-taco-log/</id>
-            <content type="html">
-                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;WHERE&lt;/th&gt;
-&lt;th&gt;WHAT&lt;/th&gt;
-&lt;th&gt;WHEN&lt;/th&gt;
-&lt;th&gt;THOUGHTS&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://tacossinaloaoakland.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos Sinaloa&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Shrimp, saudero, carnitas tacos&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;2025-07-12&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;The saudero is underrated. 💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-asi-es-colima-oakland-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos Asi Es Colima&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Carnitas burrito&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;2025-07-10&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Very good, lots of onion. Red sauce is fire roasted. Spicy! $14 💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/taqueria-la-mejor-oakland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Taqueria El Mejor&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Chile Relleno Plate&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;2025-07-09&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Really good, large portions, cheap. Also serve baby burritos. $15 💵&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-el-gordo-oakland-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Taco El Gordo&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Al Pastor Burrito&lt;/td&gt;
-&lt;td&gt;3/13/23&lt;/td&gt;
-&lt;td&gt;Excellent, good crema, next time try saudero. 💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-el-melon-oakland-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos El Melon&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Al pastor and birria taco&lt;/td&gt;
-&lt;td&gt;3/14/23&lt;/td&gt;
-&lt;td&gt;Cheap, everything was really good. 💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-el-novillo-oakland-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos El Novillo&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Al pastor burrito&lt;/td&gt;
-&lt;td&gt;3/17/23&lt;/td&gt;
-&lt;td&gt;LARGE burrito. Next time do asada. 💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/los-compadres-taco-truck-oakland-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Los Compadres&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Asada burrito, asada fries&lt;/td&gt;
-&lt;td&gt;7/22/23&lt;/td&gt;
-&lt;td&gt;Best asada in Fruitvale. Friendly guys, really cheap $12. 💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Tacos &lt;a href=&quot;https://www.google.com/search?channel=frs&amp;amp;client=firefox-b-1-d&amp;amp;q=tacos+guadalajara#rlimm=10656403252407561765&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Guadalajara&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Al pasta burrito&lt;/td&gt;
-&lt;td&gt;12/19/23&lt;/td&gt;
-&lt;td&gt;Al pastor was good, red sauce was better than most. 💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Related: &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;Town Business&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://bradwenner.wiki/journal/oakland-taco-log/" >
         </entry>
 </feed>
