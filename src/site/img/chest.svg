@@ -6,6 +6,8 @@
   <rect x="79.544" y="130.87" width="20" height="10" stroke-width="2.6458"/>
   <path d="m89.544 130.87v-5" stroke-width="2.6458"/>
   <circle cx="89.544" cy="123.87" r="2" stroke-width="2.6458"/>
+  <!-- Add lock to chest -->
+  <rect x="87.544" y="135.87" width="4" height="3" stroke-width="1.5"/>
  </g>
 </svg>
 

@@ -1,0 +1,27 @@
+<div id="dungeon-map">
+  <div class="dungeon-body">
+    {% for row in userComputed.dungeon.items %}
+      <div class="dungeon-row">
+        {% for item in row %}
+          {% if item[0] == 0 %}
+            <a class="empty"></a>
+          {% else %}
+            <a href="{{ item[1] }}" title="{{ item[2] }}">
+              <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+  
+  <div class="dungeon-legends">
+    {% for count in userComputed.dungeon.legends %}
+      <div class="legend-item">
+        <img src="/img/{{ count.icon }}.svg" alt="{{ count.label }}" />
+        {{count.count}} {% if count.count > 1 %}{% if count.plural %}{{count.plural}}{% else %}{{count.label}}s{% endif %}{% else %}{{count.label}}{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+

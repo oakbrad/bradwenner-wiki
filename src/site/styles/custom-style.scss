@@ -11,15 +11,15 @@ body {
     //   color: black;
     //  }
     
-    /* Forest visualization styles */
-    #forest-graph {
+    /* Dungeon visualization styles */
+    #dungeon-map {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-bottom: 20px;
       flex-direction: column;
       
-      .forest-body {
+      .dungeon-body {
         display: inline-flex;
         flex-direction: column;
         transform: rotate(45deg);
@@ -30,7 +30,7 @@ body {
           transform: rotate(45deg) scale(0.9);
         }
         
-        .forest-row {
+        .dungeon-row {
           display: flex;
           flex-direction: row;
           align-items: flex-end;
@@ -48,13 +48,13 @@ body {
             }
           }
           
-          .plane {
+          .empty {
             cursor: inherit;
           }
         }
       }
       
-      .forest-legends {
+      .dungeon-legends {
         margin-top: 10px;
         display: flex;
         gap: 10px;
@@ -77,7 +77,7 @@ body {
       }
     }
     
-    /* Maturity level icons for notes */
+    /* Note icon styles */
     body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="stone"]::before,
     body.filetree-note-icon .filename[data-note-icon="stone"]::before,
     body.links-note-icon .internal-link[data-note-icon="stone"]::before,
