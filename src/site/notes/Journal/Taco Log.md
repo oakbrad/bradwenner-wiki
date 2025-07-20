@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Oakland/Taco Log.md","permalink":"/oakland/taco-log/","title":"Taco Log"}
+{"dg-publish":true,"dg-path":"Oakland/Taco Log.md","permalink":"/oakland/taco-log/","title":"Taco Log","noteIcon":"1","updated":"2025-07-19T21:08:38.896-07:00"}
 ---
 
 #oakland #restaurants #food 
