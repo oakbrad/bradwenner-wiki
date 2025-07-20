@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://brad.quest">
-    <title>brad.quest</title>
+    <title>brad quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-20T20:19:24Z</updated>
+    <updated>2025-07-20T20:20:10Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
