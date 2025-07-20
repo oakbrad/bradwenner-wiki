@@ -3,7 +3,7 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-20T20:28:38Z</updated>
+    <updated>2025-07-20T21:49:19Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
@@ -89,8 +89,8 @@ nano $_
                 Taco Log
                 
             </title>
-            <updated>2025-07-20T20:27:53.465Z</updated>
-            <id>https://brad.quest/oakland/taco-log/</id>
+            <updated>2025-07-20T21:46:51.566Z</updated>
+            <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
 &lt;table&gt;
@@ -105,6 +105,14 @@ nano $_
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/1000002956.jpg&quot; alt=&quot;1000002956.jpg&quot; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-al-vapor-oakland-3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos al Vapor&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Tacos bisteca, lengua, cabeza&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-20&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Different - steamed! No grease, bright flavors, great texture.&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$14&lt;br /&gt;📱&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/Pasted_image_20250712230250.png&quot; alt=&quot;Pasted_image_20250712230250.png&quot; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://tacossinaloaoakland.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos Sinaloa&lt;/a&gt;&lt;/td&gt;
@@ -174,7 +182,7 @@ nano $_
 &lt;p&gt;&lt;strong&gt;Related: &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;Town Business&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://brad.quest/oakland/taco-log/" />
+            <link href="https://brad.quest/log/tacos/" />
         </entry>
 </feed>
 

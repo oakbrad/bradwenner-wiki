@@ -43,14 +43,14 @@
 </a>
 <div class="folder" x-data="{isOpen: true}">
 <div x-show="isOpen" style="display:none" class="">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Oakland')}" @click.stop="isOpen=!isOpen">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('Log')}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
 <i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
 <i x-show="!isOpen" icon-name="chevron-right"></i>
-<span class="foldername">Oakland</span>
+<span class="foldername">Log</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="1" style="text-decoration:none" class="filename" href="/oakland/taco-log/">Taco Log </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="1" style="text-decoration:none" class="filename" href="/log/tacos/">Taco Log </a>
 </div>
 </div>
 </div>
@@ -77,7 +77,7 @@
 <header>
 <h1 data-note-icon="1">Taco Log</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-07-20T13:27:53.465-07:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-07-20T14:46:51.566-07:00"></span></div></div></div>
 </header>
 <p><a class="tag" onclick="toggleTagSearch(this)" data-content="#oakland">#oakland</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#restaurants">#restaurants</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#food">#food</a></p>
 <div class="table-wrapper"><table>
@@ -92,6 +92,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:center"><img src="/img/user/System/Uploads/1000002956.jpg" alt="1000002956.jpg"></td>
+<td><a href="https://www.yelp.com/biz/tacos-al-vapor-oakland-3" target="_blank" class="external-link">Tacos al Vapor</a></td>
+<td>Tacos bisteca, lengua, cabeza</td>
+<td><a class="internal-link is-unresolved" href="/404" target="">2025-07-20</a></td>
+<td>Different - steamed! No grease, bright flavors, great texture.</td>
+<td style="text-align:center">$14<br>📱</td>
+</tr>
 <tr>
 <td style="text-align:center"><picture src="/img/user/System/Uploads/Pasted_image_20250712230250.png" alt="Pasted_image_20250712230250.png"><source media="(max-width:480px)" srcset="/img/optimized/0kY1njENdx-500.webp" type="image/webp">
 <source media="(max-width:480px)" srcset="/img/optimized/0kY1njENdx-500.jpeg">
