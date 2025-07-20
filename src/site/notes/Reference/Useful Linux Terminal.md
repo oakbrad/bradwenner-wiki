@@ -49,6 +49,15 @@ find . -name '*.txt' -exec cat {} + >> ../combined.txt
 ```
 sudo netstat -tulnp
 ```
+### [Human readable CSV output](https://www.stefaanlippens.net/pretty-csv.html)
+Input doesn't need to be file, ie. `sort` instead of `cat`
+```
+cat data.csv | column -t -s -n, | less -S
+```
+BSD/MacOS column does not support -n argument, so:
+```
+cat data.csv | sed 's/,/ ,/g' | column -t -s, | less -S
+```
 ## Useful Utilities
 ### ncdu
 ncurses disk usage analyzer - scans all directories in the path and shows a list sorted by size
