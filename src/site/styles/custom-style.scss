@@ -38,8 +38,8 @@ body {
           background-image: 
             linear-gradient(to right, var(--text-muted) 1px, transparent 1px),
             linear-gradient(to bottom, var(--text-muted) 1px, transparent 1px);
-          /* Offset the grid by 10px (half of cell size) to center grid lines */
-          background-position: 10px 10px;
+          /* Ensure grid lines align with cells */
+          background-position: 0 0;
           background-size: 20px 20px;
           opacity: 0.1;
           z-index: -1;
@@ -64,11 +64,12 @@ body {
             justify-content: center;
             align-items: center;
             position: relative;
+            box-sizing: border-box;
             
             img {
               transform: rotate(-45deg);
               position: absolute;
-              /* Adjust icon position to better center in the isometric grid */
+              /* Center the icon in the cell */
               top: 50%;
               left: 50%;
               margin: -10px 0 0 -10px; /* Half of the icon height/width for centering */
@@ -77,6 +78,8 @@ body {
           
           .empty {
             cursor: inherit;
+            width: 20px;
+            height: 20px;
           }
         }
       }
