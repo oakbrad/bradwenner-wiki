@@ -3,7 +3,7 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-20T20:24:25Z</updated>
+    <updated>2025-07-20T20:28:38Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
@@ -89,7 +89,7 @@ nano $_
                 Taco Log
                 
             </title>
-            <updated>2025-07-20T20:14:22.311Z</updated>
+            <updated>2025-07-20T20:27:53.465Z</updated>
             <id>https://brad.quest/oakland/taco-log/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -106,7 +106,7 @@ nano $_
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;100&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/Pasted_image_20250712230250.png&quot; alt=&quot;Pasted_image_20250712230250.png&quot; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://tacossinaloaoakland.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos Sinaloa&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Shrimp, saudero, carnitas tacos&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-12&lt;/a&gt;&lt;/td&gt;
@@ -114,7 +114,7 @@ nano $_
 &lt;td style=&quot;text-align:center&quot;&gt;$11&lt;br /&gt;💳&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;100&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/PXL_20250710_230030571.jpg&quot; alt=&quot;PXL_20250710_230030571.jpg&quot; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-asi-es-colima-oakland-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos Asi Es Colima&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Carnitas burrito&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-10&lt;/a&gt;&lt;/td&gt;
@@ -122,7 +122,7 @@ nano $_
 &lt;td style=&quot;text-align:center&quot;&gt;$14💳&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;100&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/Pasted_image_20250709175845.png&quot; alt=&quot;Pasted_image_20250709175845.png&quot; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/taqueria-la-mejor-oakland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Taqueria El Mejor&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Chile Relleno Plate&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-09&lt;/a&gt;&lt;/td&gt;
