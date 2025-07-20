@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>brad wiki</title>
+<title>Oakland Taco Log</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -50,7 +50,7 @@
 <span class="foldername">Journal</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/journal/oakland-taco-log/">Oakland Taco Log </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/journal/oakland-taco-log/">Oakland Taco Log </a>
 </div>
 </div>
 </div>
@@ -93,12 +93,76 @@
 </div>
 <main class="content cm-s-obsidian">
 <header>
-<h1></h1>
+<h1 data-note-icon="">Oakland Taco Log</h1>
 <div class="header-meta">
 </div>
 </header>
-<p>An uncultivated <a href="https://cagrimmett.com/2020/11/08/what-are-digital-gardens/" target="_blank" class="external-link">digital garden</a> published with <a href="https://dg-docs.ole.dev/" target="_blank" class="external-link">Obsidian</a> &amp; <a href="https://github.com/oakbrad/bradwenner-wiki" target="_blank" class="external-link">Github</a>.</p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#oakland">#oakland</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#restaurants">#restaurants</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#food">#food</a></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>WHERE</th>
+<th>WHAT</th>
+<th>WHEN</th>
+<th>THOUGHTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://tacossinaloaoakland.com/" target="_blank" class="external-link">Tacos Sinaloa</a></td>
+<td>Shrimp, saudero, carnitas tacos</td>
+<td><a class="internal-link is-unresolved" href="/404" target="">2025-07-12</a></td>
+<td>The saudero is underrated. 💳</td>
+</tr>
+<tr>
+<td><a href="https://www.yelp.com/biz/tacos-asi-es-colima-oakland-2" target="_blank" class="external-link">Tacos Asi Es Colima</a></td>
+<td>Carnitas burrito</td>
+<td><a class="internal-link is-unresolved" href="/404" target="">2025-07-10</a></td>
+<td>Very good, lots of onion. Red sauce is fire roasted. Spicy! $14 💳</td>
+</tr>
+<tr>
+<td><a href="https://www.yelp.com/biz/taqueria-la-mejor-oakland" target="_blank" class="external-link">Taqueria El Mejor</a></td>
+<td>Chile Relleno Plate</td>
+<td><a class="internal-link is-unresolved" href="/404" target="">2025-07-09</a></td>
+<td>Really good, large portions, cheap. Also serve baby burritos. $15 💵</td>
+</tr>
+<tr>
+<td><a href="https://www.yelp.com/biz/tacos-el-gordo-oakland-2" target="_blank" class="external-link">Taco El Gordo</a></td>
+<td>Al Pastor Burrito</td>
+<td>3/13/23</td>
+<td>Excellent, good crema, next time try saudero. 💳</td>
+</tr>
+<tr>
+<td><a href="https://www.yelp.com/biz/tacos-el-melon-oakland-2" target="_blank" class="external-link">Tacos El Melon</a></td>
+<td>Al pastor and birria taco</td>
+<td>3/14/23</td>
+<td>Cheap, everything was really good. 💳</td>
+</tr>
+<tr>
+<td><a href="https://www.yelp.com/biz/tacos-el-novillo-oakland-2" target="_blank" class="external-link">Tacos El Novillo</a></td>
+<td>Al pastor burrito</td>
+<td>3/17/23</td>
+<td>LARGE burrito. Next time do asada. 💳</td>
+</tr>
+<tr>
+<td><a href="https://www.yelp.com/biz/los-compadres-taco-truck-oakland-2" target="_blank" class="external-link">Los Compadres</a></td>
+<td>Asada burrito, asada fries</td>
+<td>7/22/23</td>
+<td>Best asada in Fruitvale. Friendly guys, really cheap $12. 💳</td>
+</tr>
+<tr>
+<td>Tacos <a href="https://www.google.com/search?channel=frs&amp;client=firefox-b-1-d&amp;q=tacos+guadalajara#rlimm=10656403252407561765" target="_blank" class="external-link">Guadalajara</a></td>
+<td>Al pasta burrito</td>
+<td>12/19/23</td>
+<td>Al pastor was good, red sauce was better than most. 💳</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Related: <a class="internal-link is-unresolved" href="/404" target="">Town Business</a></strong></p>
 </main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>

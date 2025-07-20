@@ -1,7 +1,15 @@
 [
 {
+		"title": "Oakland Taco Log",
+		"date":"Sun Jul 20 2025 00:58:20 GMT+0000 (Coordinated Universal Time)",
+		"url":"/journal/oakland-taco-log/",
+		"content": "#oakland #restaurants #food\n\nWHERE\nWHAT\nWHEN\nTHOUGHTS\n\nTacos Sinaloa\nShrimp, saudero, carnitas tacos\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-12</a>\nThe saudero is underrated. 💳\n\nTacos Asi Es Colima\nCarnitas burrito\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-10</a>\nVery good, lots of onion. Red sauce is fire roasted. Spicy! $14 💳\n\nTaqueria El Mejor\nChile Relleno Plate\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-09</a>\nReally good, large portions, cheap. Also serve baby burritos. $15 💵\n\nTaco El Gordo\nAl Pastor Burrito\n3/13/23\nExcellent, good crema, next time try saudero. 💳\n\nTacos El Melon\nAl pastor and birria taco\n3/14/23\nCheap, everything was really good. 💳\n\nTacos El Novillo\nAl pastor burrito\n3/17/23\nLARGE burrito. Next time do asada. 💳\n\nLos Compadres\nAsada burrito, asada fries\n7/22/23\nBest asada in Fruitvale. Friendly guys, really cheap $12. 💳\n\nTacos Guadalajara\nAl pasta burrito\n12/19/23\nAl pastor was good, red sauce was better than most. 💳\n\nRelated: <a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Town Business</a>",
+		"tags": ["oakland", "restaurants", "food", "note"]
+},
+
+{
 		"title": "Taco Log",
-		"date":"Sun Jul 20 2025 00:58:00 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Jul 20 2025 00:58:20 GMT+0000 (Coordinated Universal Time)",
 		"url":"/oakland/taco-log/",
 		"content": "#oakland #restaurants #food\n\nWHERE\nWHAT\nWHEN\nTHOUGHTS\n\nTacos Sinaloa\nShrimp, saudero, carnitas tacos\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-12</a>\nThe saudero is underrated. 💳\n\nTacos Asi Es Colima\nCarnitas burrito\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-10</a>\nVery good, lots of onion. Red sauce is fire roasted. Spicy! $14 💳\n\nTaqueria El Mejor\nChile Relleno Plate\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">2025-07-09</a>\nReally good, large portions, cheap. Also serve baby burritos. $15 💵\n\nTaco El Gordo\nAl Pastor Burrito\n3/13/23\nExcellent, good crema, next time try saudero. 💳\n\nTacos El Melon\nAl pastor and birria taco\n3/14/23\nCheap, everything was really good. 💳\n\nTacos El Novillo\nAl pastor burrito\n3/17/23\nLARGE burrito. Next time do asada. 💳\n\nLos Compadres\nAsada burrito, asada fries\n7/22/23\nBest asada in Fruitvale. Friendly guys, really cheap $12. 💳\n\nTacos Guadalajara\nAl pasta burrito\n12/19/23\nAl pastor was good, red sauce was better than most. 💳\n\nRelated: <a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Town Business</a>",
 		"tags": ["oakland", "restaurants", "food", "note"]
@@ -9,7 +17,7 @@
 
 {
 		"title": "brad wiki",
-		"date":"Sun Jul 20 2025 00:58:00 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Jul 20 2025 00:58:20 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "An uncultivated digital garden published with Obsidian &amp; Github.",
 		"tags": [ "note","gardenEntry"]
