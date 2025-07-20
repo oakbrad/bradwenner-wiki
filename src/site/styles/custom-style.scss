@@ -10,4 +10,100 @@ body {
     //  h1 {
     //   color: black;
     //  }
+    
+    /* Dungeon visualization styles */
+    #dungeon-map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+      flex-direction: column;
+      
+      .dungeon-body {
+        display: inline-flex;
+        flex-direction: column;
+        transform: rotate(45deg);
+        margin: 60px;
+        align-items: flex-end;
+        
+        @media (max-width: 575.99px) {
+          transform: rotate(45deg) scale(0.9);
+        }
+        
+        .dungeon-row {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          
+          a {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+              transform: rotate(-45deg);
+            }
+          }
+          
+          .empty {
+            cursor: inherit;
+          }
+        }
+      }
+      
+      .dungeon-legends {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+        color: var(--text-muted);
+        
+        .legend-item {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+        
+        img {
+          height: 1.5em;
+          width: auto;
+        }
+      }
+    }
+    
+    /* Note icon styles */
+    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="stone"]::before,
+    body.filetree-note-icon .filename[data-note-icon="stone"]::before,
+    body.links-note-icon .internal-link[data-note-icon="stone"]::before,
+    body.backlinks-note-icon .backlink[data-note-icon="stone"]::before {
+      background-image: url(/img/stone.svg);
+    }
+    
+    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="signpost"]::before,
+    body.filetree-note-icon .filename[data-note-icon="signpost"]::before,
+    body.links-note-icon .internal-link[data-note-icon="signpost"]::before,
+    body.backlinks-note-icon .backlink[data-note-icon="signpost"]::before {
+      background-image: url(/img/signpost.svg);
+    }
+    
+    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="withered"]::before,
+    body.filetree-note-icon .filename[data-note-icon="withered"]::before,
+    body.links-note-icon .internal-link[data-note-icon="withered"]::before,
+    body.backlinks-note-icon .backlink[data-note-icon="withered"]::before {
+      background-image: url(/img/withered.svg);
+    }
+    
+    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="chest"]::before,
+    body.filetree-note-icon .filename[data-note-icon="chest"]::before,
+    body.links-note-icon .internal-link[data-note-icon="chest"]::before,
+    body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
+      background-image: url(/img/chest.svg);
+    }
 }
+
