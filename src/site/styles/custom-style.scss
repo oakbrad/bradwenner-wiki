@@ -16,14 +16,14 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       flex-direction: column;
       
       .dungeon-body {
         display: inline-flex;
         flex-direction: column;
         transform: rotate(45deg);
-        margin: 60px;
+        margin: 40px;
         align-items: flex-end;
         position: relative;
         
@@ -73,6 +73,10 @@ body {
               top: 50%;
               left: 50%;
               margin: -10px 0 0 -10px; /* Half of the icon height/width for centering */
+            }
+            
+            img:hover {
+                transform: scale(1.25) rotate(-45deg);
             }
           }
           
