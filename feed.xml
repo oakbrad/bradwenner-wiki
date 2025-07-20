@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://bradwenner.wiki">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://brad.quest">
     <title>brad wiki</title>
-    <link href="https://bradwenner.wiki/feed.xml" rel="self" />
-    <link href="https://bradwenner.wiki" />
-    <updated>2025-07-20T04:37:10Z</updated>
-    <id>https://bradwenner.wiki</id>
+    <link href="https://brad.quest/feed.xml" rel="self" />
+    <link href="https://brad.quest" />
+    <updated>2025-07-20T19:53:08Z</updated>
+    <id>https://brad.quest</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
             <updated>2025-07-20T04:09:38.463Z</updated>
-            <id>https://bradwenner.wiki/tech/useful-linux-terminal/</id>
+            <id>https://brad.quest/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;shortcut-keys&quot; tabindex=&quot;-1&quot;&gt;Shortcut Keys&lt;/h2&gt;
@@ -66,7 +66,7 @@ nano $_
 &lt;p&gt;ncurses disk usage analyzer - scans all directories in the path and shows a list sorted by size&lt;/p&gt;
 
             </content>
-            <link href="https://bradwenner.wiki/tech/useful-linux-terminal/" />
+            <link href="https://brad.quest/tech/useful-linux-terminal/" />
         </entry>
         <entry>
             <title>
@@ -74,12 +74,12 @@ nano $_
                 
             </title>
             <updated>2025-07-20T04:10:25.939Z</updated>
-            <id>https://bradwenner.wiki/</id>
+            <id>https://brad.quest/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital garden&lt;/a&gt;.&lt;/p&gt;
 
             </content>
-            <link href="https://bradwenner.wiki/" />
+            <link href="https://brad.quest/" />
         </entry>
         <entry>
             <title>
@@ -87,7 +87,7 @@ nano $_
                 
             </title>
             <updated>2025-07-20T04:36:21.984Z</updated>
-            <id>https://bradwenner.wiki/oakland/taco-log/</id>
+            <id>https://brad.quest/oakland/taco-log/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
 &lt;table&gt;
@@ -102,24 +102,24 @@ nano $_
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;100&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;100&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://tacossinaloaoakland.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos Sinaloa&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Shrimp, saudero, carnitas tacos&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;2025-07-12&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-12&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;The saudero is underrated. 💳&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-asi-es-colima-oakland-2&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos Asi Es Colima&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Carnitas burrito&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;2025-07-10&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-10&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Very good, lots of onion. Red sauce is fire roasted. Spicy! $14 💳&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;100&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;!&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;100&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/taqueria-la-mejor-oakland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Taqueria El Mejor&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Chile Relleno Plate&lt;/td&gt;
-&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;2025-07-09&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-09&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Really good, large portions, cheap. Also serve baby burritos. $15 💵&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -159,10 +159,10 @@ nano $_
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Related: &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bradwenner.wiki/404&quot; target=&quot;&quot;&gt;Town Business&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Related: &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;Town Business&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://bradwenner.wiki/oakland/taco-log/" />
+            <link href="https://brad.quest/oakland/taco-log/" />
         </entry>
 </feed>
 
