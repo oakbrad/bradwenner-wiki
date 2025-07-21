@@ -3,7 +3,7 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-21T03:26:01Z</updated>
+    <updated>2025-07-21T03:47:16Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
@@ -121,7 +121,7 @@ nano $_
                 Elsewhere
                 
             </title>
-            <updated>2025-07-21T03:17:41.384Z</updated>
+            <updated>2025-07-21T03:47:04Z</updated>
             <id>https://brad.quest/elsewhere/</id>
             <content type="html">
                 &lt;p&gt;Find me elsewhere on the internet, or contact me directly at &lt;a href=&quot;mailto:brad@bradwenner.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;brad@bradwenner.com&lt;/a&gt;&lt;/p&gt;
@@ -148,18 +148,56 @@ nano $_
 &lt;li&gt;Bluesky: &lt;a href=&quot;https://bsky.app/profile/bradwenner.photo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;@bradwenner.photo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Strava: &lt;a href=&quot;https://www.strava.com/athletes/2245566&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradwenner&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;iNaturalist: &lt;a href=&quot;https://www.inaturalist.org/people/726158&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradwenner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LastFM: &lt;a href=&quot;https://www.last.fm/user/bradbane&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradbane&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plex: &lt;a href=&quot;https://l.plex.tv/LkgD8rt&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradwenner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Letterboxd: &lt;a href=&quot;https://letterboxd.com/bradwenner/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradwenner&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&quot;gaming&quot; tabindex=&quot;-1&quot;&gt;Gaming&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.dungeon.church/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dungeon Church&lt;/a&gt; Bay Area RPG group&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.dungeon.church/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Dungeon Church&lt;/a&gt; Bay Area D&amp;amp;D group&lt;/li&gt;
 &lt;li&gt;Bluesky: &lt;a href=&quot;https://bsky.app/profile/dungeon.church&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;@dungeon.church&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Youtube: &lt;a href=&quot;https://www.youtube.com/@DungeonChurch&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;DungeonChurch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Twitch: &lt;a href=&quot;https://www.twitch.tv/dungeonchurch&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;dungeonchurch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Ko-Fi: &lt;a href=&quot;https://ko-fi.com/dungeonchurch&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;dungeonchurch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BoardGameGeek: &lt;a href=&quot;https://boardgamegeek.com/user/dmbrad&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;dmbrad&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;RetroAchievements: &lt;a href=&quot;https://retroachievements.org/user/bradwenner&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradwenner&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Xbox: &lt;a href=&quot;https://www.xbox.com/en-US/play/user/yrdungeonmaster&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;yrdungeonmaster&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Steam: &lt;a href=&quot;https://steamcommunity.com/profiles/76561198305613167/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;76561198305613167&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h5 id=&quot;pgp-signature&quot; tabindex=&quot;-1&quot;&gt;PGP Signature&lt;/h5&gt;
+&lt;p&gt;![[brad@bradwenner.com-public-key.txt]]&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
+xsBNBGh9tKoBCACpM6aga2hZy4cSAmJicKE3gvLsqviK6BDWVhtZKnye6eCD
+3HYr4MeRbAjeCcjZvdA9NV+37FhSXGe2vi+klk0iDKykE9RBGLJRTnh2qFaP
+pzbU+kRr+CYm8Di8Kbj6ksDza52Xr+B6lyZZHJKIiwyMeewDwGdkBy5Baw5Z
+MjMyrUdJjM/QSSitZhmVBQ9+CR8ITVt7jGJxebkkYgSuowsKrkDyxHlQYyol
+xgOOlmVjj4HGLIaKV0IwXgTVwNopx7g+CVNSA6HWcTbCHNbuRDDBokcs7Jh9
+mYW23ftNlU2HrEqRt8im9+yvcYqcpOTa8uHBuq1ahqDNey5CDyoDJi4PABEB
+AAHNIUJyYWQgV2VubmVyIDxicmFkQGJyYWR3ZW5uZXIuY29tPsLAigQQAQgA
+PgWCaH20qgQLCQcICZDQUk6SpK9jDwMVCAoEFgACAQIZAQKbAwIeARYhBP5l
+T6oWXhwDSkCPgNBSTpKkr2MPAABBqAgAmBNTTygODRNSSjJ3YVRkfRUo7v8T
+ELbpdxrTdTvjo4iiuzCDy03aeCPzmUO450ocX4FIKjuQy5MEvcHKoL8pXwiF
+RPtwXLpQ+sNeM+6olQ7u+Uve5CAiZkbX0iDqsT8aKGqU8DmbWCL6XQgS+orL
+CTRqNhI4K3CBWGEPGKOQlnAhWxm+7z+jV+HKWlsLmHqqekQwCiuH482M3fxM
+Bp96yDff7Dqz6r/9K2FHtF7X72DZ1bGCMx4OffOQrmqlpIcU48h/QeMWcDg8
+FZYldh0akUtadE6tMuH8FCTuwMaK7HRSFl7yU35ZNOUkg97sqENwWwNkOCGb
+DDWvu0aIA3BqAs7ATQRofbSqAQgA0txPLlL7C8O+jISdJ3TfgNhY4MNOmh7g
+emXnFyh0rj3u1NwQfkKfrgPVtD/TXEXODxbiTf5X4Vut2SunVi6mtWDRBS60
+4w+NnbFA6XN1CfYELdOYBm7HfM20j2WRVmn8FYt/gVR2e1rg/4NAECwRwxoB
+b7hZ3RYBdyPQHQjg+rhmMqwc+WIQzBBu7AURzqar+eOzBaeBcyD8zRxb630y
+LDFaw6xzLG7sqJowi34dbIud81SdXdC/0QA4FloD05jbp/dGw8JhBr2EC/0f
+ED3kKpLWgKQGfkzDn0M7ZdaDEe/r+9C0KSM9WjZS9BAhzQrSWYyE3mKFVxkQ
+RhkIa2N3QwARAQABwsB2BBgBCAAqBYJofbSqCZDQUk6SpK9jDwKbDBYhBP5l
+T6oWXhwDSkCPgNBSTpKkr2MPAADaeQf+LM+zSZVad0y5i6Stbk+yabKGjk9L
+EkC02afrBuoXTBxVtKt67Zz1D9A6vKJQQVqcGv2Z59+xS5/yteMgQ056ym+d
+PLW+cG9Lm8AF2ku05mg3dIxerJmpBmdF/bHEqjRZcp9u4PUvvajhEqbvW17/
+JMM5/yHwbVjLw6QfD1G3c83mtkjCmcIdCJ3qwFNxTwIQADy+4zpz0RUY3Qhw
+y9AbNPc9dNOoQOF4e2EiA4efCBn7jd4tYFutBbgU3+Zbz4lV1XPidV7N1d3y
+na6pFsQ3V/c/m3PVAlGmgiwOJ1ZEDgSTdN+D32cy/8XIqOPsVwYiBdUmm2kS
+UwDrA5iAHHUf8w==
+=lTGl
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;/code&gt;&lt;/pre&gt;
 
             </content>
             <link href="https://brad.quest/elsewhere/" />
