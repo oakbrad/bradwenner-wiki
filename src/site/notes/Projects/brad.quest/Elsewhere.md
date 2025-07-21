@@ -16,8 +16,8 @@ Find me elsewhere on the internet, or contact me directly at brad@bradwenner.com
 * Youtube: [MysteryHoundPress](https://www.youtube.com/@mysteryhoundpress)
 * Twitch: [mysteryhoundpress](https://www.twitch.tv/mysteryhoundpress)
 ### Personal Socials
-* Discord: [@diybrad](discord.com/users/367504021965242371) 
 * Github: [oakbrad](https://github.com/oakbrad)
+* Discord: [@diybrad](discord.com/users/367504021965242371) 
 * Bluesky: [@bradwenner.photo](https://bsky.app/profile/bradwenner.photo)
 * Strava: [bradwenner](https://www.strava.com/athletes/2245566)
 * iNaturalist: [bradwenner](https://www.inaturalist.org/people/726158)
@@ -35,7 +35,7 @@ Find me elsewhere on the internet, or contact me directly at brad@bradwenner.com
 * Xbox: [yrdungeonmaster](https://www.xbox.com/en-US/play/user/yrdungeonmaster)
 * Steam: [76561198305613167](https://steamcommunity.com/profiles/76561198305613167/)
 ##### PGP Signature
-![[brad@bradwenner.com-public-key.txt]]
+[Github Gist](https://gist.github.com/oakbrad/6867f003b9deb7a413ea77a5ddc10893)
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 xsBNBGh9tKoBCACpM6aga2hZy4cSAmJicKE3gvLsqviK6BDWVhtZKnye6eCD

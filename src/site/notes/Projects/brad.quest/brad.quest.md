@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/brad-quest/brad-quest/","hide":true,"tags":["gardenEntry"],"noteIcon":"","updated":"2025-07-19T22:41:42.233-07:00"}
+{"dg-publish":true,"permalink":"/projects/brad-quest/brad-quest/","hide":true,"tags":["gardenEntry"],"noteIcon":""}
 ---
 
 An uncultivated [digital garden](https://cagrimmett.com/2020/11/08/what-are-digital-gardens/).

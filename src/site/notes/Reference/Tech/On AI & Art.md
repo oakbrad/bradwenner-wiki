@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Tech/On AI & Art.md","permalink":"/tech/on-ai-and-art/","noteIcon":"1","updated":"2025-07-20T19:32:06.677-07:00"}
+{"dg-publish":true,"dg-path":"Tech/On AI & Art.md","permalink":"/tech/on-ai-and-art/","noteIcon":"1"}
 ---
 
 #art #tech #ai
