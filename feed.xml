@@ -3,7 +3,7 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-21T01:52:14Z</updated>
+    <updated>2025-07-21T01:56:11Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
@@ -70,6 +70,38 @@ nano $_
         </entry>
         <entry>
             <title>
+                On AI &amp; Art
+                
+            </title>
+            <updated>2025-07-21T01:32:00.789Z</updated>
+            <id>https://brad.quest/tech/on-ai-and-art/</id>
+            <content type="html">
+                &lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;Art does not die because there is no art; it dies because there is too much of it.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-Baudrillard&lt;/strong&gt;, &lt;em&gt;&lt;a href=&quot;https://library.brads.house/index.php?page=13&amp;amp;id=844#cover&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;The Conspiracy of Art&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2212.03551&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Talking About Large Language Models&lt;/a&gt; by Murray Shanahan&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://maggieappleton.com/ai-dark-forest&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;The Dark Forest and Generative AI&lt;/a&gt; by Maggie Appleton&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;Our new challenge as little snowflake humans will be to prove we &lt;strong&gt;aren’t&lt;/strong&gt; language models. It’s the reverse &lt;a href=&quot;https://en.wikipedia.org/wiki/Turing_test&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;turing test&lt;/a&gt;.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jmsdnns.com/tech/algo-underground/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Algorithmic Underground&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.garbageday.email/p/finding-ai-line&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Finding the AI Line&lt;/a&gt;  by Ryan Broderick&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;&lt;strong&gt;[The AI backlash]&lt;/strong&gt; has led to a certain irony for creators who want to, in a sense, get away with using AI. At least as it exists right now. Like Glorb, they have to find a way to use it that is both impossible to achieve without it, and also not reliant on it as a shortcut. It has to make people &lt;a href=&quot;https://www.tiktok.com/t/ZTL5uXtkN/?utm_source=www.garbageday.email&amp;amp;utm_medium=referral&amp;amp;utm_campaign=finding-the-ai-line&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;comment&lt;/a&gt;, &lt;strong&gt;“This is what AI was actually for.”&lt;/strong&gt; And it’s these edge cases that interested parties should keep an eye on.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://youtu.be/pL9o_BwSN-o?si=Bo6rjgS4TkWfCaHF&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://brad.quest/tech/on-ai-and-art/" />
+        </entry>
+        <entry>
+            <title>
                 brad.quest
                 
             </title>
@@ -89,7 +121,7 @@ nano $_
                 Taco Log
                 
             </title>
-            <updated>2025-07-20T21:46:51.566Z</updated>
+            <updated>2025-07-21T01:55:20.899Z</updated>
             <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -176,6 +208,14 @@ nano $_
 &lt;td&gt;2023-12-19&lt;/td&gt;
 &lt;td&gt;Al pastor was good, red sauce was better than most.&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;💳&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
