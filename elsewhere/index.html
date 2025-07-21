@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Useful Linux Terminal</title>
+<title>Elsewhere</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -69,13 +69,13 @@
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/tech/useful-linux-terminal/">Useful Linux Terminal </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/tech/useful-linux-terminal/">Useful Linux Terminal </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink"><a data-note-icon="signpost" style="text-decoration:none" class="filename" href="/elsewhere/">Elsewhere </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="signpost" style="text-decoration:none" class="filename" href="/elsewhere/">Elsewhere </a>
 </div>
 </div>
 </div>
@@ -83,61 +83,46 @@
 </div>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Useful Linux Terminal</h1>
+<h1 data-note-icon="signpost">Elsewhere</h1>
 <div class="header-meta">
-<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-07-19T21:09:38.463-07:00"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-07-20T20:17:41.384-07:00"></span></div></div></div>
 </header>
-<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#linux">#linux</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#reference">#reference</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#tech">#tech</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#cli">#cli</a></p>
-<h2 id="shortcut-keys" tabindex="-1">Shortcut Keys</h2>
+<p>Find me elsewhere on the internet, or contact me directly at <a href="mailto:brad@bradwenner.com" target="_blank" class="external-link">brad@bradwenner.com</a></p>
+<h1 id="professional" tabindex="-1">Professional</h1>
 <ul>
-<li><code>ctrl + R</code> = reverse search through history</li>
-<li><code>ctrl + L</code> = clear screen</li>
-<li><code>ctrl + U</code> = clear line</li>
-<li><code>ctrl + W/K</code> = clear before/after cursor</li>
-<li><code>ctrl + A/E</code> = jump to begin/end of line</li>
-<li><code>esc + .</code> = argument of the last command</li>
-<li><code>ctrl + X + E</code> = open current line in text editor</li>
+<li><a href="https://www.bradwenner.com/" target="_blank" class="external-link">Brad Wenner Photography</a> San Francisco based photographer</li>
+<li><a href="https://bradwenner.digital/" target="_blank" class="external-link">Brad Wenner Digital</a> Digital Image Technician &amp; rentals</li>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/bradwenner/" target="_blank" class="external-link">bradwenner</a></li>
+<li>Instagram: <a href="https://www.instagram.com/bradwenner.digital/" target="_blank" class="external-link">@bradwenner.digital</a></li>
 </ul>
-<h2 id="commands" tabindex="-1">Commands</h2>
-<h3 id="find-and-replace-in-a-previous-command" tabindex="-1">Find and replace in a previous command</h3>
-<p>Replace a string in the last matching command:</p>
-<pre><code>^find^replace
-</code></pre>
-<p>ex:</p>
-<pre><code>ssh 192.168.0.7
-# do stuff on that server, now move on to the next...
-^.7^.8
-</code></pre>
-<h3 id="return-to-previous-directory" tabindex="-1">Return to previous directory</h3>
-<pre><code>cd -
-</code></pre>
-<h3 id="re-run-previous-command-with-sudo" tabindex="-1">Re-run previous command with sudo</h3>
-<pre><code>sudo !!
-</code></pre>
-<h3 id="refer-to-last-string-of-previous-command" tabindex="-1">Refer to last string of previous command</h3>
-<p>You can use <code>$_</code> to refer to the last string/argument. ex:</p>
-<pre><code>touch /path/to/file
-nano $_
-</code></pre>
-<h3 id="create-directories-from-list" tabindex="-1">Create directories from list</h3>
-<pre><code>xargs mkdir -p &lt; list.txt
-</code></pre>
-<h3 id="combine-multiple-files-into-one" tabindex="-1">Combine multiple files into one</h3>
-<pre><code>find . -name '*.txt' -exec cat {} + &gt;&gt; ../combined.txt
-</code></pre>
-<h3 id="list-processes-with-ports-open" tabindex="-1">List processes with ports open</h3>
-<pre><code>sudo netstat -tulnp
-</code></pre>
-<h3 id="a-href-https-www-stefaanlippens-net-pretty-csv-html-target-blank-class-external-link-human-readable-csv-output-a" tabindex="-1"><a href="https://www.stefaanlippens.net/pretty-csv.html" target="_blank" class="external-link">Human readable CSV output</a></h3>
-<p>Input doesn't need to be file, ie. <code>sort</code> instead of <code>cat</code></p>
-<pre><code>cat data.csv | column -t -s -n, | less -S
-</code></pre>
-<p>BSD/MacOS column does not support -n argument, so:</p>
-<pre><code>cat data.csv | sed 's/,/ ,/g' | column -t -s, | less -S
-</code></pre>
-<h2 id="useful-utilities" tabindex="-1">Useful Utilities</h2>
-<h3 id="ncdu" tabindex="-1">ncdu</h3>
-<p>ncurses disk usage analyzer - scans all directories in the path and shows a list sorted by size</p>
+<h2 id="printmaking" tabindex="-1">Printmaking</h2>
+<ul>
+<li><a href="https://mysteryhound.press/" target="_blank" class="external-link">Mystery Hound Press</a> screen printing</li>
+<li>Etsy: <a href="https://mysteryhoundpress.etsy.com/" target="_blank" class="external-link">mysteryhoundpress</a></li>
+<li>Gumroad: <a href="https://mysteryhoundpress.gumroad.com/" target="_blank" class="external-link">mysteryhoundpress</a></li>
+<li>Instagram: <a href="https://www.instagram.com/mysteryhound.press" target="_blank" class="external-link">@mysteryhound.press</a></li>
+<li>Youtube: <a href="https://www.youtube.com/@mysteryhoundpress" target="_blank" class="external-link">MysteryHoundPress</a></li>
+<li>Twitch: <a href="https://www.twitch.tv/mysteryhoundpress" target="_blank" class="external-link">mysteryhoundpress</a></li>
+</ul>
+<h3 id="personal-socials" tabindex="-1">Personal Socials</h3>
+<ul>
+<li>Discord: <a href="discord.com/users/367504021965242371" target="_blank" class="external-link">@diybrad</a></li>
+<li>Github: <a href="https://github.com/oakbrad" target="_blank" class="external-link">oakbrad</a></li>
+<li>Bluesky: <a href="https://bsky.app/profile/bradwenner.photo" target="_blank" class="external-link">@bradwenner.photo</a></li>
+<li>Strava: <a href="https://www.strava.com/athletes/2245566" target="_blank" class="external-link">bradwenner</a></li>
+<li>iNaturalist: <a href="https://www.inaturalist.org/people/726158" target="_blank" class="external-link">bradwenner</a></li>
+</ul>
+<h4 id="gaming" tabindex="-1">Gaming</h4>
+<ul>
+<li><a href="https://www.dungeon.church/" target="_blank" class="external-link">Dungeon Church</a> Bay Area RPG group</li>
+<li>Bluesky: <a href="https://bsky.app/profile/dungeon.church" target="_blank" class="external-link">@dungeon.church</a></li>
+<li>Youtube: <a href="https://www.youtube.com/@DungeonChurch" target="_blank" class="external-link">DungeonChurch</a></li>
+<li>Twitch: <a href="https://www.twitch.tv/dungeonchurch" target="_blank" class="external-link">dungeonchurch</a></li>
+<li>Ko-Fi: <a href="https://ko-fi.com/dungeonchurch" target="_blank" class="external-link">dungeonchurch</a></li>
+<li>RetroAchievements: <a href="https://retroachievements.org/user/bradwenner" target="_blank" class="external-link">bradwenner</a></li>
+<li>Xbox: <a href="https://www.xbox.com/en-US/play/user/yrdungeonmaster" target="_blank" class="external-link">yrdungeonmaster</a></li>
+<li>Steam: <a href="https://steamcommunity.com/profiles/76561198305613167/" target="_blank" class="external-link">76561198305613167</a></li>
+</ul>
 </main>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>

@@ -74,6 +74,10 @@
 </div>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="">
+<div @click.stop class="notelink"><a data-note-icon="signpost" style="text-decoration:none" class="filename" href="/elsewhere/">Elsewhere </a>
+</div>
+</div>
 </div>
 </nav>
 </div>
@@ -85,17 +89,26 @@
 <div id="dungeon-map">
 <div class="dungeon-body">
 <div class="dungeon-row">
-<a href="/log/tacos/" title="Taco Log">
-<img src="/img/tree-2.svg" alt="Taco Log" height="20">
+<a href="/elsewhere/" title="Elsewhere">
+<img src="/img/signpost.svg" alt="Elsewhere" height="20">
 </a>
+<a class="empty"></a>
 <a href="/" title="brad.quest">
 <img src="/img/tree-1.svg" alt="brad.quest" height="20">
 </a>
 </div>
 <div class="dungeon-row">
+<a href="/log/tacos/" title="Taco Log">
+<img src="/img/tree-2.svg" alt="Taco Log" height="20">
+</a>
 <a href="/tech/useful-linux-terminal/" title="Useful Linux Terminal">
 <img src="/img/tree-1.svg" alt="Useful Linux Terminal" height="20">
 </a>
+<a class="empty"></a>
+</div>
+<div class="dungeon-row">
+<a class="empty"></a>
+<a class="empty"></a>
 <a href="/tech/on-ai-and-art/" title="On AI &amp; Art">
 <img src="/img/tree-1.svg" alt="On AI &amp; Art" height="20">
 </a>
@@ -109,6 +122,10 @@
 <div class="legend-item">
 <img src="/img/tree-2.svg" alt="Tome">
 1 Tome
+</div>
+<div class="legend-item">
+<img src="/img/signpost.svg" alt="Signpost">
+1 Signpost
 </div>
 </div>
 </div>
