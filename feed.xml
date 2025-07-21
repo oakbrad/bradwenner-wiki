@@ -3,14 +3,14 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-21T03:47:16Z</updated>
+    <updated>2025-07-21T04:54:52Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-20T04:09:38.463Z</updated>
+            <updated>2025-07-21T04:54:41Z</updated>
             <id>https://brad.quest/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -73,7 +73,7 @@ nano $_
                 On AI &amp; Art
                 
             </title>
-            <updated>2025-07-21T02:32:06.677Z</updated>
+            <updated>2025-07-21T04:54:41Z</updated>
             <id>https://brad.quest/tech/on-ai-and-art/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt;&lt;/p&gt;
@@ -105,7 +105,7 @@ nano $_
                 brad.quest
                 
             </title>
-            <updated>2025-07-20T05:41:42.233Z</updated>
+            <updated>2025-07-21T04:54:41Z</updated>
             <id>https://brad.quest/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital garden&lt;/a&gt;.&lt;/p&gt;
@@ -121,7 +121,7 @@ nano $_
                 Elsewhere
                 
             </title>
-            <updated>2025-07-21T03:47:04Z</updated>
+            <updated>2025-07-21T04:54:41Z</updated>
             <id>https://brad.quest/elsewhere/</id>
             <content type="html">
                 &lt;p&gt;Find me elsewhere on the internet, or contact me directly at &lt;a href=&quot;mailto:brad@bradwenner.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;brad@bradwenner.com&lt;/a&gt;&lt;/p&gt;
@@ -143,8 +143,8 @@ nano $_
 &lt;/ul&gt;
 &lt;h3 id=&quot;personal-socials&quot; tabindex=&quot;-1&quot;&gt;Personal Socials&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Discord: &lt;a href=&quot;https://brad.quest/discord.com/users/367504021965242371&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;@diybrad&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Github: &lt;a href=&quot;https://github.com/oakbrad&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;oakbrad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Discord: &lt;a href=&quot;https://brad.quest/discord.com/users/367504021965242371&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;@diybrad&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Bluesky: &lt;a href=&quot;https://bsky.app/profile/bradwenner.photo&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;@bradwenner.photo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Strava: &lt;a href=&quot;https://www.strava.com/athletes/2245566&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradwenner&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;iNaturalist: &lt;a href=&quot;https://www.inaturalist.org/people/726158&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;bradwenner&lt;/a&gt;&lt;/li&gt;
@@ -165,7 +165,7 @@ nano $_
 &lt;li&gt;Steam: &lt;a href=&quot;https://steamcommunity.com/profiles/76561198305613167/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;76561198305613167&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&quot;pgp-signature&quot; tabindex=&quot;-1&quot;&gt;PGP Signature&lt;/h5&gt;
-&lt;p&gt;![[brad@bradwenner.com-public-key.txt]]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/oakbrad/6867f003b9deb7a413ea77a5ddc10893&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Github Gist&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
 xsBNBGh9tKoBCACpM6aga2hZy4cSAmJicKE3gvLsqviK6BDWVhtZKnye6eCD
 3HYr4MeRbAjeCcjZvdA9NV+37FhSXGe2vi+klk0iDKykE9RBGLJRTnh2qFaP
@@ -207,7 +207,7 @@ UwDrA5iAHHUf8w==
                 Taco Log
                 
             </title>
-            <updated>2025-07-21T01:55:20.899Z</updated>
+            <updated>2025-07-21T04:54:41Z</updated>
             <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -228,7 +228,7 @@ UwDrA5iAHHUf8w==
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-al-vapor-oakland-3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos al Vapor&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Tacos bisteca, lengua, cabeza&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-20&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Different - steamed! No grease, bright flavors, great texture.&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Different&lt;/strong&gt; - steamed! No grease, bright flavors, great texture.&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;$14&lt;br /&gt;📱&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -254,6 +254,14 @@ UwDrA5iAHHUf8w==
 &lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-09&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Really good, large portions, cheap. Also serve baby burritos.&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;$15&lt;br /&gt;💵&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/lagranafish250110.png&quot; alt=&quot;lagranafish250110.png&quot; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/la-grana-fish-oakland-3&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;La Grana Fish&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Fish tacos &amp;amp; asada vampiro&lt;/td&gt;
+&lt;td&gt;2025-01-10&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;GOAT&lt;/strong&gt; spot. Vampiros are must order, fish tacos Baja style. Not cheap tho.&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$20 💳&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
@@ -294,14 +302,6 @@ UwDrA5iAHHUf8w==
 &lt;td&gt;2023-12-19&lt;/td&gt;
 &lt;td&gt;Al pastor was good, red sauce was better than most.&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;💳&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
