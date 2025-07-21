@@ -1,5 +1,5 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLdjthA/rm0VqqWjcT98qNoM5INQPQwR9+fUYeP3C0zIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" integrity="sha512-FaAQujRxLMvw+BkmGN3w7u9EdQQr1t0vQoY8KDh09+6SFaWSTe+KrT8oCWg25X91hytm5c5BTmiSGQejkraaZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
   /* Style for content images that should have lightbox functionality */
@@ -28,17 +28,25 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Initialize SimpleLightbox for all content images except those in the dungeon map
-    // Use a more specific selector to avoid conflicts
-    new SimpleLightbox('.content img:not(#dungeon-map img)', {
-      captionPosition: 'bottom',
-      captionsData: 'alt',
-      captionDelay: 250,
-      animationSpeed: 250,
-      fadeSpeed: 200,
-      scrollZoom: true,
-      maxZoom: 3
-    });
+    // Wait a bit to ensure all images are loaded
+    setTimeout(function() {
+      try {
+        // Initialize SimpleLightbox for all content images except those in the dungeon map
+        var lightbox = new SimpleLightbox('.content img:not(#dungeon-map img)', {
+          captionPosition: 'bottom',
+          captionsData: 'alt',
+          captionDelay: 250,
+          animationSpeed: 250,
+          fadeSpeed: 200,
+          scrollZoom: true,
+          maxZoom: 3
+        });
+        
+        console.log('SimpleLightbox initialized successfully');
+      } catch (error) {
+        console.error('Error initializing SimpleLightbox:', error);
+      }
+    }, 500);
   });
 </script>
 
