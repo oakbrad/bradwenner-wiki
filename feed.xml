@@ -3,14 +3,14 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-21T04:54:52Z</updated>
+    <updated>2025-07-21T05:50:23Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-21T04:54:41Z</updated>
+            <updated>2025-07-21T05:50:12Z</updated>
             <id>https://brad.quest/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -73,7 +73,7 @@ nano $_
                 On AI &amp; Art
                 
             </title>
-            <updated>2025-07-21T04:54:41Z</updated>
+            <updated>2025-07-21T05:50:12Z</updated>
             <id>https://brad.quest/tech/on-ai-and-art/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt;&lt;/p&gt;
@@ -102,10 +102,34 @@ nano $_
         </entry>
         <entry>
             <title>
+                Javascript for Artists
+                
+            </title>
+            <updated>2025-07-21T05:50:12Z</updated>
+            <id>https://brad.quest/tech/js-for-artists/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#webdev&quot;&gt;#webdev&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#programming&quot;&gt;#programming&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Javascript libraries for creating visualizations.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://d3js.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;D3.js&lt;/a&gt; - powerful, bespoke dataviz that can do anything&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://leafletjs.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Leaflet.js&lt;/a&gt; - lightweight maps&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://p5js.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;p5.js&lt;/a&gt; - creative visual coding&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://pixijs.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;PixiJS&lt;/a&gt; - HTML5 creation engine&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/russellsamora/scrollama&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Scrollama&lt;/a&gt; - Storytelling&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://simplelightbox.js.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Simple Lightbox&lt;/a&gt; - lightweight lightbox for images&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://threejs.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;three.js&lt;/a&gt; - WebGL for interactive 3D&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://timeline.knightlab.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;TimelineJS&lt;/a&gt; - timelines or linear presentations from spreadsheets&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://brad.quest/tech/js-for-artists/" />
+        </entry>
+        <entry>
+            <title>
                 brad.quest
                 
             </title>
-            <updated>2025-07-21T04:54:41Z</updated>
+            <updated>2025-07-21T05:50:12Z</updated>
             <id>https://brad.quest/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital garden&lt;/a&gt;.&lt;/p&gt;
@@ -121,7 +145,7 @@ nano $_
                 Elsewhere
                 
             </title>
-            <updated>2025-07-21T04:54:41Z</updated>
+            <updated>2025-07-21T05:50:12Z</updated>
             <id>https://brad.quest/elsewhere/</id>
             <content type="html">
                 &lt;p&gt;Find me elsewhere on the internet, or contact me directly at &lt;a href=&quot;mailto:brad@bradwenner.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;brad@bradwenner.com&lt;/a&gt;&lt;/p&gt;
@@ -207,7 +231,7 @@ UwDrA5iAHHUf8w==
                 Taco Log
                 
             </title>
-            <updated>2025-07-21T04:54:41Z</updated>
+            <updated>2025-07-21T05:50:12Z</updated>
             <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
