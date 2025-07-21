@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Log/Tacos.md","permalink":"/log/tacos/","title":"Taco Log","noteIcon":"1","updated":"2025-07-20T14:46:51.566-07:00"}
+{"dg-publish":true,"dg-path":"Log/Tacos.md","permalink":"/log/tacos/","title":"Taco Log","noteIcon":"2","updated":"2025-07-20T18:55:20.899-07:00"}
 ---
 
 #oakland #restaurants #food 
@@ -15,5 +15,6 @@
 |                                      | [Tacos El Novillo](https://www.yelp.com/biz/tacos-el-novillo-oakland-2)                                                            | Al pastor burrito               | 2023-03-17     | LARGE burrito. Next time do asada.                             |    💳     |
 |                                      | [Los Compadres](https://www.yelp.com/biz/los-compadres-taco-truck-oakland-2)                                                       | Asada burrito, asada fries      | 2023-07-22     | Best asada in Fruitvale. Friendly guys, really cheap.          | $12<br>💳 |
 |                                      | Tacos [Guadalajara](https://www.google.com/search?channel=frs&client=firefox-b-1-d&q=tacos+guadalajara#rlimm=10656403252407561765) | Al pasta burrito                | 2023-12-19     | Al pastor was good, red sauce was better than most.            |    💳     |
+|                                      |                                                                                                                                    |                                 |                |                                                                |           |
 
 **Related: [[Reference/Town Business\|Town Business]]**
