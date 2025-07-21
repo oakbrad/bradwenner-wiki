@@ -1,25 +1,11 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" integrity="sha512-/4kQE5RJQYHRhUiK+CZS8UhaJTnLmQkDuf8lOhiP2xLdjthA/rm0VqqWjcT98qNoM5INQPQwR9+fUYeP3C0zIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" integrity="sha512-FaAQujRxLMvw+BkmGN3w7u9EdQQr1t0vQoY8KDh09+6SFaWSTe+KrT8oCWg25X91hytm5c5BTmiSGQejkraaZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
-  .content img {
+  /* Style for content images that should have lightbox functionality */
+  .content img:not(#dungeon-map img) {
     cursor: zoom-in;
-    position: relative;
     transition: all 0.3s ease;
-  }
-  
-  .content img::after {
-    content: '🔍';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    opacity: 0.7;
-    pointer-events: none;
-  }
-  
-  .content img:hover::after {
-    opacity: 1;
   }
   
   /* SimpleLightbox customizations */
@@ -42,64 +28,55 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Add magnifying glass icon to all images
-    const contentImages = document.querySelectorAll('.content img');
-    
-    contentImages.forEach(img => {
-      // Create a wrapper div for positioning the icon
-      const wrapper = document.createElement('div');
-      wrapper.style.position = 'relative';
-      wrapper.style.display = 'inline-block';
-      
-      // Create the magnifying glass icon
-      const icon = document.createElement('div');
-      icon.innerHTML = '🔍';
-      icon.style.position = 'absolute';
-      icon.style.top = '10px';
-      icon.style.right = '10px';
-      icon.style.fontSize = '20px';
-      icon.style.color = 'var(--text-accent)';
-      icon.style.opacity = '0';
-      icon.style.transition = 'opacity 0.3s ease';
-      icon.style.pointerEvents = 'none';
-      
-      // Replace the image with the wrapper
-      img.parentNode.insertBefore(wrapper, img);
-      wrapper.appendChild(img);
-      wrapper.appendChild(icon);
-      
-      // Show icon on hover
-      wrapper.addEventListener('mouseenter', () => {
-        icon.style.opacity = '1';
-      });
-      
-      wrapper.addEventListener('mouseleave', () => {
-        icon.style.opacity = '0';
-      });
-      
-      // Add data attributes for SimpleLightbox
-      if (!img.hasAttribute('data-lightbox')) {
-        img.setAttribute('data-lightbox', 'gallery');
+    // Wait a bit to ensure all images are loaded
+    setTimeout(function() {
+      try {
+        // First, add necessary attributes to images for SimpleLightbox to work
+        const contentImages = document.querySelectorAll('.content img:not(#dungeon-map img)');
         
-        // If the image has a title or alt text, use it for the lightbox caption
-        if (img.getAttribute('title')) {
-          img.setAttribute('data-title', img.getAttribute('title'));
-        } else if (img.getAttribute('alt')) {
-          img.setAttribute('data-title', img.getAttribute('alt'));
-        }
+        contentImages.forEach(function(img) {
+          // Skip if image is inside dungeon map
+          if (img.closest('#dungeon-map')) {
+            return;
+          }
+          
+          // Create a link around the image if it doesn't already have one
+          if (img.parentNode.tagName !== 'A') {
+            const link = document.createElement('a');
+            link.href = img.src; // Set the link to the image source
+            link.classList.add('lightbox-image');
+            
+            // Replace the image with the link+image
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+          } else {
+            // If image is already inside a link, add the lightbox class to the link
+            img.parentNode.classList.add('lightbox-image');
+            
+            // Store the original link href if it's not pointing to the image
+            if (img.parentNode.href !== img.src) {
+              img.parentNode.setAttribute('data-original-href', img.parentNode.href);
+              img.parentNode.href = img.src;
+            }
+          }
+        });
+        
+        // Initialize SimpleLightbox on the links we just created/modified
+        var lightbox = new SimpleLightbox('a.lightbox-image', {
+          captionPosition: 'bottom',
+          captionsData: 'alt',
+          captionDelay: 250,
+          animationSpeed: 250,
+          fadeSpeed: 200,
+          scrollZoom: true,
+          maxZoom: 3
+        });
+        
+        console.log('SimpleLightbox initialized successfully with', contentImages.length, 'images');
+      } catch (error) {
+        console.error('Error initializing SimpleLightbox:', error);
       }
-    });
-    
-    // Initialize SimpleLightbox
-    new SimpleLightbox('.content img', {
-      captionPosition: 'bottom',
-      captionsData: 'data-title',
-      captionDelay: 250,
-      animationSpeed: 250,
-      fadeSpeed: 200,
-      scrollZoom: true,
-      maxZoom: 3
-    });
+    }, 500);
   });
 </script>
 
