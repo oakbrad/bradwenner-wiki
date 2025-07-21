@@ -31,8 +31,38 @@
     // Wait a bit to ensure all images are loaded
     setTimeout(function() {
       try {
-        // Initialize SimpleLightbox for all content images except those in the dungeon map
-        var lightbox = new SimpleLightbox('.content img:not(#dungeon-map img)', {
+        // First, add necessary attributes to images for SimpleLightbox to work
+        const contentImages = document.querySelectorAll('.content img:not(#dungeon-map img)');
+        
+        contentImages.forEach(function(img) {
+          // Skip if image is inside dungeon map
+          if (img.closest('#dungeon-map')) {
+            return;
+          }
+          
+          // Create a link around the image if it doesn't already have one
+          if (img.parentNode.tagName !== 'A') {
+            const link = document.createElement('a');
+            link.href = img.src; // Set the link to the image source
+            link.classList.add('lightbox-image');
+            
+            // Replace the image with the link+image
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+          } else {
+            // If image is already inside a link, add the lightbox class to the link
+            img.parentNode.classList.add('lightbox-image');
+            
+            // Store the original link href if it's not pointing to the image
+            if (img.parentNode.href !== img.src) {
+              img.parentNode.setAttribute('data-original-href', img.parentNode.href);
+              img.parentNode.href = img.src;
+            }
+          }
+        });
+        
+        // Initialize SimpleLightbox on the links we just created/modified
+        var lightbox = new SimpleLightbox('a.lightbox-image', {
           captionPosition: 'bottom',
           captionsData: 'alt',
           captionDelay: 250,
@@ -42,7 +72,7 @@
           maxZoom: 3
         });
         
-        console.log('SimpleLightbox initialized successfully');
+        console.log('SimpleLightbox initialized successfully with', contentImages.length, 'images');
       } catch (error) {
         console.error('Error initializing SimpleLightbox:', error);
       }
