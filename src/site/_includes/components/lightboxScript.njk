@@ -2,11 +2,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" integrity="sha512-FaAQujRxLMvw+BkmGN3w7u9EdQQr1t0vQoY8KDh09+6SFaWSTe+KrT8oCWg25X91hytm5c5BTmiSGQejkraaZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
-  /* Style for images that should have lightbox functionality */
-  .content picture img, 
-  .content > img:not(#dungeon-map img) {
+  /* Style for content images that should have lightbox functionality */
+  .content img:not(#dungeon-map img) {
     cursor: zoom-in;
-    position: relative;
     transition: all 0.3s ease;
   }
   
@@ -30,90 +28,11 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // Process images in picture elements
-    const pictureElements = document.querySelectorAll('.content picture');
-    
-    pictureElements.forEach(picture => {
-      // Skip if picture is inside dungeon map
-      if (picture.closest('#dungeon-map')) {
-        return;
-      }
-      
-      const img = picture.querySelector('img');
-      if (!img) return;
-      
-      setupLightbox(img, picture);
-    });
-    
-    // Process standalone images (not in picture elements and not in dungeon map)
-    const standaloneImages = document.querySelectorAll('.content > img:not(#dungeon-map img)');
-    
-    standaloneImages.forEach(img => {
-      // Skip if image is inside dungeon map
-      if (img.closest('#dungeon-map')) {
-        return;
-      }
-      
-      setupLightbox(img);
-    });
-    
-    // Helper function to set up lightbox for an image
-    function setupLightbox(img, container = null) {
-      // Create a wrapper div for positioning the icon
-      const wrapper = document.createElement('div');
-      wrapper.style.position = 'relative';
-      wrapper.style.display = 'inline-block';
-      
-      // Create the magnifying glass icon
-      const icon = document.createElement('div');
-      icon.innerHTML = '🔍';
-      icon.style.position = 'absolute';
-      icon.style.top = '10px';
-      icon.style.right = '10px';
-      icon.style.fontSize = '20px';
-      icon.style.color = 'var(--text-accent)';
-      icon.style.opacity = '0';
-      icon.style.transition = 'opacity 0.3s ease';
-      icon.style.pointerEvents = 'none';
-      
-      // Replace the image with the wrapper
-      const parent = container || img.parentNode;
-      parent.insertBefore(wrapper, container || img);
-      wrapper.appendChild(container || img);
-      wrapper.appendChild(icon);
-      
-      // Show icon on hover
-      wrapper.addEventListener('mouseenter', () => {
-        icon.style.opacity = '1';
-      });
-      
-      wrapper.addEventListener('mouseleave', () => {
-        icon.style.opacity = '0';
-      });
-      
-      // Add data attributes for SimpleLightbox
-      if (!img.hasAttribute('data-lightbox')) {
-        img.setAttribute('data-lightbox', 'gallery');
-        
-        // If the image has a title or alt text, use it for the lightbox caption
-        if (img.getAttribute('title')) {
-          img.setAttribute('data-title', img.getAttribute('title'));
-        } else if (img.getAttribute('alt')) {
-          img.setAttribute('data-title', img.getAttribute('alt'));
-        }
-      }
-      
-      // Add click event to ensure lightbox opens
-      img.addEventListener('click', function(e) {
-        e.preventDefault();
-        // The SimpleLightbox library will handle the actual lightbox display
-      });
-    }
-    
-    // Initialize SimpleLightbox with the correct selectors
-    new SimpleLightbox('.content picture img, .content > img:not(#dungeon-map img)', {
+    // Initialize SimpleLightbox for all content images except those in the dungeon map
+    // Use a more specific selector to avoid conflicts
+    new SimpleLightbox('.content img:not(#dungeon-map img)', {
       captionPosition: 'bottom',
-      captionsData: 'data-title',
+      captionsData: 'alt',
       captionDelay: 250,
       animationSpeed: 250,
       fadeSpeed: 200,
