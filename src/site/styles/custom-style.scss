@@ -22,9 +22,8 @@ body {
       .dungeon-body {
         display: inline-flex;
         flex-direction: column;
-        transform: rotate(45deg);
-        margin: 40px;
-        align-items: flex-end;
+        margin: 20px;
+        align-items: center;
         position: relative;
         
         /* Grid background */
@@ -48,13 +47,13 @@ body {
         }
         
         @media (max-width: 575.99px) {
-          transform: rotate(45deg) scale(0.9);
+          transform: scale(0.9);
         }
         
         .dungeon-row {
           display: flex;
           flex-direction: row;
-          align-items: flex-end;
+          align-items: center;
           
           a {
             width: 20px;
@@ -67,16 +66,16 @@ body {
             box-sizing: border-box;
             
             img {
-              transform: rotate(-45deg);
               position: absolute;
               /* Center the icon in the cell */
               top: 50%;
               left: 50%;
-              margin: 0 0 0 0; /* Half of the icon height/width for centering */
+              transform: translate(-50%, -50%);
+              margin: 0;
             }
             
             img:hover {
-                transform: scale(1.25) rotate(-45deg);
+                transform: scale(1.25) translate(-40%, -40%);
             }
           }
           
