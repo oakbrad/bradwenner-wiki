@@ -72,10 +72,15 @@ body {
               left: 50%;
               transform: translate(-50%, -50%);
               margin: 0;
+              width: 16px; /* Set a fixed width */
+              height: 16px; /* Set a fixed height */
+              object-fit: contain; /* Ensure the image maintains its aspect ratio */
+              transition: transform 0.2s ease; /* Add smooth transition */
             }
             
             img:hover {
-                transform: scale(1.25) translate(-40%, -40%);
+                /* Fix hover effect to maintain centering */
+                transform: translate(-50%, -50%) scale(1.25);
             }
           }
           
