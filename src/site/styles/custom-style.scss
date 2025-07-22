@@ -87,23 +87,23 @@ body {
       }
       
       .dungeon-legends {
-        margin-top: 12px;
+        margin-top: 10px;
         display: flex;
-        gap: 12px;
+        gap: 10px;
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 0.96em;
+        font-size: 0.8em;
         color: var(--text-muted);
         
         .legend-item {
           display: flex;
           align-items: center;
-          gap: 6px;
+          gap: 5px;
         }
         
         img {
-          height: 1.8em;
+          height: 1.5em;
           width: auto;
         }
       }
