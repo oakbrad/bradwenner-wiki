@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Tech/Useful Linux Terminal.md","permalink":"/tech/useful-linux-terminal/","noteIcon":null}
+{"dg-publish":true,"dg-path":"Tech/Useful Linux Terminal.md","permalink":"/tech/useful-linux-terminal/","noteIcon":"1"}
 ---
 
 #linux #reference #tech #cli

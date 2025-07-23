@@ -21,7 +21,7 @@ Find me elsewhere on the internet, or contact me directly at brad@bradwenner.com
 * Bluesky: [@bradwenner.photo](https://bsky.app/profile/bradwenner.photo)
 * Strava: [bradwenner](https://www.strava.com/athletes/2245566)
 * iNaturalist: [bradwenner](https://www.inaturalist.org/people/726158)
-* LastFM: [bradbane](https://www.last.fm/user/bradbane)
+* LastFM: [diybrad](https://www.last.fm/user/diybrad)
 * Plex: [bradwenner](https://l.plex.tv/LkgD8rt)
 * Letterboxd: [bradwenner](https://letterboxd.com/bradwenner/)
 #### Gaming
@@ -31,7 +31,7 @@ Find me elsewhere on the internet, or contact me directly at brad@bradwenner.com
 * Twitch: [dungeonchurch](https://www.twitch.tv/dungeonchurch)
 * Ko-Fi: [dungeonchurch](https://ko-fi.com/dungeonchurch)
 * BoardGameGeek: [dmbrad](https://boardgamegeek.com/user/dmbrad)
-* RetroAchievements: [bradwenner](https://retroachievements.org/user/bradwenner)
+* RetroAchievements: [diybrad](https://retroachievements.org/user/diybrad)
 * Xbox: [yrdungeonmaster](https://www.xbox.com/en-US/play/user/yrdungeonmaster)
 * Steam: [76561198305613167](https://steamcommunity.com/profiles/76561198305613167/)
 ##### PGP Signature
