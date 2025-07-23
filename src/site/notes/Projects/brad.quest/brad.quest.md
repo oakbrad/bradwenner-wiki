@@ -18,3 +18,4 @@ An uncultivated [digital ~~garden~~ dungeon](https://cagrimmett.com/2020/11/08/w
 ##### todo
 - [ ] [[Reference/Tech/Gridfinity\|Gridfinity]]
 - [ ] [[Spotify isn't Punk\|Spotify isn't Punk]]
+- [ ] [[Hustles/Mystery Hound/Screen Printing\|Screen Printing]] press sketches & notes
