@@ -3,14 +3,14 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-24T18:06:58Z</updated>
+    <updated>2025-07-24T18:09:20Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-24T18:06:46Z</updated>
+            <updated>2025-07-24T18:09:04Z</updated>
             <id>https://brad.quest/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -73,7 +73,7 @@ nano $_
                 On AI &amp; Art
                 
             </title>
-            <updated>2025-07-24T18:06:46Z</updated>
+            <updated>2025-07-24T18:09:04Z</updated>
             <id>https://brad.quest/tech/on-ai-and-art/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt;&lt;/p&gt;
@@ -105,7 +105,7 @@ nano $_
                 Javascript for Artists
                 
             </title>
-            <updated>2025-07-24T18:06:46Z</updated>
+            <updated>2025-07-24T18:09:04Z</updated>
             <id>https://brad.quest/tech/js-for-artists/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#webdev&quot;&gt;#webdev&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#programming&quot;&gt;#programming&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt;&lt;/p&gt;
@@ -132,7 +132,7 @@ nano $_
                 On Writing by Stephen King
                 
             </title>
-            <updated>2025-07-24T18:06:46Z</updated>
+            <updated>2025-07-24T18:09:04Z</updated>
             <id>https://brad.quest/log/books/on-writing-by-stephen-king/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#log&quot;&gt;#log&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#writing&quot;&gt;#writing&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nonfiction&quot;&gt;#nonfiction&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#read2025&quot;&gt;#read2025&lt;/a&gt;&lt;/p&gt;
@@ -180,10 +180,38 @@ nano $_
         </entry>
         <entry>
             <title>
+                Black Earth by Timothy Snyder
+                
+            </title>
+            <updated>2025-07-24T18:09:04Z</updated>
+            <id>https://brad.quest/log/books/black-earth-by-timothy-snyder/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#log&quot;&gt;#log&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nonfiction&quot;&gt;#nonfiction&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#antifascism&quot;&gt;#antifascism&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#read2025&quot;&gt;#read2025&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;em-a-href-https-library-brads-house-index-php-page-13-and-amp-id-839-cover-target-blank-class-external-link-black-earth-the-holocaust-as-history-and-warning-a-em-by-timothy-snyder&quot; tabindex=&quot;-1&quot;&gt;&lt;em&gt;&lt;a href=&quot;https://library.brads.house/index.php?page=13&amp;amp;id=839#cover&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Black Earth: The Holocaust as History and Warning&lt;/a&gt;&lt;/em&gt; by Timothy Snyder&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Finished:&lt;/strong&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-24&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Rating:&lt;/strong&gt; ⭐⭐⭐⭐⭐&lt;br /&gt;
+&lt;strong&gt;Thoughts:&lt;/strong&gt; Typically, the motivations of the Nazis &amp;amp; their collaborators are reduced to racism or an inherent evil. This meticulously researched book reveals a more complete picture of the social conditions that led to the Holocaust. The creation of stateless zones, the hollowing or destruction of institutions, &amp;amp; the zero-sum worldview that incentivized ordinary people to reach for the state&#39;s levers of murder. All part of an extra-legal machine meant to encourage violent experimentation that could be reified back into the state.&lt;/p&gt;
+&lt;p&gt;Many of the stories are very difficult to read: the murder of children, the improvisation of cars as mobile gas chambers, the woman who was buried alive &amp;amp; naked in a pit of corpses. Other details are horrifying in their mundanity: the Nazis originally provided extra rations of alcohol to soldiers who participated in mass murder, but ultimately found it unnecessary.&lt;/p&gt;
+&lt;p&gt;There are also many tales of those who resisted or rescued Jews, often not out of ideology or bravery, but out of the simple humanity the state could not stamp out (&amp;quot;No one ever left my house naked or hungry&amp;quot; one woman explains).&lt;/p&gt;
+&lt;p&gt;It is of course terrifying to recognize that many of these conditions exist today. The extraordinary renditions and the state machinery that enables it, the tech capitalists who wish to be freed from the &amp;quot;inefficiencies&amp;quot; of democracy to innovate in stateless zones, the paranoid, zero-sum worldview of MAGA.... &amp;quot;a warning&amp;quot;&lt;/p&gt;
+&lt;h5 id=&quot;highlighted&quot; tabindex=&quot;-1&quot;&gt;Highlighted&lt;/h5&gt;
+&lt;p&gt;&lt;em&gt;Mostly listened on audiobooks so only a couple of highlights.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Throughout Europe, this is what rescuers said again and again: that they were behaving normally. “We regarded it as the most normal thing to help those who needed help”—thus the verdict of a Polish family who sheltered two Jews for much of the war. They were not describing the normality that they saw around them, of course. They were not acting as others acted, or following the explicit or implicit prescriptions of those in power. Their sense of normality must have come from within, or from something learned and internalized before the war, since there were few or no external sources of the norms they exemplified&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Wanda J.’s judgment about the decisive importance of a sense of humanity seems like a hopeful conclusion, but it is not. Good and evil can be rendered visible, as in memoirs such as hers, but they are not easy to summon or dismiss. Most of us would like to think that we possess the qualities she named: “moral instinct” and “human goodness.” Perhaps we imagine that we would be rescuers in some future catastrophe. Yet if states were destroyed, local institutions corrupted, and economic incentives directed towards murder, few of us would behave well.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://brad.quest/log/books/black-earth-by-timothy-snyder/" />
+        </entry>
+        <entry>
+            <title>
                 brad.quest
                 
             </title>
-            <updated>2025-07-24T18:06:46Z</updated>
+            <updated>2025-07-24T18:09:04Z</updated>
             <id>https://brad.quest/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital &lt;s&gt;garden&lt;/s&gt; dungeon&lt;/a&gt;.&lt;/p&gt;
@@ -212,7 +240,7 @@ nano $_
                 Elsewhere
                 
             </title>
-            <updated>2025-07-24T18:06:46Z</updated>
+            <updated>2025-07-24T18:09:04Z</updated>
             <id>https://brad.quest/elsewhere/</id>
             <content type="html">
                 &lt;p&gt;Find me elsewhere on the internet, or contact me directly at &lt;a href=&quot;mailto:brad@bradwenner.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;brad@bradwenner.com&lt;/a&gt;&lt;/p&gt;
@@ -298,7 +326,7 @@ UwDrA5iAHHUf8w==
                 Taco Log
                 
             </title>
-            <updated>2025-07-24T18:06:46Z</updated>
+            <updated>2025-07-24T18:09:04Z</updated>
             <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
