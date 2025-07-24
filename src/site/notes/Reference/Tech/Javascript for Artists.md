@@ -12,4 +12,7 @@ Javascript libraries for creating visualizations.
 * [Scrollama](https://github.com/russellsamora/scrollama) - Storytelling
 * [Simple Lightbox](https://simplelightbox.js.org/) - lightweight lightbox for images
 * [three.js](https://threejs.org/) - WebGL for interactive 3D
+* [two.js](https://github.com/jonobr1/two.js) - two-dimensional drawing
 * [TimelineJS](https://timeline.knightlab.com/) - timelines or linear presentations from spreadsheets
+* [Anime.js](https://animejs.com/) - web animation engine
+* [Snap.svg](http://snapsvg.io/) - simple SVG-based interaction & animation
