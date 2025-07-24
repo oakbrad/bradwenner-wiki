@@ -3,14 +3,14 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-24T00:21:56Z</updated>
+    <updated>2025-07-24T18:06:58Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-24T00:21:46Z</updated>
+            <updated>2025-07-24T18:06:46Z</updated>
             <id>https://brad.quest/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -73,7 +73,7 @@ nano $_
                 On AI &amp; Art
                 
             </title>
-            <updated>2025-07-24T00:21:46Z</updated>
+            <updated>2025-07-24T18:06:46Z</updated>
             <id>https://brad.quest/tech/on-ai-and-art/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt;&lt;/p&gt;
@@ -105,7 +105,7 @@ nano $_
                 Javascript for Artists
                 
             </title>
-            <updated>2025-07-24T00:21:46Z</updated>
+            <updated>2025-07-24T18:06:46Z</updated>
             <id>https://brad.quest/tech/js-for-artists/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#webdev&quot;&gt;#webdev&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#programming&quot;&gt;#programming&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt;&lt;/p&gt;
@@ -132,12 +132,14 @@ nano $_
                 On Writing by Stephen King
                 
             </title>
-            <updated>2025-07-24T00:21:46Z</updated>
+            <updated>2025-07-24T18:06:46Z</updated>
             <id>https://brad.quest/log/books/on-writing-by-stephen-king/</id>
             <content type="html">
-                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#lifelog&quot;&gt;#lifelog&lt;/a&gt;&lt;br /&gt;
-Finished &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-23&lt;/a&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#log&quot;&gt;#log&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#writing&quot;&gt;#writing&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nonfiction&quot;&gt;#nonfiction&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#read2025&quot;&gt;#read2025&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;a-href-https-library-brads-house-index-php-page-13-and-amp-id-841-cover-target-blank-class-external-link-em-on-writing-a-memoir-of-the-craft-em-a-by-stephen-king&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://library.brads.house/index.php?page=13&amp;amp;id=841#cover&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;On Writing: A Memoir of the Craft&lt;/em&gt;&lt;/a&gt; by Stephen King&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Finished:&lt;/strong&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-23&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Rating:&lt;/strong&gt; ⭐⭐⭐&lt;br /&gt;
+&lt;strong&gt;Thoughts:&lt;/strong&gt; Good writing advice sprinkled among anecdotes, some more interesting than others.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Kill all adverbs&lt;/li&gt;
 &lt;li&gt;First draft &amp;quot;with the door closed&amp;quot; for yourself&lt;/li&gt;
@@ -181,7 +183,7 @@ Finished &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://
                 brad.quest
                 
             </title>
-            <updated>2025-07-24T00:21:46Z</updated>
+            <updated>2025-07-24T18:06:46Z</updated>
             <id>https://brad.quest/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital &lt;s&gt;garden&lt;/s&gt; dungeon&lt;/a&gt;.&lt;/p&gt;
@@ -210,7 +212,7 @@ Finished &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://
                 Elsewhere
                 
             </title>
-            <updated>2025-07-24T00:21:46Z</updated>
+            <updated>2025-07-24T18:06:46Z</updated>
             <id>https://brad.quest/elsewhere/</id>
             <content type="html">
                 &lt;p&gt;Find me elsewhere on the internet, or contact me directly at &lt;a href=&quot;mailto:brad@bradwenner.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;brad@bradwenner.com&lt;/a&gt;&lt;/p&gt;
@@ -251,7 +253,7 @@ Finished &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://
 &lt;li&gt;BoardGameGeek: &lt;a href=&quot;https://boardgamegeek.com/user/dmbrad&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;dmbrad&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;RetroAchievements: &lt;a href=&quot;https://retroachievements.org/user/diybrad&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;diybrad&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Xbox: &lt;a href=&quot;https://www.xbox.com/en-US/play/user/yrdungeonmaster&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;yrdungeonmaster&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Steam: &lt;a href=&quot;https://steamcommunity.com/profiles/76561198305613167/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;76561198305613167&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Steam: &lt;a href=&quot;https://steamcommunity.com/profiles/76561198305613167/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;345347439&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&quot;pgp-signature&quot; tabindex=&quot;-1&quot;&gt;PGP Signature&lt;/h5&gt;
 &lt;p&gt;&lt;a href=&quot;https://gist.github.com/oakbrad/6867f003b9deb7a413ea77a5ddc10893&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Github Gist&lt;/a&gt;&lt;/p&gt;
@@ -296,7 +298,7 @@ UwDrA5iAHHUf8w==
                 Taco Log
                 
             </title>
-            <updated>2025-07-24T00:21:46Z</updated>
+            <updated>2025-07-24T18:06:46Z</updated>
             <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -317,7 +319,7 @@ UwDrA5iAHHUf8w==
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/mariscos-el-poblano-oakland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mariscos el Poblano&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Tacos chorizo, carnitas, al pastor&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-23&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Good fatty carnitas, Chorizo too dry. Al pastor mid. Next time camaron empanadas or torta de milanese&lt;/td&gt;
+&lt;td&gt;Pretty mid, should&#39;ve done seafood. Camaron empanadas next time&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;💵 $13.50&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
