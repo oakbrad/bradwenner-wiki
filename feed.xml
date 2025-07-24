@@ -3,14 +3,14 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-23T21:53:32Z</updated>
+    <updated>2025-07-24T00:21:56Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-23T21:53:20Z</updated>
+            <updated>2025-07-24T00:21:46Z</updated>
             <id>https://brad.quest/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -73,7 +73,7 @@ nano $_
                 On AI &amp; Art
                 
             </title>
-            <updated>2025-07-23T21:53:20Z</updated>
+            <updated>2025-07-24T00:21:46Z</updated>
             <id>https://brad.quest/tech/on-ai-and-art/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt;&lt;/p&gt;
@@ -105,7 +105,7 @@ nano $_
                 Javascript for Artists
                 
             </title>
-            <updated>2025-07-23T21:53:20Z</updated>
+            <updated>2025-07-24T00:21:46Z</updated>
             <id>https://brad.quest/tech/js-for-artists/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#webdev&quot;&gt;#webdev&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#programming&quot;&gt;#programming&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt;&lt;/p&gt;
@@ -118,7 +118,10 @@ nano $_
 &lt;li&gt;&lt;a href=&quot;https://github.com/russellsamora/scrollama&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Scrollama&lt;/a&gt; - Storytelling&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://simplelightbox.js.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Simple Lightbox&lt;/a&gt; - lightweight lightbox for images&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://threejs.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;three.js&lt;/a&gt; - WebGL for interactive 3D&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jonobr1/two.js&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;two.js&lt;/a&gt; - two-dimensional drawing&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://timeline.knightlab.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;TimelineJS&lt;/a&gt; - timelines or linear presentations from spreadsheets&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://animejs.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Anime.js&lt;/a&gt; - web animation engine&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://snapsvg.io/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Snap.svg&lt;/a&gt; - simple SVG-based interaction &amp;amp; animation&lt;/li&gt;
 &lt;/ul&gt;
 
             </content>
@@ -126,10 +129,59 @@ nano $_
         </entry>
         <entry>
             <title>
+                On Writing by Stephen King
+                
+            </title>
+            <updated>2025-07-24T00:21:46Z</updated>
+            <id>https://brad.quest/log/books/on-writing-by-stephen-king/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#lifelog&quot;&gt;#lifelog&lt;/a&gt;&lt;br /&gt;
+Finished &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-23&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;a-href-https-library-brads-house-index-php-page-13-and-amp-id-841-cover-target-blank-class-external-link-em-on-writing-a-memoir-of-the-craft-em-a-by-stephen-king&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://library.brads.house/index.php?page=13&amp;amp;id=841#cover&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;On Writing: A Memoir of the Craft&lt;/em&gt;&lt;/a&gt; by Stephen King&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Kill all adverbs&lt;/li&gt;
+&lt;li&gt;First draft &amp;quot;with the door closed&amp;quot; for yourself&lt;/li&gt;
+&lt;li&gt;Second draft for the hypothetical &lt;em&gt;Ideal Reader&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Second draft should be shorter than the first. He aims for 10% reduction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;highlighted&quot; tabindex=&quot;-1&quot;&gt;Highlighted&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I believe large numbers of people have at least some talent as writers and storytellers, and that those talents can be strengthened and sharpened.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;When you write a story, you’re telling yourself the story,” he said. “When you rewrite, your main job is taking out all the things that are not the story.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What you need to remember is that there’s a difference between lecturing about what you know and using it to enrich the story. The latter is good. The former is not.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The situation comes first. The characters—always flat and unfeatured, to begin with—come next. Once these things are fixed in my mind, I begin to narrate.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A strong enough situation renders the whole question of plot moot, which is fine with me.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Description begins in the writer’s imagination, but should finish in the reader’s.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When it comes to scene-setting and all sorts of description, a meal is as good as a feast&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In a very real sense, every life is in medias res.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The most important things to remember about back story are that (a) everyone has a history and (b) most of it isn’t very interesting. Stick to the parts that are, and don’t get carried away with the rest.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+            </content>
+            <link href="https://brad.quest/log/books/on-writing-by-stephen-king/" />
+        </entry>
+        <entry>
+            <title>
                 brad.quest
                 
             </title>
-            <updated>2025-07-23T21:53:20Z</updated>
+            <updated>2025-07-24T00:21:46Z</updated>
             <id>https://brad.quest/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital &lt;s&gt;garden&lt;/s&gt; dungeon&lt;/a&gt;.&lt;/p&gt;
@@ -158,7 +210,7 @@ nano $_
                 Elsewhere
                 
             </title>
-            <updated>2025-07-23T21:53:20Z</updated>
+            <updated>2025-07-24T00:21:46Z</updated>
             <id>https://brad.quest/elsewhere/</id>
             <content type="html">
                 &lt;p&gt;Find me elsewhere on the internet, or contact me directly at &lt;a href=&quot;mailto:brad@bradwenner.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;brad@bradwenner.com&lt;/a&gt;&lt;/p&gt;
@@ -244,7 +296,7 @@ UwDrA5iAHHUf8w==
                 Taco Log
                 
             </title>
-            <updated>2025-07-23T21:53:20Z</updated>
+            <updated>2025-07-24T00:21:46Z</updated>
             <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -265,7 +317,7 @@ UwDrA5iAHHUf8w==
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/mariscos-el-poblano-oakland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mariscos el Poblano&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Tacos chorizo, carnitas, al pastor&lt;/td&gt;
 &lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-23&lt;/a&gt;&lt;/td&gt;
-&lt;td&gt;Good fatty carnitas, Chorizo too dry. Al pastor mid. Next timeCameron empanadas or torta de milanese&lt;/td&gt;
+&lt;td&gt;Good fatty carnitas, Chorizo too dry. Al pastor mid. Next time camaron empanadas or torta de milanese&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;💵 $13.50&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
