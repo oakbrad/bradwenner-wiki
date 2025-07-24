@@ -2,9 +2,12 @@
 {"dg-publish":true,"dg-path":"Log/Books/On Writing by Stephen King.md","permalink":"/log/books/on-writing-by-stephen-king/","noteIcon":"1"}
 ---
 
-#books #reading #lifelog
-Finished [[Journal/2025/2025-07-23\|2025-07-23]]
+#books #reading #log #writing #nonfiction #read2025
 ### [*On Writing: A Memoir of the Craft*](https://library.brads.house/index.php?page=13&id=841#cover) by Stephen King
+**Finished:** [[Journal/2025/2025-07-23\|2025-07-23]]
+**Rating:** ⭐⭐⭐ 
+**Thoughts:** Good writing advice sprinkled among anecdotes, some more interesting than others.
+
 * Kill all adverbs
 * First draft "with the door closed" for yourself
 * Second draft for the hypothetical *Ideal Reader*

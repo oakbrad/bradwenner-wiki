@@ -33,7 +33,7 @@ Find me elsewhere on the internet, or contact me directly at brad@bradwenner.com
 * BoardGameGeek: [dmbrad](https://boardgamegeek.com/user/dmbrad)
 * RetroAchievements: [diybrad](https://retroachievements.org/user/diybrad)
 * Xbox: [yrdungeonmaster](https://www.xbox.com/en-US/play/user/yrdungeonmaster)
-* Steam: [76561198305613167](https://steamcommunity.com/profiles/76561198305613167/)
+* Steam: [345347439](https://steamcommunity.com/profiles/76561198305613167/)
 ##### PGP Signature
 [Github Gist](https://gist.github.com/oakbrad/6867f003b9deb7a413ea77a5ddc10893)
 ```
