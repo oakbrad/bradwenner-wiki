@@ -4,7 +4,7 @@
 
 #books #reading #log #nonfiction #antifascism #read2025
 ### *[Black Earth: The Holocaust as History and Warning](https://library.brads.house/index.php?page=13&id=839#cover)* by Timothy Snyder
-**Finished:** [[2025-07-24\|2025-07-24]]
+**Finished:** [[Journal/2025/2025-07-24\|2025-07-24]]
 **Rating:** ⭐⭐⭐⭐⭐
 **Thoughts:** Typically, the motivations of the Nazis & their collaborators are reduced to racism or an inherent evil. This meticulously researched book reveals a more complete picture of the social conditions that led to the Holocaust. The creation of stateless zones, the hollowing or destruction of institutions, & the zero-sum worldview that incentivized ordinary people to reach for the state's levers of murder. All part of an extra-legal machine meant to encourage violent experimentation that could be reified back into the state.
 
