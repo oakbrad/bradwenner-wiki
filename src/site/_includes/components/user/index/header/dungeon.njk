@@ -1,14 +1,20 @@
 <div id="dungeon-map">
   <div class="dungeon-body">
-    {% for row in userComputed.dungeon.items %}
+    {% for row in userComputed.dungeon.gridWithIcons %}
       <div class="dungeon-row">
-        {% for item in row %}
-          {% if item[0] == 0 %}
-            <a class="empty"></a>
+        {% for cell in row %}
+          {% if cell.isDungeon %}
+            <div class="dungeon-cell">
+              {% if cell.icon %}
+                <a href="{{ cell.icon[1] }}" title="{{ cell.icon[2] }}" class="dungeon-icon-link">
+                  <img src="/img/{{ cell.icon[0] }}.svg" alt="{{ cell.icon[2] }}" />
+                </a>
+              {% else %}
+                <span class="empty-dungeon"></span>
+              {% endif %}
+            </div>
           {% else %}
-            <a href="{{ item[1] }}" title="{{ item[2] }}">
-              <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
-            </a>
+            <div class="empty-cell"></div>
           {% endif %}
         {% endfor %}
       </div>
@@ -16,10 +22,10 @@
   </div>
   
   <div class="dungeon-legends">
-    {% for count in userComputed.dungeon.legends %}
-      <div class="legend-item">
-        <img src="/img/{{ count.icon }}.svg" alt="{{ count.label }}" />
-        {{count.count}} {% if count.count > 1 %}{% if count.plural %}{{count.plural}}{% else %}{{count.label}}s{% endif %}{% else %}{{count.label}}{% endif %}
+    {% for legend in userComputed.dungeon.legends %}
+      <div class="dungeon-legend">
+        <img src="/img/{{ legend.icon }}.svg" alt="{{ legend.icon }}" />
+        <span>{{ legend.label }} ({{ legend.count }})</span>
       </div>
     {% endfor %}
   </div>
