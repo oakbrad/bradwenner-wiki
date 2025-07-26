@@ -10,7 +10,15 @@
         {% for cell in row %}
           {% if cell == 1 %}
             <div class="dungeon-cell">
-              <span class="empty-dungeon"></span>
+              {% set cellKey = loop.parent.index0 ~ '-' ~ loop.index0 %}
+              {% if userComputed.dungeon.iconPositions.get(cellKey) %}
+                {% set icon = userComputed.dungeon.iconPositions.get(cellKey) %}
+                <a href="{{ icon[1] }}" title="{{ icon[2] }}">
+                  <img src="/img/{{ icon[0] }}.svg" alt="{{ icon[2] }}" height="20" />
+                </a>
+              {% else %}
+                <span class="empty-dungeon"></span>
+              {% endif %}
             </div>
           {% else %}
             <div class="empty-cell"></div>
@@ -29,4 +37,3 @@
     {% endfor %}
   </div>
 </div>
-

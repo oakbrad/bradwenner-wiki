@@ -141,6 +141,39 @@ const noteLabels = {
   chest: { label: "Treasure", count: 0, icon: "chest" }
 };
 
+// Function to find all dungeon cells (cells with value 1)
+function findDungeonCells(dungeonGrid) {
+  const dungeonCells = [];
+  for (let y = 0; y < dungeonGrid.length; y++) {
+    for (let x = 0; x < dungeonGrid[y].length; x++) {
+      if (dungeonGrid[y][x] === 1) {
+        dungeonCells.push({ x, y });
+      }
+    }
+  }
+  return dungeonCells;
+}
+
+// Function to randomly distribute icons among dungeon cells
+function distributeIconsInDungeon(dungeonItems, dungeonCells) {
+  // Shuffle the dungeon cells to randomize icon placement
+  const shuffledCells = shuffle([...dungeonCells]);
+  
+  // Create a map to store icon positions
+  const iconPositions = new Map();
+  
+  // Determine how many icons we can place (minimum of icons or available cells)
+  const itemCount = Math.min(dungeonItems.length, shuffledCells.length);
+  
+  // Assign positions to icons
+  for (let i = 0; i < itemCount; i++) {
+    const cell = shuffledCells[i];
+    iconPositions.set(`${cell.y}-${cell.x}`, dungeonItems[i]);
+  }
+  
+  return iconPositions;
+}
+
 function dungeonData(data) {
   const itemCounts = JSON.parse(JSON.stringify(noteLabels));
   const dungeonItems = data.collections.note.map((n) => {
@@ -160,11 +193,19 @@ function dungeonData(data) {
   const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length) * 2)); // Larger grid
   const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
   
+  // Find all dungeon cells
+  const dungeonCells = findDungeonCells(dungeonGrid);
+  
+  // Distribute icons among dungeon cells
+  const iconPositions = distributeIconsInDungeon(dungeonItems, dungeonCells);
+  
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);
   
   return {
     dungeonGrid: dungeonGrid,
+    iconPositions: iconPositions,
+    dungeonItems: dungeonItems,
     legends,
   };
 }
@@ -176,4 +217,3 @@ function userComputed(data) {
 }
 
 exports.userComputed = userComputed;
-
