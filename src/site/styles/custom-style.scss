@@ -14,13 +14,11 @@ body {
       width: 100%;
       
       .dungeon-body {
-        display: inline-flex;
-        flex-direction: column;
+        display: grid;
         margin: 24px;
         margin-top: 0px;
         margin-bottom: 12px;
-        align-items: center;
-        justify-content: center;
+        place-items: center;
         position: relative;
         
         /* Grid background */
@@ -35,7 +33,7 @@ body {
             linear-gradient(to right, var(--text-muted) 1px, transparent 1px),
             linear-gradient(to bottom, var(--text-muted) 1px, transparent 1px);
           background-position: 0 0;
-          background-size: 26px 26px; /* Adjusted to match cell size + margin */
+          background-size: 24px 24px;
           opacity: 0.1;
           z-index: -1;
           border: 1px solid var(--text-muted);
@@ -47,28 +45,27 @@ body {
         }
         
         .dungeon-row {
-          display: flex;
-          flex-direction: row;
-          align-items: center !important;
-          vertical-align: center !important;
-          justify-content: center !important; /* Center cells horizontally */
-          height: 26px; /* Fixed height to ensure consistent rows */
+          display: grid;
+          grid-auto-flow: column;
+          grid-gap: 0;
+          align-items: center;
+          justify-content: center;
+          height: 24px;
           
           .dungeon-cell, .empty-cell {
             width: 24px;
             height: 24px;
             display: flex;
-            justify-content: center !important;
-            align-items: center !important;
-            vertical-align: center !important;
-            margin: 1px;
+            justify-content: center;
+            align-items: center;
             box-sizing: border-box;
           }
           
           .dungeon-cell {
-            background-color: rgba(128, 128, 128, 0.2); // Gray background with 0.2 opacity
-            border-radius: 2px;
-            position: relative; /* Ensure proper positioning context */
+            background-color: rgba(128, 128, 128, 0.4);
+            border-radius: 0;
+            position: relative;
+            border: 1px solid rgba(128, 128, 128, 0.6);
             
             a.dungeon-icon-link {
               cursor: pointer;
@@ -77,14 +74,15 @@ body {
               display: flex;
               justify-content: center;
               align-items: center;
-              z-index: 2; /* Ensure icons are above the cell background */
+              z-index: 2;
               
               img {
-                width: 19px;
-                height: 19px;
+                width: 18px;
+                height: 18px;
                 object-fit: contain;
                 transition: transform 0.2s ease;
-                display: block; /* Ensure proper display */
+                display: block;
+                image-rendering: pixelated;
               }
               
               img:hover {
@@ -99,7 +97,7 @@ body {
           }
           
           .empty-cell {
-            background-color: transparent; // Transparent background for non-dungeon cells
+            background-color: transparent;
           }
         }
       }
@@ -122,6 +120,7 @@ body {
         img {
           height: 1.5em;
           width: auto;
+          image-rendering: pixelated;
         }
       }
     }
