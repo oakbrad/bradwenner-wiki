@@ -182,19 +182,6 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
     console.log(`Assigned icon ${dungeonItems[i][0]} to cell ${key}`);
   }
   
-  // Add a few direct assignments for debugging
-  if (dungeonCells.length > 0 && dungeonItems.length > 0) {
-    const firstCell = dungeonCells[0];
-    iconPositions[`${firstCell.y}-${firstCell.x}`] = dungeonItems[0];
-    console.log(`Forced icon ${dungeonItems[0][0]} to cell ${firstCell.y}-${firstCell.x}`);
-    
-    if (dungeonCells.length > 1 && dungeonItems.length > 1) {
-      const secondCell = dungeonCells[1];
-      iconPositions[`${secondCell.y}-${secondCell.x}`] = dungeonItems[1];
-      console.log(`Forced icon to cell ${secondCell.y}-${secondCell.x}`);
-    }
-  }
-  
   return iconPositions;
 }
 
