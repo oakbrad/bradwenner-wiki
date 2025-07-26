@@ -8,7 +8,7 @@
           
           {% if isDungeon %}
             <div class="dungeon-cell">
-              {% if item %}
+              {% if item != 0 %}
                 <a href="{{ item[1] }}" title="{{ item[2] }}">
                   <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
                 </a>
@@ -33,4 +33,3 @@
     {% endfor %}
   </div>
 </div>
-

@@ -20,7 +20,7 @@ function sliceIntoChunks(arr, chunkSize) {
 }
 
 // BSP (Binary Space Partitioning) algorithm for dungeon generation
-function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 4) {
+function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 5) {
   // Initialize grid with all cells as non-dungeon (0)
   let grid = Array(height).fill().map(() => Array(width).fill(0));
   
@@ -29,8 +29,8 @@ function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 4) {
     // Stop recursion if we've reached max depth or the space is too small
     if (depth >= maxDepth || w <= minRoomSize * 2 || h <= minRoomSize * 2) {
       // Create a room in this space
-      const roomWidth = Math.max(Math.floor(w * 0.6), minRoomSize);
-      const roomHeight = Math.max(Math.floor(h * 0.6), minRoomSize);
+      const roomWidth = Math.max(Math.floor(w * 0.7), minRoomSize);
+      const roomHeight = Math.max(Math.floor(h * 0.7), minRoomSize);
       const roomX = x + Math.floor((w - roomWidth) / 2);
       const roomY = y + Math.floor((h - roomHeight) / 2);
       
@@ -161,7 +161,7 @@ function getPositions(items, dungeonGrid) {
   }
   
   // Create a 2D grid with all cells initialized as empty
-  const grid = Array(gridHeight).fill().map(() => Array(gridWidth).fill(null));
+  const grid = Array(gridHeight).fill().map(() => Array(gridWidth).fill(0));
   
   // Place items in the first N dungeon cells
   for (let i = 0; i < Math.min(items.length, shuffledCells.length); i++) {
@@ -203,7 +203,7 @@ function dungeonData(data) {
   });
   
   // Generate a larger dungeon grid using BSP
-  const gridSize = Math.max(15, Math.ceil(Math.sqrt(dungeonItems.length) * 1.5)); // Larger grid
+  const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length) * 2)); // Larger grid
   const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
   
   // Place items in dungeon cells only
@@ -226,4 +226,3 @@ function userComputed(data) {
 }
 
 exports.userComputed = userComputed;
-
