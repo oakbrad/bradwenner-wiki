@@ -19,7 +19,7 @@
       <div class="dungeon-row">
         {% for cell in row %}
           {% if cell == 1 %}
-            <div class="dungeon-cell">
+            <div class="dungeon-cell" data-row="{{ loop.parent.index0 }}" data-col="{{ loop.index0 }}">
               {% set hasItem = false %}
               {% for item in userComputed.dungeon.items %}
                 {% if item.y == loop.parent.index0 and item.x == loop.index0 %}
@@ -50,3 +50,4 @@
     {% endfor %}
   </div>
 </div>
+
