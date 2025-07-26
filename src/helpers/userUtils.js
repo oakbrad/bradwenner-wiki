@@ -247,8 +247,31 @@ function dungeonData(data) {
     return [v, n.url, n.data.title || n.fileSlug, height];
   }) : [];
   
-  // Generate a larger dungeon grid using BSP
-  const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length || 1) * 2)); // Larger grid
+  // Calculate grid size with more organic scaling based on number of items
+  // For small numbers of notes, create a much smaller dungeon
+  const itemCount = dungeonItems.length || 1;
+  
+  // Tiered approach for minimum sizes based on item count
+  let minSize;
+  if (itemCount <= 5) {
+    minSize = 8;  // Very small dungeon for 1-5 items
+  } else if (itemCount <= 10) {
+    minSize = 12; // Small dungeon for 6-10 items
+  } else if (itemCount <= 20) {
+    minSize = 16; // Medium dungeon for 11-20 items
+  } else {
+    minSize = 20; // Larger dungeon for 21+ items
+  }
+  
+  // Calculate base size using square root with a scaling factor
+  // The scaling factor increases logarithmically with the number of items
+  const scalingFactor = 1.5 + 0.25 * Math.log10(itemCount);
+  const baseSize = Math.ceil(Math.sqrt(itemCount) * scalingFactor);
+  
+  // Use the larger of the minimum size or calculated base size
+  const gridSize = Math.max(minSize, baseSize);
+  
+  // Generate the dungeon grid using BSP
   const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
   
   // Find all dungeon cells
