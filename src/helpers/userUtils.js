@@ -141,9 +141,66 @@ const noteLabels = {
   chest: { label: "Treasure", count: 0, icon: "chest" }
 };
 
+// Function to find all dungeon cells (cells with value 1)
+function findDungeonCells(dungeonGrid) {
+  const dungeonCells = [];
+  for (let y = 0; y < dungeonGrid.length; y++) {
+    for (let x = 0; x < dungeonGrid[y].length; x++) {
+      if (dungeonGrid[y][x] === 1) {
+        dungeonCells.push({ x, y });
+      }
+    }
+  }
+  return dungeonCells;
+}
+
+// Function to randomly distribute icons among dungeon cells
+function distributeIconsInDungeon(dungeonItems, dungeonCells) {
+  // Shuffle the dungeon cells to randomize icon placement
+  const shuffledCells = shuffle([...dungeonCells]);
+  
+  // Create an object to store icon positions (using an object instead of Map for template compatibility)
+  const iconPositions = {};
+  
+  // Check if we have any items to place
+  if (!dungeonItems || dungeonItems.length === 0) {
+    console.log("No dungeon items to distribute");
+    return iconPositions;
+  }
+  
+  // Determine how many icons we can place (minimum of icons or available cells)
+  const itemCount = Math.min(dungeonItems.length, shuffledCells.length);
+  
+  // Assign positions to icons
+  for (let i = 0; i < itemCount; i++) {
+    const cell = shuffledCells[i];
+    // Use the cell coordinates as the key in the format "y-x"
+    const key = `${cell.y}-${cell.x}`;
+    iconPositions[key] = dungeonItems[i];
+    
+    // Debug log to verify icon assignment
+    console.log(`Assigned icon ${dungeonItems[i][0]} to cell ${key}`);
+  }
+  
+  // Add a few direct assignments for debugging
+  if (dungeonCells.length > 0 && dungeonItems.length > 0) {
+    const firstCell = dungeonCells[0];
+    iconPositions[`${firstCell.y}-${firstCell.x}`] = dungeonItems[0];
+    console.log(`Forced icon ${dungeonItems[0][0]} to cell ${firstCell.y}-${firstCell.x}`);
+    
+    if (dungeonCells.length > 1 && dungeonItems.length > 1) {
+      const secondCell = dungeonCells[1];
+      iconPositions[`${secondCell.y}-${secondCell.x}`] = dungeonItems[1];
+      console.log(`Forced icon to cell ${secondCell.y}-${secondCell.x}`);
+    }
+  }
+  
+  return iconPositions;
+}
+
 function dungeonData(data) {
   const itemCounts = JSON.parse(JSON.stringify(noteLabels));
-  const dungeonItems = data.collections.note.map((n) => {
+  const dungeonItems = data.collections.note ? data.collections.note.map((n) => {
     let v = parseInt(n.data.noteIcon);
     let height = 2;
     if (!v) {
@@ -154,17 +211,67 @@ function dungeonData(data) {
     }
     itemCounts[v] ? itemCounts[v].count++ : null;
     return [v, n.url, n.data.title || n.fileSlug, height];
-  });
+  }) : [];
   
   // Generate a larger dungeon grid using BSP
-  const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length) * 2)); // Larger grid
+  const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length || 1) * 2)); // Larger grid
   const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
+  
+  // Find all dungeon cells
+  const dungeonCells = findDungeonCells(dungeonGrid);
+  console.log(`Found ${dungeonCells.length} dungeon cells for ${dungeonItems.length} icons`);
+  
+  // Distribute icons among dungeon cells
+  const iconPositions = distributeIconsInDungeon(dungeonItems, dungeonCells);
+  console.log(`Created ${Object.keys(iconPositions).length} icon positions`);
+  
+  // Convert iconPositions to an array for easier template iteration
+  const iconPositionsArray = Object.keys(iconPositions).map(key => {
+    const [y, x] = key.split('-').map(Number);
+    return {
+      y: y,
+      x: x,
+      icon: iconPositions[key]
+    };
+  });
   
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);
   
+  // Create a modified grid with icons embedded
+  const gridWithIcons = JSON.parse(JSON.stringify(dungeonGrid));
+  iconPositionsArray.forEach(pos => {
+    if (gridWithIcons[pos.y] && gridWithIcons[pos.y][pos.x] === 1) {
+      gridWithIcons[pos.y][pos.x] = {
+        isDungeon: true,
+        icon: pos.icon
+      };
+    }
+  });
+  
+  // Convert remaining dungeon cells (with value 1) to objects
+  for (let y = 0; y < gridWithIcons.length; y++) {
+    for (let x = 0; x < gridWithIcons[y].length; x++) {
+      if (gridWithIcons[y][x] === 1) {
+        gridWithIcons[y][x] = {
+          isDungeon: true,
+          icon: null
+        };
+      } else if (gridWithIcons[y][x] === 0) {
+        gridWithIcons[y][x] = {
+          isDungeon: false,
+          icon: null
+        };
+      }
+    }
+  }
+  
   return {
     dungeonGrid: dungeonGrid,
+    gridWithIcons: gridWithIcons,
+    iconPositions: iconPositions,
+    iconPositionsArray: iconPositionsArray,
+    dungeonItems: dungeonItems,
     legends,
   };
 }
@@ -176,4 +283,3 @@ function userComputed(data) {
 }
 
 exports.userComputed = userComputed;
-
