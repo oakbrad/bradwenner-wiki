@@ -1,4 +1,6 @@
+{# Dungeon visualization component - Renders a BSP-generated dungeon with icons representing notes #}
 <div id="dungeon-map">
+  {# Main dungeon grid #}
   <div class="dungeon-body">
     {% for row in userComputed.dungeon.gridWithIcons %}
       <div class="dungeon-row">
@@ -6,14 +8,17 @@
           {% if cell.isDungeon %}
             <div class="dungeon-cell">
               {% if cell.icon %}
+                {# Cell with an icon (representing a note) #}
                 <a href="{{ cell.icon[1] }}" title="{{ cell.icon[2] }}" class="dungeon-icon-link">
                   <img src="/img/{{ cell.icon[0] }}.svg" alt="{{ cell.icon[2] }}" />
                 </a>
               {% else %}
+                {# Empty dungeon cell (walkable but no icon) #}
                 <span class="empty-dungeon"></span>
               {% endif %}
             </div>
           {% else %}
+            {# Non-dungeon cell (wall) #}
             <div class="empty-cell"></div>
           {% endif %}
         {% endfor %}
@@ -21,6 +26,7 @@
     {% endfor %}
   </div>
   
+  {# Legend showing icon types and counts #}
   <div class="dungeon-legends">
     {% for legend in userComputed.dungeon.legends %}
       <div class="dungeon-legend">
