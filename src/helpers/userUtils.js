@@ -1,4 +1,9 @@
 // Dungeon visualization feature for digital garden with BSP dungeon generation
+/**
+ * Shuffles an array in place using the Fisher-Yates algorithm
+ * @param {Array} a - The array to shuffle
+ * @returns {Array} - The shuffled array (same reference as input)
+ */
 function shuffle(a) {
   var j, x, i;
   for (i = a.length - 1; i > 0; i--) {
@@ -10,6 +15,12 @@ function shuffle(a) {
   return a;
 }
 
+/**
+ * Splits an array into chunks of the specified size
+ * @param {Array} arr - The array to split
+ * @param {number} chunkSize - The size of each chunk
+ * @returns {Array} - Array of chunks
+ */
 function sliceIntoChunks(arr, chunkSize) {
   const res = [];
   for (let i = 0; i < arr.length; i += chunkSize) {
@@ -19,12 +30,29 @@ function sliceIntoChunks(arr, chunkSize) {
   return res;
 }
 
-// BSP (Binary Space Partitioning) algorithm for dungeon generation
+/**
+ * Generates a dungeon grid using Binary Space Partitioning (BSP) algorithm
+ * BSP recursively divides the space into smaller sections and creates rooms within them
+ * 
+ * @param {number} width - Width of the dungeon grid
+ * @param {number} height - Height of the dungeon grid
+ * @param {number} minRoomSize - Minimum size of rooms (default: 3)
+ * @param {number} maxDepth - Maximum recursion depth (default: 5)
+ * @returns {Array<Array<number>>} - 2D grid where 1 represents dungeon cells and 0 represents walls
+ */
 function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 5) {
   // Initialize grid with all cells as non-dungeon (0)
   let grid = Array(height).fill().map(() => Array(width).fill(0));
   
-  // Recursive function to split spaces
+  /**
+   * Recursively splits a space and creates rooms
+   * @param {number} x - X coordinate of the space
+   * @param {number} y - Y coordinate of the space
+   * @param {number} w - Width of the space
+   * @param {number} h - Height of the space
+   * @param {number} depth - Current recursion depth
+   * @returns {Object} - Room information including position and center
+   */
   function splitSpace(x, y, w, h, depth) {
     // Stop recursion if we've reached max depth or the space is too small
     if (depth >= maxDepth || w <= minRoomSize * 2 || h <= minRoomSize * 2) {
@@ -93,7 +121,13 @@ function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 5) {
     }
   }
   
-  // Function to create a corridor between two points
+  /**
+   * Creates a corridor between two points in the dungeon
+   * @param {number} x1 - Starting X coordinate
+   * @param {number} y1 - Starting Y coordinate
+   * @param {number} x2 - Ending X coordinate
+   * @param {number} y2 - Ending Y coordinate
+   */
   function createCorridor(x1, y1, x2, y2) {
     // First go horizontally, then vertically
     let currentX = x1;
@@ -126,6 +160,9 @@ function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 5) {
   return grid;
 }
 
+/**
+ * Defines the types of notes and their visual representation in the dungeon
+ */
 const noteLabels = {
   "tree-1": { label: "Scroll", count: 0, icon: "tree-1" },
   "tree-2": { label: "Tome", count: 0, icon: "tree-2" },
@@ -141,7 +178,11 @@ const noteLabels = {
   chest: { label: "Treasure", count: 0, icon: "chest" }
 };
 
-// Function to find all dungeon cells (cells with value 1)
+/**
+ * Finds all valid dungeon cells (cells with value 1) in the grid
+ * @param {Array<Array<number>>} dungeonGrid - 2D grid representing the dungeon
+ * @returns {Array<{x: number, y: number}>} - Array of cell coordinates
+ */
 function findDungeonCells(dungeonGrid) {
   const dungeonCells = [];
   for (let y = 0; y < dungeonGrid.length; y++) {
@@ -154,7 +195,12 @@ function findDungeonCells(dungeonGrid) {
   return dungeonCells;
 }
 
-// Function to randomly distribute icons among dungeon cells
+/**
+ * Distributes icons randomly among dungeon cells
+ * @param {Array} dungeonItems - Array of items to place in the dungeon
+ * @param {Array<{x: number, y: number}>} dungeonCells - Array of valid cell coordinates
+ * @returns {Object} - Map of cell coordinates to icons
+ */
 function distributeIconsInDungeon(dungeonItems, dungeonCells) {
   // Shuffle the dungeon cells to randomize icon placement
   const shuffledCells = shuffle([...dungeonCells]);
@@ -164,7 +210,6 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
   
   // Check if we have any items to place
   if (!dungeonItems || dungeonItems.length === 0) {
-    console.log("No dungeon items to distribute");
     return iconPositions;
   }
   
@@ -177,14 +222,16 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
     // Use the cell coordinates as the key in the format "y-x"
     const key = `${cell.y}-${cell.x}`;
     iconPositions[key] = dungeonItems[i];
-    
-    // Debug log to verify icon assignment
-    console.log(`Assigned icon ${dungeonItems[i][0]} to cell ${key}`);
   }
   
   return iconPositions;
 }
 
+/**
+ * Generates the dungeon data including grid, icons, and legend
+ * @param {Object} data - The site data object
+ * @returns {Object} - Dungeon visualization data
+ */
 function dungeonData(data) {
   const itemCounts = JSON.parse(JSON.stringify(noteLabels));
   const dungeonItems = data.collections.note ? data.collections.note.map((n) => {
@@ -206,11 +253,9 @@ function dungeonData(data) {
   
   // Find all dungeon cells
   const dungeonCells = findDungeonCells(dungeonGrid);
-  console.log(`Found ${dungeonCells.length} dungeon cells for ${dungeonItems.length} icons`);
   
   // Distribute icons among dungeon cells
   const iconPositions = distributeIconsInDungeon(dungeonItems, dungeonCells);
-  console.log(`Created ${Object.keys(iconPositions).length} icon positions`);
   
   // Convert iconPositions to an array for easier template iteration
   const iconPositionsArray = Object.keys(iconPositions).map(key => {
@@ -222,6 +267,7 @@ function dungeonData(data) {
     };
   });
   
+  // Sort legends by count (most frequent first)
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);
   
@@ -263,6 +309,11 @@ function dungeonData(data) {
   };
 }
 
+/**
+ * Computes user-specific data for the site
+ * @param {Object} data - The site data object
+ * @returns {Object} - Computed user data
+ */
 function userComputed(data) {
   return {
     dungeon: dungeonData(data),
