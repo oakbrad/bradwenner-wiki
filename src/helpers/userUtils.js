@@ -162,6 +162,12 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
   // Create an object to store icon positions (using an object instead of Map for template compatibility)
   const iconPositions = {};
   
+  // Check if we have any items to place
+  if (!dungeonItems || dungeonItems.length === 0) {
+    console.log("No dungeon items to distribute");
+    return iconPositions;
+  }
+  
   // Determine how many icons we can place (minimum of icons or available cells)
   const itemCount = Math.min(dungeonItems.length, shuffledCells.length);
   
@@ -177,14 +183,14 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
   }
   
   // Add a few direct assignments for debugging
-  if (dungeonCells.length > 0) {
+  if (dungeonCells.length > 0 && dungeonItems.length > 0) {
     const firstCell = dungeonCells[0];
     iconPositions[`${firstCell.y}-${firstCell.x}`] = dungeonItems[0];
     console.log(`Forced icon ${dungeonItems[0][0]} to cell ${firstCell.y}-${firstCell.x}`);
     
-    if (dungeonCells.length > 1) {
+    if (dungeonCells.length > 1 && dungeonItems.length > 1) {
       const secondCell = dungeonCells[1];
-      iconPositions[`${secondCell.y}-${secondCell.x}`] = dungeonItems[Math.min(1, dungeonItems.length - 1)];
+      iconPositions[`${secondCell.y}-${secondCell.x}`] = dungeonItems[1];
       console.log(`Forced icon to cell ${secondCell.y}-${secondCell.x}`);
     }
   }
@@ -194,7 +200,7 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
 
 function dungeonData(data) {
   const itemCounts = JSON.parse(JSON.stringify(noteLabels));
-  const dungeonItems = data.collections.note.map((n) => {
+  const dungeonItems = data.collections.note ? data.collections.note.map((n) => {
     let v = parseInt(n.data.noteIcon);
     let height = 2;
     if (!v) {
@@ -205,10 +211,10 @@ function dungeonData(data) {
     }
     itemCounts[v] ? itemCounts[v].count++ : null;
     return [v, n.url, n.data.title || n.fileSlug, height];
-  });
+  }) : [];
   
   // Generate a larger dungeon grid using BSP
-  const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length) * 2)); // Larger grid
+  const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length || 1) * 2)); // Larger grid
   const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
   
   // Find all dungeon cells

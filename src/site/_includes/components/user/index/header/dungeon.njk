@@ -9,10 +9,14 @@
   
   <!-- Debug: Display first few icon positions -->
   <div style="margin-bottom: 10px; font-size: 12px; color: #666; max-height: 100px; overflow: auto;">
-    {% for pos in userComputed.dungeon.iconPositionsArray.slice(0, 5) %}
-      ({{ pos.y }},{{ pos.x }}): {{ pos.icon[0] }}, 
-    {% endfor %}
-    {% if userComputed.dungeon.iconPositionsArray.length > 5 %}...{% endif %}
+    {% if userComputed.dungeon.iconPositionsArray.length > 0 %}
+      {% for pos in userComputed.dungeon.iconPositionsArray.slice(0, 5) %}
+        ({{ pos.y }},{{ pos.x }}): {{ pos.icon[0] }}, 
+      {% endfor %}
+      {% if userComputed.dungeon.iconPositionsArray.length > 5 %}...{% endif %}
+    {% else %}
+      No icon positions available
+    {% endif %}
   </div>
   
   <div class="dungeon-body">
