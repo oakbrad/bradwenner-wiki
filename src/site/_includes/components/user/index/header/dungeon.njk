@@ -24,8 +24,9 @@
               {% for item in userComputed.dungeon.items %}
                 {% if item.y == loop.parent.index0 and item.x == loop.index0 %}
                   {% set hasItem = true %}
-                  <a href="{{ item.url }}" title="{{ item.title }}">
+                  <a href="{{ item.url }}" title="{{ item.title }}" style="color: red; font-weight: bold;">
                     <img src="/img/{{ item.icon }}.svg" alt="{{ item.title }}" height="20" />
+                    ITEM HERE
                   </a>
                 {% endif %}
               {% endfor %}
@@ -35,6 +36,22 @@
             </div>
           {% else %}
             <div class="empty-cell"></div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+  
+  <!-- Debug: Show all cells with their coordinates -->
+  <div style="margin-top: 20px; font-size: 12px; color: #666;">
+    <h4>Cell Coordinates (first 10 rows only):</h4>
+    {% for row in userComputed.dungeon.dungeonGrid.slice(0, 10) %}
+      <div>
+        {% for cell in row.slice(0, 10) %}
+          {% if cell == 1 %}
+            [{{ loop.parent.index0 }},{{ loop.index0 }}]
+          {% else %}
+            ({{ loop.parent.index0 }},{{ loop.index0 }})
           {% endif %}
         {% endfor %}
       </div>
