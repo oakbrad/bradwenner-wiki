@@ -176,6 +176,19 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
     console.log(`Assigned icon ${dungeonItems[i][0]} to cell ${key}`);
   }
   
+  // Add a few direct assignments for debugging
+  if (dungeonCells.length > 0) {
+    const firstCell = dungeonCells[0];
+    iconPositions[`${firstCell.y}-${firstCell.x}`] = dungeonItems[0];
+    console.log(`Forced icon ${dungeonItems[0][0]} to cell ${firstCell.y}-${firstCell.x}`);
+    
+    if (dungeonCells.length > 1) {
+      const secondCell = dungeonCells[1];
+      iconPositions[`${secondCell.y}-${secondCell.x}`] = dungeonItems[Math.min(1, dungeonItems.length - 1)];
+      console.log(`Forced icon to cell ${secondCell.y}-${secondCell.x}`);
+    }
+  }
+  
   return iconPositions;
 }
 
@@ -206,12 +219,52 @@ function dungeonData(data) {
   const iconPositions = distributeIconsInDungeon(dungeonItems, dungeonCells);
   console.log(`Created ${Object.keys(iconPositions).length} icon positions`);
   
+  // Convert iconPositions to an array for easier template iteration
+  const iconPositionsArray = Object.keys(iconPositions).map(key => {
+    const [y, x] = key.split('-').map(Number);
+    return {
+      y: y,
+      x: x,
+      icon: iconPositions[key]
+    };
+  });
+  
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);
   
+  // Create a modified grid with icons embedded
+  const gridWithIcons = JSON.parse(JSON.stringify(dungeonGrid));
+  iconPositionsArray.forEach(pos => {
+    if (gridWithIcons[pos.y] && gridWithIcons[pos.y][pos.x] === 1) {
+      gridWithIcons[pos.y][pos.x] = {
+        isDungeon: true,
+        icon: pos.icon
+      };
+    }
+  });
+  
+  // Convert remaining dungeon cells (with value 1) to objects
+  for (let y = 0; y < gridWithIcons.length; y++) {
+    for (let x = 0; x < gridWithIcons[y].length; x++) {
+      if (gridWithIcons[y][x] === 1) {
+        gridWithIcons[y][x] = {
+          isDungeon: true,
+          icon: null
+        };
+      } else if (gridWithIcons[y][x] === 0) {
+        gridWithIcons[y][x] = {
+          isDungeon: false,
+          icon: null
+        };
+      }
+    }
+  }
+  
   return {
     dungeonGrid: dungeonGrid,
+    gridWithIcons: gridWithIcons,
     iconPositions: iconPositions,
+    iconPositionsArray: iconPositionsArray,
     dungeonItems: dungeonItems,
     legends,
   };
