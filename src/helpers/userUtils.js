@@ -147,7 +147,7 @@ function placeItemsInDungeon(items, dungeonGrid) {
   for (let y = 0; y < gridHeight; y++) {
     for (let x = 0; x < gridWidth; x++) {
       if (dungeonGrid[y][x] === 1) {
-        dungeonCells.push([y, x]);
+        dungeonCells.push({y, x});
       }
     }
   }
@@ -163,10 +163,16 @@ function placeItemsInDungeon(items, dungeonGrid) {
   // Place items in the first N dungeon cells
   const placedItems = [];
   for (let i = 0; i < Math.min(items.length, shuffledCells.length); i++) {
-    const [y, x] = shuffledCells[i];
-    // Add coordinates to the item
-    const itemWithCoords = [...items[i], y, x];
-    placedItems.push(itemWithCoords);
+    const {y, x} = shuffledCells[i];
+    // Create an object with all the item data and coordinates
+    placedItems.push({
+      icon: items[i][0],
+      url: items[i][1],
+      title: items[i][2],
+      height: items[i][3],
+      y: y,
+      x: x
+    });
   }
   
   return placedItems;
