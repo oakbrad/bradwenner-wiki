@@ -159,8 +159,8 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
   // Shuffle the dungeon cells to randomize icon placement
   const shuffledCells = shuffle([...dungeonCells]);
   
-  // Create a map to store icon positions
-  const iconPositions = new Map();
+  // Create an object to store icon positions (using an object instead of Map for template compatibility)
+  const iconPositions = {};
   
   // Determine how many icons we can place (minimum of icons or available cells)
   const itemCount = Math.min(dungeonItems.length, shuffledCells.length);
@@ -168,7 +168,12 @@ function distributeIconsInDungeon(dungeonItems, dungeonCells) {
   // Assign positions to icons
   for (let i = 0; i < itemCount; i++) {
     const cell = shuffledCells[i];
-    iconPositions.set(`${cell.y}-${cell.x}`, dungeonItems[i]);
+    // Use the cell coordinates as the key in the format "y-x"
+    const key = `${cell.y}-${cell.x}`;
+    iconPositions[key] = dungeonItems[i];
+    
+    // Debug log to verify icon assignment
+    console.log(`Assigned icon ${dungeonItems[i][0]} to cell ${key}`);
   }
   
   return iconPositions;
@@ -195,9 +200,11 @@ function dungeonData(data) {
   
   // Find all dungeon cells
   const dungeonCells = findDungeonCells(dungeonGrid);
+  console.log(`Found ${dungeonCells.length} dungeon cells for ${dungeonItems.length} icons`);
   
   // Distribute icons among dungeon cells
   const iconPositions = distributeIconsInDungeon(dungeonItems, dungeonCells);
+  console.log(`Created ${Object.keys(iconPositions).length} icon positions`);
   
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);

@@ -2,6 +2,8 @@
   <!-- Debug info -->
   <div style="margin-bottom: 10px; font-size: 12px; color: #666;">
     Grid size: {{ userComputed.dungeon.dungeonGrid.length }}x{{ userComputed.dungeon.dungeonGrid[0].length }}
+    <!-- Add debug info for icon positions -->
+    | Icons: {{ userComputed.dungeon.dungeonItems.length }}
   </div>
   
   <div class="dungeon-body">
@@ -11,10 +13,10 @@
           {% if cell == 1 %}
             <div class="dungeon-cell">
               {% set cellKey = loop.parent.index0 ~ '-' ~ loop.index0 %}
-              {% if userComputed.dungeon.iconPositions.get(cellKey) %}
-                {% set icon = userComputed.dungeon.iconPositions.get(cellKey) %}
-                <a href="{{ icon[1] }}" title="{{ icon[2] }}">
-                  <img src="/img/{{ icon[0] }}.svg" alt="{{ icon[2] }}" height="20" />
+              {% if userComputed.dungeon.iconPositions[cellKey] %}
+                {% set icon = userComputed.dungeon.iconPositions[cellKey] %}
+                <a href="{{ icon[1] }}" title="{{ icon[2] }}" class="dungeon-icon-link">
+                  <img src="/img/{{ icon[0] }}.svg" alt="{{ icon[2] }}" height="20" width="20" />
                 </a>
               {% else %}
                 <span class="empty-dungeon"></span>
