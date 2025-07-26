@@ -138,9 +138,9 @@ function countDungeonCells(dungeonGrid) {
 }
 
 // Place items in dungeon cells only
-function getPositions(items, dungeonGrid) {
-  const gridWidth = dungeonGrid[0].length;
+function placeItemsInDungeon(items, dungeonGrid) {
   const gridHeight = dungeonGrid.length;
+  const gridWidth = dungeonGrid[0].length;
   
   // Create a list of all dungeon cell coordinates
   const dungeonCells = [];
@@ -160,16 +160,16 @@ function getPositions(items, dungeonGrid) {
     items = items.slice(0, shuffledCells.length);
   }
   
-  // Create a 2D grid with all cells initialized as empty
-  const grid = Array(gridHeight).fill().map(() => Array(gridWidth).fill(0));
-  
   // Place items in the first N dungeon cells
+  const placedItems = [];
   for (let i = 0; i < Math.min(items.length, shuffledCells.length); i++) {
     const [y, x] = shuffledCells[i];
-    grid[y][x] = items[i];
+    // Add coordinates to the item
+    const itemWithCoords = [...items[i], y, x];
+    placedItems.push(itemWithCoords);
   }
   
-  return grid;
+  return placedItems;
 }
 
 const noteLabels = {
@@ -207,13 +207,13 @@ function dungeonData(data) {
   const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
   
   // Place items in dungeon cells only
-  const itemGrid = getPositions(dungeonItems, dungeonGrid);
+  const placedItems = placeItemsInDungeon(dungeonItems, dungeonGrid);
   
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);
   
   return {
-    items: itemGrid,
+    items: placedItems,
     dungeonGrid: dungeonGrid,
     legends,
   };
@@ -226,3 +226,4 @@ function userComputed(data) {
 }
 
 exports.userComputed = userComputed;
+

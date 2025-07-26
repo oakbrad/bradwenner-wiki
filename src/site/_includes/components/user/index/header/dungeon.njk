@@ -1,18 +1,25 @@
 <div id="dungeon-map">
+  <!-- Debug info -->
+  <div style="margin-bottom: 10px; font-size: 12px; color: #666;">
+    Grid size: {{ userComputed.dungeon.dungeonGrid.length }}x{{ userComputed.dungeon.dungeonGrid[0].length }}
+  </div>
+  
   <div class="dungeon-body">
-    {% for row in userComputed.dungeon.items %}
+    {% for row in userComputed.dungeon.dungeonGrid %}
       <div class="dungeon-row">
-        {% for i in range(0, row.length) %}
-          {% set isDungeon = userComputed.dungeon.dungeonGrid[loop.parent.index0][loop.index0] == 1 %}
-          {% set item = row[i] %}
-          
-          {% if isDungeon %}
+        {% for cell in row %}
+          {% if cell == 1 %}
             <div class="dungeon-cell">
-              {% if item != 0 %}
-                <a href="{{ item[1] }}" title="{{ item[2] }}">
-                  <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
-                </a>
-              {% else %}
+              {% set hasItem = false %}
+              {% for item in userComputed.dungeon.items %}
+                {% if item[0] != 0 and item[3] == loop.parent.index0 and item[4] == loop.index0 %}
+                  {% set hasItem = true %}
+                  <a href="{{ item[1] }}" title="{{ item[2] }}">
+                    <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
+                  </a>
+                {% endif %}
+              {% endfor %}
+              {% if not hasItem %}
                 <span class="empty-dungeon"></span>
               {% endif %}
             </div>
@@ -33,3 +40,4 @@
     {% endfor %}
   </div>
 </div>
+
