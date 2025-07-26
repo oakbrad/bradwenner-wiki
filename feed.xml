@@ -3,14 +3,14 @@
     <title>brad.quest</title>
     <link href="https://brad.quest/feed.xml" rel="self" />
     <link href="https://brad.quest" />
-    <updated>2025-07-26T02:49:02Z</updated>
+    <updated>2025-07-26T20:21:45Z</updated>
     <id>https://brad.quest</id>
         <entry>
             <title>
                 Useful Linux Terminal
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/tech/useful-linux-terminal/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#linux&quot;&gt;#linux&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#cli&quot;&gt;#cli&lt;/a&gt;&lt;/p&gt;
@@ -73,7 +73,7 @@ nano $_
                 On AI &amp; Art
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/tech/on-ai-and-art/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tech&quot;&gt;#tech&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ai&quot;&gt;#ai&lt;/a&gt;&lt;/p&gt;
@@ -105,7 +105,7 @@ nano $_
                 Javascript for Artists
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/tech/js-for-artists/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#webdev&quot;&gt;#webdev&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#programming&quot;&gt;#programming&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reference&quot;&gt;#reference&lt;/a&gt;&lt;/p&gt;
@@ -129,10 +129,73 @@ nano $_
         </entry>
         <entry>
             <title>
+                Gridfinity
+                
+            </title>
+            <updated>2025-07-26T20:21:33Z</updated>
+            <id>https://brad.quest/tech/gridfinity-in-the-studio/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#3dprinting&quot;&gt;#3dprinting&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#studio&quot;&gt;#studio&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#art&quot;&gt;#art&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#tools&quot;&gt;#tools&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#diy&quot;&gt;#diy&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!attention] WIP&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://gridfinity.xyz/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gridfinity&lt;/a&gt; is a &lt;a href=&quot;https://www.printables.com/search/models?ctx=models&amp;amp;q=gridfinity&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;popular&lt;/a&gt;, &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;printable&lt;/a&gt; organizer system based on an open source &lt;a href=&quot;https://gridfinity.xyz/specification/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;spec&lt;/a&gt; of &lt;code&gt;42x42x7mm&lt;/code&gt; boxes by &lt;a href=&quot;https://www.youtube.com/c/ZackFreedman&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Zach Freedman&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;gridfinity-basics&quot; tabindex=&quot;-1&quot;&gt;Gridfinity Basics&lt;/h1&gt;
+&lt;h2 id=&quot;baseplates&quot; tabindex=&quot;-1&quot;&gt;Baseplates&lt;/h2&gt;
+&lt;p&gt;I use two different baseplates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.printables.com/model/250550-gridfinity-magnet-light-baseplate&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Magnet-Light Baseplates&lt;/a&gt; sturdy &amp;amp; reasonable print time that retains the magnet/screw holes&lt;/li&gt;
+&lt;li&gt;Ultralight Baseplates are very fast to print &amp;amp; best where vertical space is limited (ie. drawers)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When butting baseplates together into a larger grid, I find it helpful to run &lt;a href=&quot;https://amzn.to/46t4ecl&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;a deburring tool&lt;/a&gt; around the outer edges.&lt;/p&gt;
+&lt;h2 id=&quot;bins&quot; tabindex=&quot;-1&quot;&gt;Bins&lt;/h2&gt;
+&lt;p&gt;A few notable improvements on Zach&#39;s original collection of bins.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://thangs.com/designer/ImprovedByDesign/3d-model/Corrugated%2520Gridfinity%2520Light%2520Bins%2520%2528No%2520vase%2520mode%2529-1091242&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Corrugated Light Bins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;transport-trays&quot; tabindex=&quot;-1&quot;&gt;Transport Trays&lt;/h2&gt;
+&lt;p&gt;An essential piece of organization for grouping bins by project so they can be moved from storage to workbench.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://thangs.com/designer/atucom/3d-model/Gridfinity%2520Transport%2520Tray-65965&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Transport Trays&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;parametric-gridfinity&quot; tabindex=&quot;-1&quot;&gt;Parametric Gridfinity&lt;/h1&gt;
+&lt;p&gt;Tools for generating bins, bases, and accessories.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.ostat.com/docs/openscad/gridfinity-extended&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gridfinity Extended&lt;/a&gt; and &lt;a href=&quot;https://github.com/kennetek/gridfinity-rebuilt-openscad&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gridfinity Rebuilt&lt;/a&gt; are both &lt;a href=&quot;https://openscad.org/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;OpenSCAD&lt;/a&gt; implementations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://outline.georgs.lv/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gridfinity toolbox from photo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gridfinity.perplexinglabs.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gridfinity Generator&lt;/a&gt; by Perplexing Labs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gridfinitygenerator.com/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gridfinity Box, Baseplate, and Cutout Generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gridfinity.bouwens.co/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Gridfinity Creator&lt;/a&gt;&lt;br /&gt;
+There is also a Gridfinity &lt;a href=&quot;https://apps.autodesk.com/FUSION/en/Detail/Index?id=7197558650811789&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Fusion360 App&lt;/a&gt; and the python library &lt;a href=&quot;https://github.com/michaelgale/cq-gridfinity&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;cq-gridfinity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+            </content>
+            <link href="https://brad.quest/tech/gridfinity-in-the-studio/" />
+        </entry>
+        <entry>
+            <title>
+                The King in Yellow by Robert Chambers
+                
+            </title>
+            <updated>2025-07-26T20:21:33Z</updated>
+            <id>https://brad.quest/log/books/the-king-in-yellow-by-robert-chambers/</id>
+            <content type="html">
+                &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#log&quot;&gt;#log&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#fiction&quot;&gt;#fiction&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#read2025&quot;&gt;#read2025&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#fantasy&quot;&gt;#fantasy&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#horror&quot;&gt;#horror&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;em-a-href-https-library-brads-house-index-php-page-13-and-amp-id-832-cover-target-blank-class-external-link-the-king-in-yellow-a-em-by-robert-w-chambers&quot; tabindex=&quot;-1&quot;&gt;&lt;em&gt;&lt;a href=&quot;https://library.brads.house/index.php?page=13&amp;amp;id=832#cover&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;The King in Yellow&lt;/a&gt;&lt;/em&gt; by Robert W Chambers&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Finished:&lt;/strong&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-26&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Rating:&lt;/strong&gt; ⭐⭐⭐&lt;br /&gt;
+&lt;strong&gt;Thoughts:&lt;/strong&gt; Stylistically (and chronologically) halfway between Poe and Lovecraft, a collection of short stories about a forbidden play whose second act drives people mad. The first story, &lt;em&gt;&amp;quot;The Repairer of Reputations&amp;quot;&lt;/em&gt;, was the strongest and then they get less supernatural (and less interesting) as the book progresses.&lt;/p&gt;
+
+            </content>
+            <link href="https://brad.quest/log/books/the-king-in-yellow-by-robert-chambers/" />
+        </entry>
+        <entry>
+            <title>
                 On Writing by Stephen King
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/log/books/on-writing-by-stephen-king/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#log&quot;&gt;#log&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#writing&quot;&gt;#writing&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nonfiction&quot;&gt;#nonfiction&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#read2025&quot;&gt;#read2025&lt;/a&gt;&lt;/p&gt;
@@ -183,14 +246,14 @@ nano $_
                 Dungeon Crawler Carl by Matt Dinniman
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/log/books/dungeon-crawler-carl-by-matt-dinniman/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#log&quot;&gt;#log&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#read2025&quot;&gt;#read2025&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#fiction&quot;&gt;#fiction&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#fantasy&quot;&gt;#fantasy&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#scifi&quot;&gt;#scifi&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#DNF&quot;&gt;#DNF&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;a-href-https-library-brads-house-index-php-page-13-and-amp-id-834-cover-target-blank-class-external-link-em-dungeon-crawler-carl-em-a-by-matt-dinniman&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://library.brads.house/index.php?page=13&amp;amp;id=834#cover&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;&lt;em&gt;Dungeon Crawler Carl&lt;/em&gt;&lt;/a&gt; by Matt Dinniman&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Finished:&lt;/strong&gt; DNF&lt;br /&gt;
 &lt;strong&gt;Rating:&lt;/strong&gt; ⭐&lt;br /&gt;
-&lt;strong&gt;Thoughts:&lt;/strong&gt; Quite possibly the worst thing I have ever attempted to read. Made it 30% in and I simply don&#39;t want to read pages of exposition on video game mechanics, lootboxes, or popup achievements - all drenched in the worst kind of juvenile &amp;quot;edgy&amp;quot; humor. One dimensional character who exists only as set dressing for an uninspired re-hash of The Hunger Games. I&#39;m baffled by how widely recommended this series is or that this is supposedly the best of so-called &lt;em&gt;&amp;quot;LitRPG&amp;quot;&lt;/em&gt;.  I enjoy a pulpy fantasy book every once in a while, but this is simply bad.&lt;/p&gt;
+&lt;strong&gt;Thoughts:&lt;/strong&gt; Quite possibly the worst thing I have ever attempted to read. Made it 30% in and I simply don&#39;t want to read pages of exposition on video game mechanics, lootboxes, or popup achievements - all drenched in the worst kind of juvenile &amp;quot;edgy&amp;quot; humor. One dimensional character who exists only as set dressing for an uninspired re-hash of &lt;em&gt;The Hunger Games&lt;/em&gt;. I&#39;m baffled by how widely recommended this series is or that this is supposedly the best of so-called &amp;quot;LitRPG&amp;quot;. I enjoy a pulpy fantasy book every once in a while, but this is simply bad.&lt;/p&gt;
 
             </content>
             <link href="https://brad.quest/log/books/dungeon-crawler-carl-by-matt-dinniman/" />
@@ -200,7 +263,7 @@ nano $_
                 Black Earth by Timothy Snyder
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/log/books/black-earth-by-timothy-snyder/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#books&quot;&gt;#books&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#reading&quot;&gt;#reading&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#log&quot;&gt;#log&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#nonfiction&quot;&gt;#nonfiction&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#antifascism&quot;&gt;#antifascism&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#read2025&quot;&gt;#read2025&lt;/a&gt;&lt;/p&gt;
@@ -228,7 +291,7 @@ nano $_
                 brad.quest
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/</id>
             <content type="html">
                 &lt;p&gt;An uncultivated &lt;a href=&quot;https://cagrimmett.com/2020/11/08/what-are-digital-gardens/&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;digital &lt;s&gt;garden&lt;/s&gt; dungeon&lt;/a&gt;.&lt;/p&gt;
@@ -244,7 +307,7 @@ nano $_
 &lt;hr /&gt;
 &lt;h5 id=&quot;todo&quot; tabindex=&quot;-1&quot;&gt;todo&lt;/h5&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;Gridfinity&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt; &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;2&quot; href=&quot;https://brad.quest/tech/gridfinity-in-the-studio/&quot;&gt;Gridfinity&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_1&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_1&quot;&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;Spotify isn&#39;t Punk&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
 &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_2&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_2&quot;&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;Screen Printing&lt;/a&gt; press sketches &amp;amp; notes&lt;/label&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -257,7 +320,7 @@ nano $_
                 Elsewhere
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/elsewhere/</id>
             <content type="html">
                 &lt;p&gt;Find me elsewhere on the internet, or contact me directly at &lt;a href=&quot;mailto:brad@bradwenner.com&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;brad@bradwenner.com&lt;/a&gt;&lt;/p&gt;
@@ -343,7 +406,7 @@ UwDrA5iAHHUf8w==
                 Taco Log
                 
             </title>
-            <updated>2025-07-26T02:48:51Z</updated>
+            <updated>2025-07-26T20:21:33Z</updated>
             <id>https://brad.quest/log/tacos/</id>
             <content type="html">
                 &lt;p&gt;&lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#oakland&quot;&gt;#oakland&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#restaurants&quot;&gt;#restaurants&lt;/a&gt; &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#food&quot;&gt;#food&lt;/a&gt;&lt;/p&gt;
@@ -359,6 +422,14 @@ UwDrA5iAHHUf8w==
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/Pasted%20image%2020250726132006.png&quot; alt=&quot;Pasted image 20250726132006.png&quot; /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/tacos-al-pastor-estilo-puebla-oakland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Tacos al Pastor Estilo Puebla&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Al pastor de trompo&lt;/td&gt;
+&lt;td&gt;&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://brad.quest/404&quot; target=&quot;&quot;&gt;2025-07-26&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Excellent, smoky al pastor with pineapple. Hard to beat&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$15&lt;br /&gt;💵&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;https://brad.quest/img/user/System/Uploads/PXL_20250723_211502537.jpg&quot; alt=&quot;PXL_20250723_211502537.jpg&quot; /&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;https://www.yelp.com/biz/mariscos-el-poblano-oakland&quot; target=&quot;_blank&quot; class=&quot;external-link&quot;&gt;Mariscos el Poblano&lt;/a&gt;&lt;/td&gt;
