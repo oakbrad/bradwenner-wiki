@@ -1,132 +1,130 @@
+/* Custom styles for the site */
+
+/* Adjust the width of the content area */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dark mode styles */
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+  &.theme-dark {
     
     /* Dungeon visualization styles */
     #dungeon-map {
-      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+      flex-direction: column;
       
       .dungeon-body {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
-        background-color: #1a1a1a; /* Darker background for dungeon feel */
-        border: 2px solid #333; /* Darker border */
-        border-radius: 4px;
-        padding: 10px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-        background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23333' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M1 0h2v2H1V0zm4 0h2v2H5V0zm4 0h2v2H9V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zM1 4h2v2H1V4zm4 0h2v2H5V4zm4 0h2v2H9V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zM1 8h2v2H1V8zm4 0h2v2H5V8zm4 0h2v2H9V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zM1 12h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM1 16h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z'/%3E%3C/g%3E%3C/svg%3E");
-        background-size: 26px 26px; /* Match grid size to cell size + margin */
-      }
-      
-      .dungeon-row {
-        display: flex;
-        height: 26px; /* Fixed height to match grid */
-      }
-      
-      .dungeon-cell {
-        width: 24px;
-        height: 24px;
-        margin: 1px;
-        background-color: #3a3a3a; /* Darker cell background */
-        border-radius: 2px;
+        margin: 24px;
+        align-items: center;
         position: relative;
-        transition: all 0.2s ease;
         
-        &:hover {
-          background-color: #4a4a4a; /* Slightly lighter on hover */
-          transform: scale(1.05);
-          z-index: 2;
-          box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Glow effect on hover */
+        /* Grid background */
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: 
+            linear-gradient(to right, var(--text-muted) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--text-muted) 1px, transparent 1px);
+          background-position: 0 0;
+          background-size: 26px 26px; /* Adjusted to match cell size + margin */
+          opacity: 0.1;
+          z-index: -1;
+          border: 1px solid var(--text-muted);
+          border-radius: 4px;
         }
         
-        /* Stone texture for cells */
-        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23444' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h4v4H0V0zm4 4h4v4H4V4zm4-4h4v4H8V0zm8 0h4v4h-4V0zm-4 4h4v4h-4V4zm0-4h4v4h-4V0zm8 8h4v4h-4V8zm-8 0h4v4h-4V8zm8-8h4v4h-4V0z'/%3E%3C/g%3E%3C/svg%3E");
-      }
-      
-      .empty-cell {
-        width: 24px;
-        height: 24px;
-        margin: 1px;
-        background-color: transparent;
-      }
-      
-      .dungeon-icon-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        z-index: 1;
+        @media (max-width: 575.99px) {
+          transform: scale(0.7);
+        }
         
-        img {
-          filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.7)); /* Add glow to icons */
-          transition: all 0.3s ease;
+        .dungeon-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 26px; /* Fixed height to ensure consistent rows */
           
-          &:hover {
-            transform: scale(1.2);
-            filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9)); /* Enhanced glow on hover */
+          .dungeon-cell, .empty-cell {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1px;
+            box-sizing: border-box;
+          }
+          
+          .dungeon-cell {
+            background-color: rgba(128, 128, 128, 0.6); // Gray background for dungeon cells
+            border-radius: 2px;
+            position: relative; /* Ensure proper positioning context */
+            
+            a.dungeon-icon-link {
+              cursor: pointer;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 2; /* Ensure icons are above the cell background */
+              
+              img {
+                width: 19px;
+                height: 19px;
+                object-fit: contain;
+                transition: transform 0.2s ease;
+                display: block; /* Ensure proper display */
+              }
+              
+              img:hover {
+                transform: scale(1.25);
+              }
+            }
+            
+            .empty-dungeon {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          
+          .empty-cell {
+            background-color: transparent; // Transparent background for non-dungeon cells
           }
         }
       }
       
       .dungeon-legends {
-        margin-top: 15px;
+        margin-top: 10px;
         display: flex;
-        flex-wrap: wrap;
         gap: 10px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+        color: var(--text-muted);
         
         .dungeon-legend {
           display: flex;
           align-items: center;
-          background-color: #2a2a2a; /* Darker background for legends */
-          padding: 5px 10px;
-          border-radius: 4px;
-          font-size: 0.9em;
-          
-          img {
-            margin-right: 5px;
-            filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.5)); /* Subtle glow */
-          }
+          gap: 5px;
+        }
+        
+        img {
+          height: 1.5em;
+          width: auto;
         }
       }
     }
-    
-    /* Note icon styles */
-    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="stone"]::before,
-    body.filetree-note-icon .filename[data-note-icon="stone"]::before,
-    body.links-note-icon .internal-link[data-note-icon="stone"]::before,
-    body.backlinks-note-icon .backlink[data-note-icon="stone"]::before {
-      background-image: url(/img/stone.svg);
-    }
-    
-    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="signpost"]::before,
-    body.filetree-note-icon .filename[data-note-icon="signpost"]::before,
-    body.links-note-icon .internal-link[data-note-icon="signpost"]::before,
-    body.backlinks-note-icon .backlink[data-note-icon="signpost"]::before {
-      background-image: url(/img/signpost.svg);
-    }
-    
-    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="withered"]::before,
-    body.filetree-note-icon .filename[data-note-icon="withered"]::before,
-    body.links-note-icon .internal-link[data-note-icon="withered"]::before,
-    body.backlinks-note-icon .backlink[data-note-icon="withered"]::before {
-      background-image: url(/img/withered.svg);
-    }
-    
-    body.title-note-icon .cm-s-obsidian>header>h1[data-note-icon="chest"]::before,
-    body.filetree-note-icon .filename[data-note-icon="chest"]::before,
-    body.links-note-icon .internal-link[data-note-icon="chest"]::before,
-    body.backlinks-note-icon .backlink[data-note-icon="chest"]::before {
-      background-image: url(/img/chest.svg);
-    }
+  }
 }
+
