@@ -17,12 +17,14 @@ body {
       align-items: center;
       padding-bottom: 10px;
       flex-direction: column;
+      width: 100%;
       
       .dungeon-body {
         display: inline-flex;
         flex-direction: column;
         margin: 24px;
         align-items: center;
+        justify-content: center;
         position: relative;
         
         /* Grid background */
@@ -52,6 +54,7 @@ body {
           display: flex;
           flex-direction: row;
           align-items: center;
+          justify-content: center; /* Center cells horizontally */
           height: 26px; /* Fixed height to ensure consistent rows */
           
           .dungeon-cell, .empty-cell {
@@ -65,7 +68,7 @@ body {
           }
           
           .dungeon-cell {
-            background-color: rgba(128, 128, 128, 0.6); // Gray background for dungeon cells
+            background-color: rgba(128, 128, 128, 0.2); // Gray background with 0.2 opacity
             border-radius: 2px;
             position: relative; /* Ensure proper positioning context */
             
@@ -127,4 +130,3 @@ body {
     }
   }
 }
-
