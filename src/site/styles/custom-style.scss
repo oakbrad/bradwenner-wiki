@@ -32,12 +32,15 @@ body {
           background-image: 
             linear-gradient(to right, var(--text-muted) 1px, transparent 1px),
             linear-gradient(to bottom, var(--text-muted) 1px, transparent 1px);
-          background-position: 0 0;
+          /* Offset the background grid to center cells within grid lines */
+          background-position: 12px 12px; /* Half of cell size to center cells in grid lines */
           background-size: 24px 24px;
           opacity: 0.1;
           z-index: -1;
           border: 1px solid var(--text-muted);
           border-radius: 4px;
+          /* Add padding to ensure grid lines are visible around all cells */
+          padding: 12px;
         }
         
         @media (max-width: 575.99px) {
