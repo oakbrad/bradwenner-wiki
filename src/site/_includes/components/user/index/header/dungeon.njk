@@ -2,21 +2,8 @@
   <!-- Debug info -->
   <div style="margin-bottom: 10px; font-size: 12px; color: #666;">
     Grid size: {{ userComputed.dungeon.dungeonGrid.length }}x{{ userComputed.dungeon.dungeonGrid[0].length }}
-    <!-- Add debug info for icon positions -->
     | Icons: {{ userComputed.dungeon.dungeonItems.length }}
     | Icon positions: {{ userComputed.dungeon.iconPositionsArray.length }}
-  </div>
-  
-  <!-- Debug: Display first few icon positions -->
-  <div style="margin-bottom: 10px; font-size: 12px; color: #666; max-height: 100px; overflow: auto;">
-    {% if userComputed.dungeon.iconPositionsArray.length > 0 %}
-      {% for pos in userComputed.dungeon.iconPositionsArray.slice(0, 5) %}
-        ({{ pos.y }},{{ pos.x }}): {{ pos.icon[0] }}, 
-      {% endfor %}
-      {% if userComputed.dungeon.iconPositionsArray.length > 5 %}...{% endif %}
-    {% else %}
-      No icon positions available
-    {% endif %}
   </div>
   
   <div class="dungeon-body">
@@ -42,11 +29,12 @@
   </div>
   
   <div class="dungeon-legends">
-    {% for count in userComputed.dungeon.legends %}
-      <div class="legend-item">
-        <img src="/img/{{ count.icon }}.svg" alt="{{ count.label }}" />
-        {{count.count}} {% if count.count > 1 %}{% if count.plural %}{{count.plural}}{% else %}{{count.label}}s{% endif %}{% else %}{{count.label}}{% endif %}
+    {% for legend in userComputed.dungeon.legends %}
+      <div class="dungeon-legend">
+        <img src="/img/{{ legend.icon }}.svg" alt="{{ legend.icon }}" height="16" width="16" />
+        <span>{{ legend.label }} ({{ legend.count }})</span>
       </div>
     {% endfor %}
   </div>
 </div>
+

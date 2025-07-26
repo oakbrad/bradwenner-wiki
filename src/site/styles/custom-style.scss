@@ -13,117 +13,90 @@ body {
     
     /* Dungeon visualization styles */
     #dungeon-map {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 10px;
-      flex-direction: column;
+      margin: 20px 0;
       
       .dungeon-body {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
-        margin: 24px;
-        align-items: center;
+        background-color: #1a1a1a; /* Darker background for dungeon feel */
+        border: 2px solid #333; /* Darker border */
+        border-radius: 4px;
+        padding: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+        background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23333' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M1 0h2v2H1V0zm4 0h2v2H5V0zm4 0h2v2H9V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zm4 0h2v2h-2V0zM1 4h2v2H1V4zm4 0h2v2H5V4zm4 0h2v2H9V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zM1 8h2v2H1V8zm4 0h2v2H5V8zm4 0h2v2H9V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8zM1 12h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM1 16h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: 26px 26px; /* Match grid size to cell size + margin */
+      }
+      
+      .dungeon-row {
+        display: flex;
+        height: 26px; /* Fixed height to match grid */
+      }
+      
+      .dungeon-cell {
+        width: 24px;
+        height: 24px;
+        margin: 1px;
+        background-color: #3a3a3a; /* Darker cell background */
+        border-radius: 2px;
         position: relative;
-        transform: scale(0.9); // Adjusted scale for larger grid
+        transition: all 0.2s ease;
         
-        /* Grid background */
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-image: 
-            linear-gradient(to right, var(--text-muted) 1px, transparent 1px),
-            linear-gradient(to bottom, var(--text-muted) 1px, transparent 1px);
-          background-position: 0 0;
-          background-size: 26px 26px; /* Adjusted to match cell size + margin */
-          opacity: 0.1;
-          z-index: -1;
-          border: 1px solid var(--text-muted);
-          border-radius: 4px;
+        &:hover {
+          background-color: #4a4a4a; /* Slightly lighter on hover */
+          transform: scale(1.05);
+          z-index: 2;
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Glow effect on hover */
         }
         
-        @media (max-width: 575.99px) {
-          transform: scale(0.7);
-        }
+        /* Stone texture for cells */
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23444' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h4v4H0V0zm4 4h4v4H4V4zm4-4h4v4H8V0zm8 0h4v4h-4V0zm-4 4h4v4h-4V4zm0-4h4v4h-4V0zm8 8h4v4h-4V8zm-8 0h4v4h-4V8zm8-8h4v4h-4V0z'/%3E%3C/g%3E%3C/svg%3E");
+      }
+      
+      .empty-cell {
+        width: 24px;
+        height: 24px;
+        margin: 1px;
+        background-color: transparent;
+      }
+      
+      .dungeon-icon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
         
-        .dungeon-row {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          height: 26px; /* Fixed height to ensure consistent rows */
+        img {
+          filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.7)); /* Add glow to icons */
+          transition: all 0.3s ease;
           
-          .dungeon-cell, .empty-cell {
-            width: 24px;
-            height: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 1px;
-            box-sizing: border-box;
-          }
-          
-          .dungeon-cell {
-            background-color: rgba(128, 128, 128, 0.6); // Gray background for dungeon cells
-            border-radius: 2px;
-            position: relative; /* Ensure proper positioning context */
-            
-            a.dungeon-icon-link {
-              cursor: pointer;
-              width: 100%;
-              height: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 2; /* Ensure icons are above the cell background */
-              
-              img {
-                width: 19px;
-                height: 19px;
-                object-fit: contain;
-                transition: transform 0.2s ease;
-                display: block; /* Ensure proper display */
-              }
-              
-              img:hover {
-                transform: scale(1.25);
-              }
-            }
-            
-            .empty-dungeon {
-              width: 100%;
-              height: 100%;
-            }
-          }
-          
-          .empty-cell {
-            background-color: transparent; // Transparent background for non-dungeon cells
+          &:hover {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9)); /* Enhanced glow on hover */
           }
         }
       }
       
       .dungeon-legends {
-        margin-top: 10px;
+        margin-top: 15px;
         display: flex;
-        gap: 10px;
-        width: 100%;
-        justify-content: center;
         flex-wrap: wrap;
-        font-size: 0.8em;
-        color: var(--text-muted);
+        gap: 10px;
         
-        .legend-item {
+        .dungeon-legend {
           display: flex;
           align-items: center;
-          gap: 5px;
-        }
-        
-        img {
-          height: 1.5em;
-          width: auto;
+          background-color: #2a2a2a; /* Darker background for legends */
+          padding: 5px 10px;
+          border-radius: 4px;
+          font-size: 0.9em;
+          
+          img {
+            margin-right: 5px;
+            filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.5)); /* Subtle glow */
+          }
         }
       }
     }
