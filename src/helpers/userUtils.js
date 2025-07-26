@@ -251,21 +251,23 @@ function dungeonData(data) {
   // For small numbers of notes, create a much smaller dungeon
   const itemCount = dungeonItems.length || 1;
   
-  // Tiered approach for minimum sizes based on item count
+  // Tiered approach for minimum sizes based on item count - with smaller sizes
   let minSize;
-  if (itemCount <= 5) {
-    minSize = 8;  // Very small dungeon for 1-5 items
-  } else if (itemCount <= 10) {
-    minSize = 12; // Small dungeon for 6-10 items
-  } else if (itemCount <= 20) {
-    minSize = 16; // Medium dungeon for 11-20 items
+  if (itemCount <= 3) {
+    minSize = 6;  // Tiny dungeon for 1-3 items
+  } else if (itemCount <= 7) {
+    minSize = 8;  // Very small dungeon for 4-7 items
+  } else if (itemCount <= 15) {
+    minSize = 10; // Small dungeon for 8-15 items
+  } else if (itemCount <= 25) {
+    minSize = 14; // Medium dungeon for 16-25 items
   } else {
-    minSize = 20; // Larger dungeon for 21+ items
+    minSize = 18; // Larger dungeon for 26+ items
   }
   
-  // Calculate base size using square root with a scaling factor
-  // The scaling factor increases logarithmically with the number of items
-  const scalingFactor = 1.5 + 0.25 * Math.log10(itemCount);
+  // Calculate base size using square root with a reduced scaling factor
+  // The scaling factor increases logarithmically but starts smaller
+  const scalingFactor = 1.2 + 0.2 * Math.log10(itemCount);
   const baseSize = Math.ceil(Math.sqrt(itemCount) * scalingFactor);
   
   // Use the larger of the minimum size or calculated base size
