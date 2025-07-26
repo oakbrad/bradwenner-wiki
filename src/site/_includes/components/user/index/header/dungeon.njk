@@ -2,6 +2,10 @@
   <!-- Debug info -->
   <div style="margin-bottom: 10px; font-size: 12px; color: #666;">
     Grid size: {{ userComputed.dungeon.dungeonGrid.length }}x{{ userComputed.dungeon.dungeonGrid[0].length }}
+    <br>
+    Items: {{ userComputed.dungeon.items.length }}
+    <br>
+    First item: {% if userComputed.dungeon.items.length > 0 %}{{ userComputed.dungeon.items[0] | dump }}{% else %}None{% endif %}
   </div>
   
   <div class="dungeon-body">
@@ -12,7 +16,7 @@
             <div class="dungeon-cell">
               {% set hasItem = false %}
               {% for item in userComputed.dungeon.items %}
-                {% if item[0] != 0 and item[3] == loop.parent.index0 and item[4] == loop.index0 %}
+                {% if item[4] == loop.parent.index0 and item[5] == loop.index0 %}
                   {% set hasItem = true %}
                   <a href="{{ item[1] }}" title="{{ item[2] }}">
                     <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
