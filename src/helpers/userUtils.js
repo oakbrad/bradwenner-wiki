@@ -126,58 +126,6 @@ function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 5) {
   return grid;
 }
 
-// Count the number of dungeon cells in the grid
-function countDungeonCells(dungeonGrid) {
-  let count = 0;
-  for (let row of dungeonGrid) {
-    for (let cell of row) {
-      if (cell === 1) count++;
-    }
-  }
-  return count;
-}
-
-// Place items in dungeon cells only
-function placeItemsInDungeon(items, dungeonGrid) {
-  const gridHeight = dungeonGrid.length;
-  const gridWidth = dungeonGrid[0].length;
-  
-  // Create a list of all dungeon cell coordinates
-  const dungeonCells = [];
-  for (let y = 0; y < gridHeight; y++) {
-    for (let x = 0; x < gridWidth; x++) {
-      if (dungeonGrid[y][x] === 1) {
-        dungeonCells.push({y, x});
-      }
-    }
-  }
-  
-  // Shuffle the dungeon cells
-  const shuffledCells = shuffle([...dungeonCells]);
-  
-  // If we have more items than dungeon cells, truncate the items list
-  if (items.length > shuffledCells.length) {
-    items = items.slice(0, shuffledCells.length);
-  }
-  
-  // Place items in the first N dungeon cells
-  const placedItems = [];
-  for (let i = 0; i < Math.min(items.length, shuffledCells.length); i++) {
-    const {y, x} = shuffledCells[i];
-    // Create an object with all the item data and coordinates
-    placedItems.push({
-      icon: items[i][0],
-      url: items[i][1],
-      title: items[i][2],
-      height: items[i][3],
-      y: y,
-      x: x
-    });
-  }
-  
-  return placedItems;
-}
-
 const noteLabels = {
   "tree-1": { label: "Scroll", count: 0, icon: "tree-1" },
   "tree-2": { label: "Tome", count: 0, icon: "tree-2" },
@@ -212,14 +160,10 @@ function dungeonData(data) {
   const gridSize = Math.max(20, Math.ceil(Math.sqrt(dungeonItems.length) * 2)); // Larger grid
   const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
   
-  // Place items in dungeon cells only
-  const placedItems = placeItemsInDungeon(dungeonItems, dungeonGrid);
-  
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);
   
   return {
-    items: placedItems,
     dungeonGrid: dungeonGrid,
     legends,
   };

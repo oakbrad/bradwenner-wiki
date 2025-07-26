@@ -2,83 +2,20 @@
   <!-- Debug info -->
   <div style="margin-bottom: 10px; font-size: 12px; color: #666;">
     Grid size: {{ userComputed.dungeon.dungeonGrid.length }}x{{ userComputed.dungeon.dungeonGrid[0].length }}
-    <br>
-    Items: {{ userComputed.dungeon.items.length }}
-    <br>
-    First item: {% if userComputed.dungeon.items.length > 0 %}{{ userComputed.dungeon.items[0] | dump }}{% else %}None{% endif %}
-    <br>
-    <!-- Show all item coordinates -->
-    Item coordinates: 
-    {% for item in userComputed.dungeon.items %}
-      ({{ item.y }},{{ item.x }}){% if not loop.last %}, {% endif %}
-    {% endfor %}
   </div>
   
   <div class="dungeon-body">
     {% for row in userComputed.dungeon.dungeonGrid %}
       <div class="dungeon-row">
         {% for cell in row %}
-          {% set currentY = loop.parent.index0 %}
-          {% set currentX = loop.index0 %}
-          
           {% if cell == 1 %}
-            <div class="dungeon-cell" data-row="{{ currentY }}" data-col="{{ currentX }}">
-              {% set hasItem = false %}
-              
-              <!-- Direct coordinate check for debugging -->
-              {% if currentY == 7 and currentX == 0 %}
-                <span style="color: blue; font-weight: bold;">COORD 7,0</span>
-              {% endif %}
-              {% if currentY == 8 and currentX == 6 %}
-                <span style="color: blue; font-weight: bold;">COORD 8,6</span>
-              {% endif %}
-              
-              {% for item in userComputed.dungeon.items %}
-                {% if item.y == currentY and item.x == currentX %}
-                  {% set hasItem = true %}
-                  <a href="{{ item.url }}" title="{{ item.title }}" style="color: red; font-weight: bold;">
-                    <img src="/img/{{ item.icon }}.svg" alt="{{ item.title }}" height="20" />
-                    ITEM HERE
-                  </a>
-                {% endif %}
-              {% endfor %}
-              
-              {% if not hasItem %}
-                <span class="empty-dungeon"></span>
-              {% endif %}
+            <div class="dungeon-cell">
+              <span class="empty-dungeon"></span>
             </div>
           {% else %}
             <div class="empty-cell"></div>
           {% endif %}
         {% endfor %}
-      </div>
-    {% endfor %}
-  </div>
-  
-  <!-- Debug: Show all cells with their coordinates -->
-  <div style="margin-top: 20px; font-size: 12px; color: #666;">
-    <h4>Cell Coordinates (first 10 rows only):</h4>
-    {% for row in userComputed.dungeon.dungeonGrid.slice(0, 10) %}
-      <div>
-        {% for cell in row.slice(0, 10) %}
-          {% if cell == 1 %}
-            [{{ loop.parent.index0 }},{{ loop.index0 }}]
-          {% else %}
-            ({{ loop.parent.index0 }},{{ loop.index0 }})
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endfor %}
-  </div>
-  
-  <!-- Debug: Direct item check -->
-  <div style="margin-top: 20px; font-size: 12px; color: #666;">
-    <h4>Direct Item Check:</h4>
-    {% for item in userComputed.dungeon.items %}
-      <div>
-        Item at ({{ item.y }},{{ item.x }}): {{ item.icon }} - {{ item.title }}
-        <br>
-        Is dungeon cell? {{ userComputed.dungeon.dungeonGrid[item.y][item.x] == 1 ? 'YES' : 'NO' }}
       </div>
     {% endfor %}
   </div>
