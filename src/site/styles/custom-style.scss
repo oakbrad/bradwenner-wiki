@@ -25,7 +25,7 @@ body {
         margin: 24px;
         align-items: center;
         position: relative;
-        transform: scale(1.2);
+        transform: scale(1.0); // Adjusted scale for larger grid
         
         /* Grid background */
         &::before {
@@ -47,7 +47,7 @@ body {
         }
         
         @media (max-width: 575.99px) {
-          transform: scale(1.08);
+          transform: scale(0.9);
         }
         
         .dungeon-row {
@@ -55,7 +55,7 @@ body {
           flex-direction: row;
           align-items: center;
           
-          a, .empty {
+          .dungeon-cell, .empty-cell {
             width: 24px;
             height: 24px;
             display: flex;
@@ -65,23 +65,38 @@ body {
             box-sizing: border-box;
           }
           
-          a {
-            cursor: pointer;
+          .dungeon-cell {
+            background-color: rgba(128, 128, 128, 0.3); // Gray background for dungeon cells
+            border-radius: 2px;
             
-            img {
-              width: 19px;
-              height: 19px;
-              object-fit: contain;
-              transition: transform 0.2s ease;
+            a {
+              cursor: pointer;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+              img {
+                width: 19px;
+                height: 19px;
+                object-fit: contain;
+                transition: transform 0.2s ease;
+              }
+              
+              img:hover {
+                transform: scale(1.25);
+              }
             }
             
-            img:hover {
-              transform: scale(1.25);
+            .empty-dungeon {
+              width: 100%;
+              height: 100%;
             }
           }
           
-          .empty {
-            cursor: inherit;
+          .empty-cell {
+            background-color: transparent; // Transparent background for non-dungeon cells
           }
         }
       }

@@ -2,13 +2,22 @@
   <div class="dungeon-body">
     {% for row in userComputed.dungeon.items %}
       <div class="dungeon-row">
-        {% for item in row %}
-          {% if item[0] == 0 %}
-            <a class="empty"></a>
+        {% for i in range(0, row.length) %}
+          {% set isDungeon = userComputed.dungeon.dungeonGrid[loop.parent.index0][loop.index0] == 1 %}
+          {% set item = row[i] %}
+          
+          {% if isDungeon %}
+            <div class="dungeon-cell">
+              {% if item %}
+                <a href="{{ item[1] }}" title="{{ item[2] }}">
+                  <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
+                </a>
+              {% else %}
+                <span class="empty-dungeon"></span>
+              {% endif %}
+            </div>
           {% else %}
-            <a href="{{ item[1] }}" title="{{ item[2] }}">
-              <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
-            </a>
+            <div class="empty-cell"></div>
           {% endif %}
         {% endfor %}
       </div>

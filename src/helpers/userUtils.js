@@ -1,4 +1,4 @@
-// Dungeon visualization feature for digital garden
+// Dungeon visualization feature for digital garden with BSP dungeon generation
 function shuffle(a) {
   var j, x, i;
   for (i = a.length - 1; i > 0; i--) {
@@ -19,17 +19,157 @@ function sliceIntoChunks(arr, chunkSize) {
   return res;
 }
 
-function getPositions(items) {
-  let minInRow = Math.floor(Math.sqrt(items.length));
-  let maxInRow = Math.ceil(Math.sqrt(items.length));
-  if (minInRow < maxInRow) {
-    items = items.concat(
-      Array(Math.pow(maxInRow, 2) - items.length).fill([0, "", ""])
-    );
+// BSP (Binary Space Partitioning) algorithm for dungeon generation
+function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 4) {
+  // Initialize grid with all cells as non-dungeon (0)
+  let grid = Array(height).fill().map(() => Array(width).fill(0));
+  
+  // Recursive function to split spaces
+  function splitSpace(x, y, w, h, depth) {
+    // Stop recursion if we've reached max depth or the space is too small
+    if (depth >= maxDepth || w <= minRoomSize * 2 || h <= minRoomSize * 2) {
+      // Create a room in this space
+      const roomWidth = Math.max(Math.floor(w * 0.6), minRoomSize);
+      const roomHeight = Math.max(Math.floor(h * 0.6), minRoomSize);
+      const roomX = x + Math.floor((w - roomWidth) / 2);
+      const roomY = y + Math.floor((h - roomHeight) / 2);
+      
+      // Mark room cells as dungeon (1)
+      for (let i = roomY; i < roomY + roomHeight; i++) {
+        for (let j = roomX; j < roomX + roomWidth; j++) {
+          if (i >= 0 && i < height && j >= 0 && j < width) {
+            grid[i][j] = 1;
+          }
+        }
+      }
+      
+      return {
+        x: roomX,
+        y: roomY,
+        width: roomWidth,
+        height: roomHeight,
+        centerX: roomX + Math.floor(roomWidth / 2),
+        centerY: roomY + Math.floor(roomHeight / 2)
+      };
+    }
+    
+    // Decide whether to split horizontally or vertically
+    const splitHorizontally = Math.random() > 0.5;
+    
+    if (splitHorizontally) {
+      // Split horizontally
+      const splitPoint = Math.floor(h / 2) + Math.floor(Math.random() * (h / 4)) - Math.floor(h / 8);
+      const room1 = splitSpace(x, y, w, splitPoint, depth + 1);
+      const room2 = splitSpace(x, y + splitPoint, w, h - splitPoint, depth + 1);
+      
+      // Connect rooms with a corridor
+      createCorridor(room1.centerX, room1.centerY, room2.centerX, room2.centerY);
+      
+      return {
+        x: x,
+        y: y,
+        width: w,
+        height: h,
+        centerX: Math.floor((room1.centerX + room2.centerX) / 2),
+        centerY: Math.floor((room1.centerY + room2.centerY) / 2)
+      };
+    } else {
+      // Split vertically
+      const splitPoint = Math.floor(w / 2) + Math.floor(Math.random() * (w / 4)) - Math.floor(w / 8);
+      const room1 = splitSpace(x, y, splitPoint, h, depth + 1);
+      const room2 = splitSpace(x + splitPoint, y, w - splitPoint, h, depth + 1);
+      
+      // Connect rooms with a corridor
+      createCorridor(room1.centerX, room1.centerY, room2.centerX, room2.centerY);
+      
+      return {
+        x: x,
+        y: y,
+        width: w,
+        height: h,
+        centerX: Math.floor((room1.centerX + room2.centerX) / 2),
+        centerY: Math.floor((room1.centerY + room2.centerY) / 2)
+      };
+    }
   }
-  items = shuffle([...items]);
-  let levels = sliceIntoChunks(items, maxInRow);
-  return levels;
+  
+  // Function to create a corridor between two points
+  function createCorridor(x1, y1, x2, y2) {
+    // First go horizontally, then vertically
+    let currentX = x1;
+    let currentY = y1;
+    
+    // Horizontal corridor
+    while (currentX !== x2) {
+      if (currentX < x2) currentX++;
+      else currentX--;
+      
+      if (currentX >= 0 && currentX < width && currentY >= 0 && currentY < height) {
+        grid[currentY][currentX] = 1;
+      }
+    }
+    
+    // Vertical corridor
+    while (currentY !== y2) {
+      if (currentY < y2) currentY++;
+      else currentY--;
+      
+      if (currentX >= 0 && currentX < width && currentY >= 0 && currentY < height) {
+        grid[currentY][currentX] = 1;
+      }
+    }
+  }
+  
+  // Start the recursive splitting
+  splitSpace(0, 0, width, height, 0);
+  
+  return grid;
+}
+
+// Count the number of dungeon cells in the grid
+function countDungeonCells(dungeonGrid) {
+  let count = 0;
+  for (let row of dungeonGrid) {
+    for (let cell of row) {
+      if (cell === 1) count++;
+    }
+  }
+  return count;
+}
+
+// Place items in dungeon cells only
+function getPositions(items, dungeonGrid) {
+  const gridWidth = dungeonGrid[0].length;
+  const gridHeight = dungeonGrid.length;
+  
+  // Create a list of all dungeon cell coordinates
+  const dungeonCells = [];
+  for (let y = 0; y < gridHeight; y++) {
+    for (let x = 0; x < gridWidth; x++) {
+      if (dungeonGrid[y][x] === 1) {
+        dungeonCells.push([y, x]);
+      }
+    }
+  }
+  
+  // Shuffle the dungeon cells
+  const shuffledCells = shuffle([...dungeonCells]);
+  
+  // If we have more items than dungeon cells, truncate the items list
+  if (items.length > shuffledCells.length) {
+    items = items.slice(0, shuffledCells.length);
+  }
+  
+  // Create a 2D grid with all cells initialized as empty
+  const grid = Array(gridHeight).fill().map(() => Array(gridWidth).fill(null));
+  
+  // Place items in the first N dungeon cells
+  for (let i = 0; i < Math.min(items.length, shuffledCells.length); i++) {
+    const [y, x] = shuffledCells[i];
+    grid[y][x] = items[i];
+  }
+  
+  return grid;
 }
 
 const noteLabels = {
@@ -61,10 +201,20 @@ function dungeonData(data) {
     itemCounts[v] ? itemCounts[v].count++ : null;
     return [v, n.url, n.data.title || n.fileSlug, height];
   });
+  
+  // Generate a larger dungeon grid using BSP
+  const gridSize = Math.max(15, Math.ceil(Math.sqrt(dungeonItems.length) * 1.5)); // Larger grid
+  const dungeonGrid = generateBSPDungeon(gridSize, gridSize);
+  
+  // Place items in dungeon cells only
+  const itemGrid = getPositions(dungeonItems, dungeonGrid);
+  
   let legends = Object.values(itemCounts).filter((c) => c.count > 0);
   legends.sort((a, b) => b.count - a.count);
+  
   return {
-    items: getPositions(dungeonItems),
+    items: itemGrid,
+    dungeonGrid: dungeonGrid,
     legends,
   };
 }
