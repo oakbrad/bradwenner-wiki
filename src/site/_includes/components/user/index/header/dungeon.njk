@@ -6,6 +6,12 @@
     Items: {{ userComputed.dungeon.items.length }}
     <br>
     First item: {% if userComputed.dungeon.items.length > 0 %}{{ userComputed.dungeon.items[0] | dump }}{% else %}None{% endif %}
+    <br>
+    <!-- Show all item coordinates -->
+    Item coordinates: 
+    {% for item in userComputed.dungeon.items %}
+      ({{ item.y }},{{ item.x }}){% if not loop.last %}, {% endif %}
+    {% endfor %}
   </div>
   
   <div class="dungeon-body">
@@ -16,10 +22,10 @@
             <div class="dungeon-cell">
               {% set hasItem = false %}
               {% for item in userComputed.dungeon.items %}
-                {% if item[4] == loop.parent.index0 and item[5] == loop.index0 %}
+                {% if item.y == loop.parent.index0 and item.x == loop.index0 %}
                   {% set hasItem = true %}
-                  <a href="{{ item[1] }}" title="{{ item[2] }}">
-                    <img src="/img/{{ item[0] }}.svg" alt="{{ item[2] }}" height="20" />
+                  <a href="{{ item.url }}" title="{{ item.title }}">
+                    <img src="/img/{{ item.icon }}.svg" alt="{{ item.title }}" height="20" />
                   </a>
                 {% endif %}
               {% endfor %}
@@ -44,4 +50,3 @@
     {% endfor %}
   </div>
 </div>
-
