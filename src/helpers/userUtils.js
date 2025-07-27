@@ -164,18 +164,14 @@ function generateBSPDungeon(width, height, minRoomSize = 3, maxDepth = 5) {
  * Defines the types of notes and their visual representation in the dungeon
  */
 const noteLabels = {
-  "tree-1": { label: "Scroll", count: 0, icon: "tree-1" },
-  "tree-2": { label: "Tome", count: 0, icon: "tree-2" },
-  "tree-3": { label: "Grimoire", count: 0, icon: "tree-3" },
-  withered: {
-    label: "Ruin",
-    plural: "Ruins",
-    count: 0,
-    icon: "withered",
-  },
+  "tree-1": { label: "Detritus", count: 0, icon: "tree-1" },
+  "tree-2": { label: "Growth", count: 0, icon: "tree-2" },
+  "tree-3": { label: "Mushroom", count: 0, icon: "tree-3" },
+  skull: { label: "Skull", count: 0, icon: "withered" },
   signpost: { label: "Signpost", count: 0, icon: "signpost" },
-  stone: { label: "Artifact", count: 0, icon: "stone" },
-  chest: { label: "Treasure", count: 0, icon: "chest" }
+  stone: { label: "Stone", count: 0, icon: "stone" },
+  chest: { label: "Treasure", count: 0, icon: "chest" },
+  exit: { label: "Exit", count: 0, icon: "exit" }
 };
 
 /**
