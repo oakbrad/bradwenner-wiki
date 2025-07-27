@@ -10,7 +10,7 @@
               {% if cell.icon %}
                 {# Cell with an icon (representing a note) #}
                 <a href="{{ cell.icon[1] }}" title="{{ cell.icon[2] }}" class="dungeon-icon-link">
-                  <img src="/img/{{ cell.icon[0] }}.svg" alt="{{ cell.icon[2] }}" />
+                  <img src="/img/{{ cell.icon[0] }}.png" alt="{{ cell.icon[2] }}" />
                 </a>
               {% else %}
                 {# Empty dungeon cell (walkable but no icon) #}
@@ -30,7 +30,7 @@
   <div class="dungeon-legends">
     {% for legend in userComputed.dungeon.legends %}
       <div class="dungeon-legend">
-        <img src="/img/{{ legend.icon }}.svg" alt="{{ legend.icon }}" />
+        <img src="/img/{{ legend.icon }}.png" alt="{{ legend.icon }}" />
         <span>{{ legend.label }} ({{ legend.count }})</span>
       </div>
     {% endfor %}
