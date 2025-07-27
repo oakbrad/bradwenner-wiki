@@ -2,20 +2,12 @@
 {"dg-publish":true,"permalink":"/projects/brad-quest/brad-quest/","hide":true,"tags":["gardenEntry"],"noteIcon":""}
 ---
 
-An uncultivated [digital ~~garden~~ dungeon](https://cagrimmett.com/2020/11/08/what-are-digital-gardens/).
+```
+You are standing at the end of a road before a small brick building.
 
-----
+Around you is a forest.
 
-> *"The Garden is the web as topology. The web as space. It’s the integrative web, the iterative web, the web as an arrangement and rearrangement of things to one another."*
-> 
-> -- [Mike Caulfield](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)
+A small stream flows out of the building and down a gully.
+```
 
-> *"How clear everything becomes when you look from the darkness of a dungeon."*
-> 
-> -- [Umberto Eco](https://library.brads.house/index.php?page=13&id=686#cover)
-
-----
-##### todo
-- [ ] [[Reference/Tech/Gridfinity\|Gridfinity]]
-- [ ] [[Spotify isn't Punk\|Spotify isn't Punk]]
-- [ ] [[Hustles/Mystery Hound/Screen Printing\|Screen Printing]] press sketches & notes
+A digital ~~garden~~ [[Projects/brad.quest/Digital Dungeon\|dungeon]].
