@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"dg-path":"Digital Dungeon.md","permalink":"/digital-dungeon/","noteIcon":"stone"}
+{"dg-publish":true,"dg-path":"Digital Dungeon.md","permalink":"/digital-dungeon/","noteIcon":"signpost"}
 ---
+
+Not a blog, nor is a garden the right metaphor. For me the internet was first [a dungeon](https://mudstats.com/World/Mirkwood). A series of twisty passages, none alike. 
 
 > *"The Garden is the web as topology. The web as space. It’s the integrative web, the iterative web, the web as an arrangement and rearrangement of things to one another."*
 > 
