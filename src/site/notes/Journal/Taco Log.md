@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Log/Tacos.md","permalink":"/log/tacos/","title":"Taco Log","noteIcon":"2"}
+{"dg-publish":true,"dg-path":"Log/Tacos.md","permalink":"/log/tacos/","title":"Taco Log","noteIcon":"chest"}
 ---
 
 #oakland #restaurants #food 

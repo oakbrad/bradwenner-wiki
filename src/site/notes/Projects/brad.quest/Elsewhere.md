@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Elsewhere.md","permalink":"/elsewhere/","noteIcon":"signpost"}
+{"dg-publish":true,"dg-path":"Elsewhere.md","permalink":"/elsewhere/","noteIcon":"exit"}
 ---
 
 Find me elsewhere on the internet, or contact me directly at brad@bradwenner.com
