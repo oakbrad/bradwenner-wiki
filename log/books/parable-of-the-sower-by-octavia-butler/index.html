@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>brad.quest</title>
+<title>Parable of the Sower by Octavia Butler</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -92,7 +92,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="1" style="text-decoration:none" class="filename" href="/log/books/parable-of-the-sower-by-octavia-butler/">Parable of the Sower by Octavia Butler </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="1" style="text-decoration:none" class="filename" href="/log/books/parable-of-the-sower-by-octavia-butler/">Parable of the Sower by Octavia Butler </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -181,338 +181,28 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-08-03T22:27:28.834Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-08-03T22:27:28.834Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-08-03T22:27:28.834Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1></h1>
+<h1 data-note-icon="1">Parable of the Sower by Octavia Butler</h1>
 <div class="header-meta">
 </div>
-<div id="dungeon-map">
-<div class="dungeon-body">
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<a href="/log/books/parable-of-the-sower-by-octavia-butler/" title="Parable of the Sower by Octavia Butler" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="Parable of the Sower by Octavia Butler"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="Parable of the Sower by Octavia Butler" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/log/books/the-king-in-yellow-by-robert-chambers/" title="The King in Yellow by Robert Chambers" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="The King in Yellow by Robert Chambers"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="The King in Yellow by Robert Chambers" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/" title="brad.quest" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="brad.quest"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="brad.quest" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<a href="/log/tacos/" title="Taco Log" class="dungeon-icon-link">
-<picture src="/img/chest.png" alt="Taco Log"><source media="(max-width:480px)" srcset="/img/optimized/7A0pnanWXd-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/7A0pnanWXd-16.jpeg">
-<img class="" src="/img/chest.png" alt="Taco Log" width=""></picture>
-</a>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<a href="/outdoors/permethrin-treatment/" title="Permethrin Treatment" class="dungeon-icon-link">
-<picture src="/img/tree-3.png" alt="Permethrin Treatment"><source media="(max-width:480px)" srcset="/img/optimized/kXZNbhbw3e-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/kXZNbhbw3e-16.jpeg">
-<img class="" src="/img/tree-3.png" alt="Permethrin Treatment" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<a href="/tech/on-ai-and-art/" title="On AI &amp; Art" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="On AI &amp; Art"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="On AI & Art" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/tech/js-for-artists/" title="Javascript for Artists" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="Javascript for Artists"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="Javascript for Artists" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<a href="/tech/useful-linux-terminal/" title="Useful Linux Terminal" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="Useful Linux Terminal"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="Useful Linux Terminal" width=""></picture>
-</a>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/digital-dungeon/" title="Digital Dungeon" class="dungeon-icon-link">
-<picture src="/img/signpost.png" alt="Digital Dungeon"><source media="(max-width:480px)" srcset="/img/optimized/kY3mQQXO4c-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/kY3mQQXO4c-16.jpeg">
-<img class="" src="/img/signpost.png" alt="Digital Dungeon" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<a href="/log/books/black-earth-by-timothy-snyder/" title="Black Earth by Timothy Snyder" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="Black Earth by Timothy Snyder"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="Black Earth by Timothy Snyder" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/log/books/on-writing-by-stephen-king/" title="On Writing by Stephen King" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="On Writing by Stephen King"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="On Writing by Stephen King" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/elsewhere/" title="Elsewhere" class="dungeon-icon-link">
-<picture src="/img/exit.png" alt="Elsewhere"><source media="(max-width:480px)" srcset="/img/optimized/5meRLNY5nE-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/5meRLNY5nE-16.jpeg">
-<img class="" src="/img/exit.png" alt="Elsewhere" width=""></picture>
-</a>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/log/books/dungeon-crawler-carl-by-matt-dinniman/" title="Dungeon Crawler Carl by Matt Dinniman" class="dungeon-icon-link">
-<picture src="/img/tree-1.png" alt="Dungeon Crawler Carl by Matt Dinniman"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="Dungeon Crawler Carl by Matt Dinniman" width=""></picture>
-</a>
-</div>
-<div class="dungeon-cell">
-<span class="empty-dungeon"></span>
-</div>
-<div class="dungeon-cell">
-<a href="/tech/gridfinity-in-the-studio/" title="Gridfinity" class="dungeon-icon-link">
-<picture src="/img/tree-2.png" alt="Gridfinity"><source media="(max-width:480px)" srcset="/img/optimized/Z1HdOYv66T-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/Z1HdOYv66T-16.jpeg">
-<img class="" src="/img/tree-2.png" alt="Gridfinity" width=""></picture>
-</a>
-</div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-<div class="dungeon-row">
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-<div class="empty-cell"></div>
-</div>
-</div>
-<div class="dungeon-legends">
-<div class="dungeon-legend">
-<picture src="/img/tree-1.png" alt="tree-1"><source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/OkQXoSJ7pN-16.jpeg">
-<img class="" src="/img/tree-1.png" alt="tree-1" width=""></picture>
-<span>Detritus (9)</span>
-</div>
-<div class="dungeon-legend">
-<picture src="/img/tree-2.png" alt="tree-2"><source media="(max-width:480px)" srcset="/img/optimized/Z1HdOYv66T-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/Z1HdOYv66T-16.jpeg">
-<img class="" src="/img/tree-2.png" alt="tree-2" width=""></picture>
-<span>Growth (1)</span>
-</div>
-<div class="dungeon-legend">
-<picture src="/img/tree-3.png" alt="tree-3"><source media="(max-width:480px)" srcset="/img/optimized/kXZNbhbw3e-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/kXZNbhbw3e-16.jpeg">
-<img class="" src="/img/tree-3.png" alt="tree-3" width=""></picture>
-<span>Mushroom (1)</span>
-</div>
-<div class="dungeon-legend">
-<picture src="/img/signpost.png" alt="signpost"><source media="(max-width:480px)" srcset="/img/optimized/kY3mQQXO4c-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/kY3mQQXO4c-16.jpeg">
-<img class="" src="/img/signpost.png" alt="signpost" width=""></picture>
-<span>Signpost (1)</span>
-</div>
-<div class="dungeon-legend">
-<picture src="/img/chest.png" alt="chest"><source media="(max-width:480px)" srcset="/img/optimized/7A0pnanWXd-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/7A0pnanWXd-16.jpeg">
-<img class="" src="/img/chest.png" alt="chest" width=""></picture>
-<span>Treasure (1)</span>
-</div>
-<div class="dungeon-legend">
-<picture src="/img/exit.png" alt="exit"><source media="(max-width:480px)" srcset="/img/optimized/5meRLNY5nE-16.webp" type="image/webp">
-<source media="(max-width:480px)" srcset="/img/optimized/5meRLNY5nE-16.jpeg">
-<img class="" src="/img/exit.png" alt="exit" width=""></picture>
-<span>Exit (1)</span>
-</div>
-</div>
-</div>
 </header>
-<pre><code>You are standing at the end of a road before a small brick building.
-
-Around you is a forest.
-
-A small stream flows out of the building and down a gully.
-</code></pre>
-<p>A digital <s>garden</s> <a class="internal-link" target="" data-note-icon="signpost" href="/digital-dungeon/">dungeon</a>.</p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#books">#books</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#reading">#reading</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#log">#log</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#read2025">#read2025</a> <a class="tag" onclick="toggleTagSearch(this)" data-content="#scifi">#scifi</a></p>
+<h3 id="a-href-https-library-brads-house-index-php-page-13-and-amp-id-828-cover-target-blank-class-external-link-em-parable-of-the-sower-em-a-by-octavia-e-butler" tabindex="-1"><a href="https://library.brads.house/index.php?page=13&amp;id=828#cover" target="_blank" class="external-link"><em>Parable of the Sower</em></a> by Octavia E. Butler</h3>
+<p><strong>Finished:</strong> <a class="internal-link is-unresolved" href="/404" target="">2025-08-03</a><br>
+<strong>Rating:</strong> ⭐⭐⭐<br>
+<strong>Thoughts:</strong> I enjoyed this, but not as much as I was hoping. This novel suffers from a common sci-fi problem, which is that most of the book is a setup for future sequels (that Butler never got around to finishing). The dystopian world of a collapsing America certainly has a prophetic quality, but I guess frustrating for me is Butler's refusal to engage in any kind of worldbuilding. She's no Ursula Le Guin, unfortunately. The politicians &amp; movements that led to this capitalist dystopia are named only at the very beginning and the very end with no real insight or explanation into the broader context of the protagonist's journey. Instead, we get fortune-cookie level philosophy about the <em>Earthseed</em> movement and a lot of talk about the protaganist's hyper-empathy syndrome, neither of which I found particularly interesting to the events of this book as a singular dystopian work.</p>
+<h5 id="highlighted" tabindex="-1">Highlighted</h5>
+<blockquote>
+<p>“The changes.” I thought for a moment. They were slow changes compared to anything that might happen here, but it took a plague to make some of the people realize that things could change.”</p>
+<p>“So?”</p>
+<p>“Things are changing now, too. Our adults haven’t been wiped out by a plague so they’re still anchored in the past, waiting for the good old days to come back. But things have changed a lot, and they’ll change more. Things are always changing. This is just one of the big jumps instead of the little step-by-step changes that are easier to take. People have changed the climate of the world. Now they’re waiting for the old days to come back.”</p>
+</blockquote>
+<blockquote>
+<p>It would be more honest to say that the Pox was caused by our own refusal to deal with obvious problems in those areas. We caused the problems: then we sat and watched as they grew into crises.</p>
+</blockquote>
 </main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <hr>
 <label for="themeSwitcher">Theme:</label>
 <select id="themeSwitcher"><option value="">Loading...</option></select>
