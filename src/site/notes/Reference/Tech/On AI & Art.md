@@ -13,5 +13,6 @@
 * [Algorithmic Underground](https://jmsdnns.com/tech/algo-underground/)
 * [Finding the AI Line](https://www.garbageday.email/p/finding-ai-line)  by Ryan Broderick
 > *"**[The AI backlash]** has led to a certain irony for creators who want to, in a sense, get away with using AI. At least as it exists right now. Like Glorb, they have to find a way to use it that is both impossible to achieve without it, and also not reliant on it as a shortcut. It has to make people [comment](https://www.tiktok.com/t/ZTL5uXtkN/?utm_source=www.garbageday.email&utm_medium=referral&utm_campaign=finding-the-ai-line), **“This is what AI was actually for.”** And it’s these edge cases that interested parties should keep an eye on."*
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pL9o_BwSN-o?si=UVMPFtyNNATKhS5Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<center>
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/pL9o_BwSN-o?si=UVMPFtyNNATKhS5Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
