@@ -12,6 +12,9 @@ Not a blog, nor is [a garden](https://www.eastgate.com/garden/Enter.html) the ri
 > 
 > -- [Umberto Eco](https://library.brads.house/index.php?page=13&id=686#cover)
 
+### Method
+These notes are taken in [Obsidian](https://obsidian.md/), published with the [Digital Garden plugin](https://dg-docs.ole.dev/), and built and [hosted on Github](https://github.com/oakbrad/brad.quest/).
+
 ----
 ##### todo
 - [x] [[Reference/Tech/Gridfinity in the Studio\|Gridfinity in the Studio]] ✅ 2025-08-08
